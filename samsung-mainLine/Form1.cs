@@ -36,6 +36,12 @@ namespace samsung_mainLine
             showData.Add(temp8);
             showData.Add(temp9);
             showData.Add(temp10);
+            showData.Add(temp);
+            showData.Add(temp2);
+            showData.Add(temp3);
+            showData.Add(temp4);
+            showData.Add(temp5);
+            showData.Add(temp6);
 
             AGVErrorModel err = new("1", "AGV-1", "EMC STOP", "OBS STOP");
             AGVErrorModel err2 = new("2", "AGV-2", "EMC STOP", "OBS STOP");
@@ -44,7 +50,7 @@ namespace samsung_mainLine
 
 
             gridViewDS.DataSource = showData;
-            gridViewError.DataSource = errorData;
+            //gridViewError.DataSource = errorData;
         }
 
         public class AGVCallingModel
