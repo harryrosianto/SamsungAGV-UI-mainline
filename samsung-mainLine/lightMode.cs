@@ -10,26 +10,28 @@ using System.Windows.Forms;
 
 namespace samsung_mainLine
 {
-    public partial class FormTimer : Form
+    public partial class lightMode : Form
     {
-        //private Form1 _formMain;
-        public static string secondsValue = "";
-        public FormTimer()
+        public lightMode()
         {
             InitializeComponent();
         }
-        
 
-        public void bunifuThinButton21_Click(object sender, EventArgs e)
+        private void lightMode_Load(object sender, EventArgs e)
         {
 
-            secondsValue = timerValue.Text;
-            this.Close();
         }
-        
+
+        private void modeButton_Click(object sender, EventArgs e)
+        {
+            Form1 dmMode = new Form1();
+            dmMode.Show();
+            this.Hide();
+        }
+
         private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

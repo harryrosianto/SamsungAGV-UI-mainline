@@ -4,13 +4,25 @@ namespace samsung_mainLine
     {
         public List<AGVCallingModel> AGVData = new();
         public List<AGVErrorModel> AGVError = new();
+        public static int counts;
+        DateTime dt = new DateTime();
+        //public static string secondsValue = "";
+
 
         public Form1()
-        {
+        {   
             InitializeComponent();
             callAPI();
-        }
+            modeButton.MouseHover += ModeButton_MouseHover;
+            modeButton.MouseLeave += ModeButton_MouseLeave;
+            logsButton.MouseHover += LogsButton_MouseHover;
+            logsButton.MouseLeave += LogsButton_MouseLeave;
+            timerButton.MouseHover += TimerButton_MouseHover;
+            timerButton.MouseLeave += TimerButton_MouseLeave;
+            homeButton.MouseHover += HomeButton_MouseHover;
+            homeButton.MouseLeave += HomeButton_MouseLeave;
 
+        }
         private void callAPI()
         {
             List<AGVCallingModel> showData = new();
@@ -51,6 +63,9 @@ namespace samsung_mainLine
 
             gridViewDS.DataSource = showData;
             //gridViewError.DataSource = errorData;
+            Console.WriteLine(counts);
+            //timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+
         }
 
         public class AGVCallingModel
@@ -83,11 +98,78 @@ namespace samsung_mainLine
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+
+
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
         {
 
         }
 
+        public void timerButton_Click(object sender, EventArgs e)
+        {
+            FormTimer f = new();
+            f.ShowDialog();
+            
+            counts = Convert.ToInt32(FormTimer.secondsValue);
+            //timerLabel.Text = FormTimer.secondsValue;
+            timerData.Text = FormTimer.secondsValue;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+        }
+
+        private void modeButton_Click(object sender, EventArgs e)
+        {
+            lightMode lmForm = new lightMode();
+            this.Hide();
+            lmForm.Show();
+        }
+
+        
+
+        private void ModeButton_MouseHover(object? sender, EventArgs e)
+        {
+            modeIndicator.Visible = true;
+        }
+        private void ModeButton_MouseLeave(object? sender, EventArgs e)
+        {
+            modeIndicator.Visible = false;
+        }
+        private void LogsButton_MouseHover(object? sender, EventArgs e)
+        {
+            logsIndicator.Visible = true;
+        }
+        private void LogsButton_MouseLeave(object? sender, EventArgs e)
+        {
+            logsIndicator.Visible = false;
+        }
+        private void TimerButton_MouseHover(object? sender, EventArgs e)
+        {
+            timerIndicator.Visible = true;
+        }
+        private void TimerButton_MouseLeave(object? sender, EventArgs e)
+        {
+            timerIndicator.Visible = false;
+        }
+        private void HomeButton_MouseHover(object? sender, EventArgs e)
+        {
+            homeIndicator.Visible = true;
+        }
+        private void HomeButton_MouseLeave(object? sender, EventArgs e)
+        {
+            homeIndicator.Visible = false;
+        }
 
     }
 }
