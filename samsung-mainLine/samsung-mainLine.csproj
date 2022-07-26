@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Bunifu.UI.WinForms" Version="6.0.0" />
+    <PackageReference Include="Standard.Licensing" Version="1.1.5" />
   </ItemGroup>
 
   <ItemGroup>

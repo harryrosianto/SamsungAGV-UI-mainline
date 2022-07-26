@@ -1,6 +1,12 @@
 using System;
 using System.Diagnostics;
 using System.Threading;
+using System.IO;
+using System.Data;
+using System.Drawing;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Text;
 
 namespace samsung_mainLine
 {
@@ -10,6 +16,7 @@ namespace samsung_mainLine
         public List<AGVErrorModel> AGVError = new();
         public int counts;
         DateTime dt = new DateTime();
+        public string missionTime;
         //public static string secondsValue = "";
         
 
@@ -35,17 +42,18 @@ namespace samsung_mainLine
         {
             List<AGVCallingModel> showData = new();
             List<AGVErrorModel> errorData = new();
+            missionTime = DateTime.Now.ToString("HH:mm:ss");
 
-            AGVCallingModel temp = new("1", "AGV-1", "Station 3", "Finish");
-            AGVCallingModel temp2 = new("2", "AGV-2", "Station 7", "Running");
-            AGVCallingModel temp3 = new("3", "AGV-1", "Station 3", "Finish");
-            AGVCallingModel temp4 = new("4", "AGV-2", "Station 7", "Running");
-            AGVCallingModel temp5 = new("5", "AGV-1", "Station 3", "Finish");
-            AGVCallingModel temp6 = new("6", "AGV-2", "Station 7", "Running");
-            AGVCallingModel temp7 = new("7", "AGV-1", "Station 3", "Finish");
-            AGVCallingModel temp8 = new("8", "AGV-2", "Station 7", "Running");
-            AGVCallingModel temp9 = new("9", "AGV-2", "Station 9", "Running");
-            AGVCallingModel temp10 = new("10", "AGV-2", "Station 9", "Running");
+            AGVCallingModel temp = new(missionTime, "AGV-1", "Station 3", "Finish");
+            AGVCallingModel temp2 = new(missionTime, "AGV-2", "Station 7", "Running");
+            AGVCallingModel temp3 = new(missionTime, "AGV-1", "Station 3", "Finish");
+            AGVCallingModel temp4 = new(missionTime, "AGV-2", "Station 7", "Running");
+            AGVCallingModel temp5 = new(missionTime, "AGV-1", "Station 3", "Finish");
+            AGVCallingModel temp6 = new(missionTime, "AGV-2", "Station 7", "Running");
+            AGVCallingModel temp7 = new(missionTime, "AGV-1", "Station 3", "Finish");
+            AGVCallingModel temp8 = new(missionTime, "AGV-2", "Station 7", "Running");
+            AGVCallingModel temp9 = new(missionTime, "AGV-2", "Station 9", "Running");
+            AGVCallingModel temp10 = new(missionTime, "AGV -2", "Station 9", "Running");
             showData.Add(temp);
             showData.Add(temp2);
             showData.Add(temp3);
@@ -194,10 +202,64 @@ namespace samsung_mainLine
 
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void logsButton_Click(object sender, EventArgs e)
         {
+            if (gridViewDS.Rows.Count > 0)
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "CSV (*.csv)|*.csv";
+                string outputName = DateTime.Today.ToString("dd-mm-yyyy");
+                sfd.FileName = "Logs Exported - " + outputName + ".csv";
+                bool fileError = false;
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    if (File.Exists(sfd.FileName))
+                    {
+                        try
+                        {
+                            File.Delete(sfd.FileName);
+                        }
+                        catch (IOException ex)
+                        {
+                            fileError = true;
+                            MessageBox.Show("failed to export csv file" + ex.Message);
+                        }
+                    }
+                    if (!fileError)
+                    {
+                        try
+                        {
+                            int columnCount = gridViewDS.Columns.Count;
+                            string columnNames = "";
+                            string[] outputCsv = new string[gridViewDS.Rows.Count + 1];
+                            for (int i = 0; i < columnCount; i++)
+                            {
+                                columnNames += gridViewDS.Columns[i].HeaderText.ToString() + ",";
+                            }
+                            outputCsv[0] += columnNames;
 
+                            for (int i = 1; (i - 1) < gridViewDS.Rows.Count; i++)
+                            {
+                                for (int j = 0; j < columnCount; j++)
+                                {
+                                    outputCsv[i] += gridViewDS.Rows[i - 1].Cells[j].Value.ToString() + ",";
+                                }
+                            }
+
+                            File.WriteAllLines(sfd.FileName, outputCsv, Encoding.UTF8);
+                            MessageBox.Show("csv file exported successfully", "Info");
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error :" + ex.Message);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("no delivery status to export!", "Info");
+            }
         }
-       
     }
 }
