@@ -12,14 +12,13 @@ namespace samsung_mainLine
 {
     public partial class Form1 : Form
     {
+
         public List<AGVCallingModel> AGVData = new();
         public List<AGVErrorModel> AGVError = new();
         public int counts;
         DateTime dt = new DateTime();
         public string missionTime;
         //public static string secondsValue = "";
-        
-
 
         public Form1()
         {   
