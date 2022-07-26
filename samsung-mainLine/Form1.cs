@@ -1,12 +1,17 @@
+using System;
+using System.Diagnostics;
+using System.Threading;
+
 namespace samsung_mainLine
 {
     public partial class Form1 : Form
     {
         public List<AGVCallingModel> AGVData = new();
         public List<AGVErrorModel> AGVError = new();
-        public static int counts;
+        public int counts;
         DateTime dt = new DateTime();
         //public static string secondsValue = "";
+        
 
 
         public Form1()
@@ -22,8 +27,11 @@ namespace samsung_mainLine
             homeButton.MouseHover += HomeButton_MouseHover;
             homeButton.MouseLeave += HomeButton_MouseLeave;
 
+            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+            timerData.Text = Convert.ToString(counts);
+
         }
-        private void callAPI()
+        private async void callAPI()
         {
             List<AGVCallingModel> showData = new();
             List<AGVErrorModel> errorData = new();
@@ -60,12 +68,11 @@ namespace samsung_mainLine
             errorData.Add(err);
             errorData.Add(err2);
 
-
             gridViewDS.DataSource = showData;
             //gridViewError.DataSource = errorData;
             Console.WriteLine(counts);
             //timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
-
+            
         }
 
         public class AGVCallingModel
@@ -103,6 +110,8 @@ namespace samsung_mainLine
             
         }
 
+        
+        
 
 
         private void bunifuTileButton1_Click(object sender, EventArgs e)
@@ -110,23 +119,32 @@ namespace samsung_mainLine
             Application.Exit();
         }
 
-        private void homeButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void timerButton_Click(object sender, EventArgs e)
         {
             FormTimer f = new();
             f.ShowDialog();
-            
             counts = Convert.ToInt32(FormTimer.secondsValue);
-            //timerLabel.Text = FormTimer.secondsValue;
+            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
             timerData.Text = FormTimer.secondsValue;
+        }
+        public void homeButton_Click(object sender, EventArgs e)
+        {
+            timer1 = new System.Windows.Forms.Timer();
+            timer1.Tick += new EventHandler(timer1_Tick);
+            timer1.Interval = 1000; // 1 second
+            timer1.Start();
+            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            counts--;
+            if (counts == 0)
+            {
+                timer1.Stop();
+            }
+            
+            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
         }
 
         private void modeButton_Click(object sender, EventArgs e)
@@ -171,5 +189,15 @@ namespace samsung_mainLine
             homeIndicator.Visible = false;
         }
 
+        private void bunifuLabel14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+       
     }
 }
