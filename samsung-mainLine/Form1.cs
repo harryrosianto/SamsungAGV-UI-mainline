@@ -19,6 +19,7 @@ namespace samsung_mainLine
         DateTime dt = new DateTime();
         public string missionTime;
         //public static string secondsValue = "";
+        public int flags = 0;
 
         public Form1()
         {   
@@ -35,6 +36,7 @@ namespace samsung_mainLine
 
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
             timerData.Text = Convert.ToString(counts);
+            Console.WriteLine(flags);
 
         }
         private async void callAPI()
@@ -130,17 +132,22 @@ namespace samsung_mainLine
         {
             FormTimer f = new();
             f.ShowDialog();
+            flags = 1;
             counts = Convert.ToInt32(FormTimer.secondsValue);
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
             timerData.Text = FormTimer.secondsValue;
+            if (flags == 1)
+            {
+                bunifuPanel3.BackColor = Color.Yellow;
+            }
         }
         public void homeButton_Click(object sender, EventArgs e)
         {
             timer1 = new System.Windows.Forms.Timer();
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000; // 1 second
-            timer1.Start();
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+            Console.WriteLine(flags);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -149,8 +156,9 @@ namespace samsung_mainLine
             if (counts == 0)
             {
                 timer1.Stop();
+                flags = 0;
             }
-            
+            Console.WriteLine(flags);
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
         }
 
@@ -198,7 +206,7 @@ namespace samsung_mainLine
 
         private void bunifuLabel14_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void logsButton_Click(object sender, EventArgs e)
