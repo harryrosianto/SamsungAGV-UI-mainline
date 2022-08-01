@@ -119,10 +119,6 @@ namespace samsung_mainLine
             
         }
 
-        
-        
-
-
         private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -132,14 +128,14 @@ namespace samsung_mainLine
         {
             FormTimer f = new();
             f.ShowDialog();
-            flags = 1;
+            //flags = 1;
             counts = Convert.ToInt32(FormTimer.secondsValue);
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
             timerData.Text = FormTimer.secondsValue;
-            if (flags == 1)
-            {
-                bunifuPanel3.BackColor = Color.Yellow;
-            }
+            //if (flags == 1)
+            //{
+            //    bunifuPanel3.BackColor = Color.Yellow;
+            //}
         }
         public void homeButton_Click(object sender, EventArgs e)
         {
@@ -147,7 +143,7 @@ namespace samsung_mainLine
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000; // 1 second
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
-            Console.WriteLine(flags);
+            timer1.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -156,7 +152,6 @@ namespace samsung_mainLine
             if (counts == 0)
             {
                 timer1.Stop();
-                flags = 0;
             }
             Console.WriteLine(flags);
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");

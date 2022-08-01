@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -59,24 +59,43 @@
             this.timerIndicator = new Bunifu.UI.WinForms.BunifuPanel();
             this.homeIndicator = new Bunifu.UI.WinForms.BunifuPanel();
             this.timerLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.standbyPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.timerData = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.standbyPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.detailPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel29 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel28 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel27 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel25 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel19 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel18 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel17 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.rearSensor1 = new System.Windows.Forms.PictureBox();
+            this.frontSensor1 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel16 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.agvInfo1 = new System.Windows.Forms.PictureBox();
+            this.detailPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel21 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.rearSensor2 = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel22 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.frontSensor2 = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel23 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel24 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel26 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.agvInfo2 = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel30 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel32 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel31 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel7 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -84,27 +103,56 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.station8 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station7 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station9 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station10 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station11 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station12 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station6 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station5 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.station1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette6 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette5 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette12 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette11 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette9 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette10 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette8 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.palette7 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.bunifuPanel3.SuspendLayout();
-            this.bunifuPanel4.SuspendLayout();
-            this.bunifuPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.bunifuPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.standbyPanel1.SuspendLayout();
+            this.standbyPanel2.SuspendLayout();
+            this.detailPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rearSensor1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frontSensor1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agvInfo1)).BeginInit();
+            this.detailPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rearSensor2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frontSensor2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agvInfo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -202,22 +250,22 @@
             // gridViewDS
             // 
             this.gridViewDS.AllowCustomTheming = true;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            this.gridViewDS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.gridViewDS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridViewDS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewDS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
             this.gridViewDS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewDS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridViewDS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewDS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewDS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridViewDS.ColumnHeadersHeight = 42;
             this.gridViewDS.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
             this.gridViewDS.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -237,14 +285,14 @@
             this.gridViewDS.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.gridViewDS.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
             this.gridViewDS.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewDS.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewDS.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridViewDS.EnableHeadersVisualStyles = false;
             this.gridViewDS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(60)))));
             this.gridViewDS.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
@@ -310,11 +358,11 @@
             this.timerButton.ButtonTextMarginLeft = 0;
             this.timerButton.ColorContrastOnClick = 45;
             this.timerButton.ColorContrastOnHover = 45;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.timerButton.CustomizableEdges = borderEdges12;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.timerButton.CustomizableEdges = borderEdges4;
             this.timerButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.timerButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.timerButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -401,11 +449,11 @@
             this.homeButton.ButtonTextMarginLeft = 0;
             this.homeButton.ColorContrastOnClick = 45;
             this.homeButton.ColorContrastOnHover = 45;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.homeButton.CustomizableEdges = borderEdges11;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.homeButton.CustomizableEdges = borderEdges3;
             this.homeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.homeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.homeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -492,11 +540,11 @@
             this.modeButton.ButtonTextMarginLeft = 0;
             this.modeButton.ColorContrastOnClick = 45;
             this.modeButton.ColorContrastOnHover = 45;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.modeButton.CustomizableEdges = borderEdges10;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.modeButton.CustomizableEdges = borderEdges2;
             this.modeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.modeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -583,11 +631,11 @@
             this.logsButton.ButtonTextMarginLeft = 0;
             this.logsButton.ColorContrastOnClick = 45;
             this.logsButton.ColorContrastOnHover = 45;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.logsButton.CustomizableEdges = borderEdges9;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.logsButton.CustomizableEdges = borderEdges1;
             this.logsButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.logsButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logsButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -764,23 +812,23 @@
             this.timerLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.timerLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuPanel3
+            // standbyPanel1
             // 
-            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
-            this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel3.BorderRadius = 10;
-            this.bunifuPanel3.BorderThickness = 0;
-            this.bunifuPanel3.Controls.Add(this.bunifuLabel6);
-            this.bunifuPanel3.Controls.Add(this.timerData);
-            this.bunifuPanel3.Controls.Add(this.bunifuLabel5);
-            this.bunifuPanel3.Controls.Add(this.timerLabel);
-            this.bunifuPanel3.Location = new System.Drawing.Point(1213, 744);
-            this.bunifuPanel3.Name = "bunifuPanel3";
-            this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(177, 108);
-            this.bunifuPanel3.TabIndex = 20;
+            this.standbyPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            this.standbyPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("standbyPanel1.BackgroundImage")));
+            this.standbyPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.standbyPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.standbyPanel1.BorderRadius = 10;
+            this.standbyPanel1.BorderThickness = 0;
+            this.standbyPanel1.Controls.Add(this.bunifuLabel6);
+            this.standbyPanel1.Controls.Add(this.timerData);
+            this.standbyPanel1.Controls.Add(this.bunifuLabel5);
+            this.standbyPanel1.Controls.Add(this.timerLabel);
+            this.standbyPanel1.Location = new System.Drawing.Point(1213, 744);
+            this.standbyPanel1.Name = "standbyPanel1";
+            this.standbyPanel1.ShowBorders = true;
+            this.standbyPanel1.Size = new System.Drawing.Size(177, 108);
+            this.standbyPanel1.TabIndex = 20;
             // 
             // bunifuLabel6
             // 
@@ -846,23 +894,23 @@
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuPanel4
+            // standbyPanel2
             // 
-            this.bunifuPanel4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
-            this.bunifuPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel4.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel4.BorderRadius = 10;
-            this.bunifuPanel4.BorderThickness = 0;
-            this.bunifuPanel4.Controls.Add(this.bunifuLabel7);
-            this.bunifuPanel4.Controls.Add(this.bunifuLabel8);
-            this.bunifuPanel4.Controls.Add(this.bunifuLabel9);
-            this.bunifuPanel4.Controls.Add(this.bunifuLabel10);
-            this.bunifuPanel4.Location = new System.Drawing.Point(1213, 888);
-            this.bunifuPanel4.Name = "bunifuPanel4";
-            this.bunifuPanel4.ShowBorders = true;
-            this.bunifuPanel4.Size = new System.Drawing.Size(177, 108);
-            this.bunifuPanel4.TabIndex = 25;
+            this.standbyPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            this.standbyPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("standbyPanel2.BackgroundImage")));
+            this.standbyPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.standbyPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.standbyPanel2.BorderRadius = 10;
+            this.standbyPanel2.BorderThickness = 0;
+            this.standbyPanel2.Controls.Add(this.bunifuLabel7);
+            this.standbyPanel2.Controls.Add(this.bunifuLabel8);
+            this.standbyPanel2.Controls.Add(this.bunifuLabel9);
+            this.standbyPanel2.Controls.Add(this.bunifuLabel10);
+            this.standbyPanel2.Location = new System.Drawing.Point(1213, 888);
+            this.standbyPanel2.Name = "standbyPanel2";
+            this.standbyPanel2.ShowBorders = true;
+            this.standbyPanel2.Size = new System.Drawing.Size(177, 108);
+            this.standbyPanel2.TabIndex = 25;
             // 
             // bunifuLabel7
             // 
@@ -944,34 +992,183 @@
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuPanel5
+            // detailPanel1
             // 
-            this.bunifuPanel5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            this.bunifuPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel5.BackgroundImage")));
-            this.bunifuPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel5.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel5.BorderRadius = 10;
-            this.bunifuPanel5.BorderThickness = 0;
-            this.bunifuPanel5.Controls.Add(this.pictureBox10);
-            this.bunifuPanel5.Controls.Add(this.pictureBox9);
-            this.bunifuPanel5.Controls.Add(this.bunifuLabel16);
-            this.bunifuPanel5.Controls.Add(this.pictureBox5);
-            this.bunifuPanel5.Location = new System.Drawing.Point(476, 744);
-            this.bunifuPanel5.Name = "bunifuPanel5";
-            this.bunifuPanel5.ShowBorders = true;
-            this.bunifuPanel5.Size = new System.Drawing.Size(316, 252);
-            this.bunifuPanel5.TabIndex = 25;
+            this.detailPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            this.detailPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("detailPanel1.BackgroundImage")));
+            this.detailPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.detailPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.detailPanel1.BorderRadius = 10;
+            this.detailPanel1.BorderThickness = 0;
+            this.detailPanel1.Controls.Add(this.bunifuLabel29);
+            this.detailPanel1.Controls.Add(this.bunifuLabel28);
+            this.detailPanel1.Controls.Add(this.bunifuLabel27);
+            this.detailPanel1.Controls.Add(this.bunifuLabel25);
+            this.detailPanel1.Controls.Add(this.bunifuLabel20);
+            this.detailPanel1.Controls.Add(this.bunifuLabel19);
+            this.detailPanel1.Controls.Add(this.bunifuLabel18);
+            this.detailPanel1.Controls.Add(this.bunifuLabel17);
+            this.detailPanel1.Controls.Add(this.rearSensor1);
+            this.detailPanel1.Controls.Add(this.frontSensor1);
+            this.detailPanel1.Controls.Add(this.bunifuLabel16);
+            this.detailPanel1.Controls.Add(this.agvInfo1);
+            this.detailPanel1.Location = new System.Drawing.Point(476, 744);
+            this.detailPanel1.Name = "detailPanel1";
+            this.detailPanel1.ShowBorders = true;
+            this.detailPanel1.Size = new System.Drawing.Size(316, 252);
+            this.detailPanel1.TabIndex = 25;
             // 
-            // pictureBox9
+            // bunifuLabel29
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(106, 31);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(102, 3);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 32;
-            this.pictureBox9.TabStop = false;
+            this.bunifuLabel29.AllowParentOverrides = false;
+            this.bunifuLabel29.AutoEllipsis = false;
+            this.bunifuLabel29.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel29.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel29.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel29.Location = new System.Drawing.Point(220, 190);
+            this.bunifuLabel29.Name = "bunifuLabel29";
+            this.bunifuLabel29.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel29.Size = new System.Drawing.Size(26, 23);
+            this.bunifuLabel29.TabIndex = 32;
+            this.bunifuLabel29.Text = "00";
+            this.bunifuLabel29.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel29.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel28
+            // 
+            this.bunifuLabel28.AllowParentOverrides = false;
+            this.bunifuLabel28.AutoEllipsis = false;
+            this.bunifuLabel28.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel28.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel28.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel28.Location = new System.Drawing.Point(220, 139);
+            this.bunifuLabel28.Name = "bunifuLabel28";
+            this.bunifuLabel28.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel28.Size = new System.Drawing.Size(26, 23);
+            this.bunifuLabel28.TabIndex = 32;
+            this.bunifuLabel28.Text = "00";
+            this.bunifuLabel28.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel28.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel27
+            // 
+            this.bunifuLabel27.AllowParentOverrides = false;
+            this.bunifuLabel27.AutoEllipsis = false;
+            this.bunifuLabel27.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel27.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel27.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel27.Location = new System.Drawing.Point(220, 87);
+            this.bunifuLabel27.Name = "bunifuLabel27";
+            this.bunifuLabel27.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel27.Size = new System.Drawing.Size(26, 23);
+            this.bunifuLabel27.TabIndex = 37;
+            this.bunifuLabel27.Text = "00";
+            this.bunifuLabel27.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel27.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel25
+            // 
+            this.bunifuLabel25.AllowParentOverrides = false;
+            this.bunifuLabel25.AutoEllipsis = false;
+            this.bunifuLabel25.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel25.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel25.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel25.Location = new System.Drawing.Point(220, 36);
+            this.bunifuLabel25.Name = "bunifuLabel25";
+            this.bunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel25.Size = new System.Drawing.Size(26, 23);
+            this.bunifuLabel25.TabIndex = 25;
+            this.bunifuLabel25.Text = "00";
+            this.bunifuLabel25.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel25.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel20
+            // 
+            this.bunifuLabel20.AllowParentOverrides = false;
+            this.bunifuLabel20.AutoEllipsis = false;
+            this.bunifuLabel20.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel20.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel20.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel20.Location = new System.Drawing.Point(220, 174);
+            this.bunifuLabel20.Name = "bunifuLabel20";
+            this.bunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel20.Size = new System.Drawing.Size(52, 16);
+            this.bunifuLabel20.TabIndex = 36;
+            this.bunifuLabel20.Text = "Route ID";
+            this.bunifuLabel20.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel20.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel19
+            // 
+            this.bunifuLabel19.AllowParentOverrides = false;
+            this.bunifuLabel19.AutoEllipsis = false;
+            this.bunifuLabel19.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel19.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel19.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel19.Location = new System.Drawing.Point(220, 121);
+            this.bunifuLabel19.Name = "bunifuLabel19";
+            this.bunifuLabel19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel19.Size = new System.Drawing.Size(63, 16);
+            this.bunifuLabel19.TabIndex = 35;
+            this.bunifuLabel19.Text = "Mission ID";
+            this.bunifuLabel19.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel19.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel18
+            // 
+            this.bunifuLabel18.AllowParentOverrides = false;
+            this.bunifuLabel18.AutoEllipsis = false;
+            this.bunifuLabel18.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel18.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel18.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel18.Location = new System.Drawing.Point(220, 68);
+            this.bunifuLabel18.Name = "bunifuLabel18";
+            this.bunifuLabel18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel18.Size = new System.Drawing.Size(73, 16);
+            this.bunifuLabel18.TabIndex = 34;
+            this.bunifuLabel18.Text = "Work Hours";
+            this.bunifuLabel18.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel18.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel17
+            // 
+            this.bunifuLabel17.AllowParentOverrides = false;
+            this.bunifuLabel17.AutoEllipsis = false;
+            this.bunifuLabel17.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel17.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel17.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel17.Location = new System.Drawing.Point(220, 18);
+            this.bunifuLabel17.Name = "bunifuLabel17";
+            this.bunifuLabel17.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel17.Size = new System.Drawing.Size(41, 16);
+            this.bunifuLabel17.TabIndex = 25;
+            this.bunifuLabel17.Text = "Cycles";
+            this.bunifuLabel17.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel17.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // rearSensor1
+            // 
+            this.rearSensor1.BackColor = System.Drawing.Color.Transparent;
+            this.rearSensor1.Image = ((System.Drawing.Image)(resources.GetObject("rearSensor1.Image")));
+            this.rearSensor1.Location = new System.Drawing.Point(106, 194);
+            this.rearSensor1.Name = "rearSensor1";
+            this.rearSensor1.Size = new System.Drawing.Size(102, 3);
+            this.rearSensor1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rearSensor1.TabIndex = 33;
+            this.rearSensor1.TabStop = false;
+            this.rearSensor1.Visible = false;
+            // 
+            // frontSensor1
+            // 
+            this.frontSensor1.BackColor = System.Drawing.Color.Transparent;
+            this.frontSensor1.Image = ((System.Drawing.Image)(resources.GetObject("frontSensor1.Image")));
+            this.frontSensor1.Location = new System.Drawing.Point(106, 27);
+            this.frontSensor1.Name = "frontSensor1";
+            this.frontSensor1.Size = new System.Drawing.Size(102, 3);
+            this.frontSensor1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frontSensor1.TabIndex = 32;
+            this.frontSensor1.TabStop = false;
+            this.frontSensor1.Visible = false;
             // 
             // bunifuLabel16
             // 
@@ -980,7 +1177,7 @@
             this.bunifuLabel16.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel16.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(66)))), ((int)(((byte)(60)))));
-            this.bunifuLabel16.Location = new System.Drawing.Point(58, 217);
+            this.bunifuLabel16.Location = new System.Drawing.Point(58, 220);
             this.bunifuLabel16.Name = "bunifuLabel16";
             this.bunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel16.Size = new System.Drawing.Size(198, 25);
@@ -988,35 +1185,132 @@
             this.bunifuLabel16.Text = "EMERGENCY STOP";
             this.bunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel16.Visible = false;
             // 
-            // pictureBox5
+            // agvInfo1
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(101, 22);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(113, 186);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.agvInfo1.BackColor = System.Drawing.Color.Transparent;
+            this.agvInfo1.Image = ((System.Drawing.Image)(resources.GetObject("agvInfo1.Image")));
+            this.agvInfo1.Location = new System.Drawing.Point(101, 18);
+            this.agvInfo1.Name = "agvInfo1";
+            this.agvInfo1.Size = new System.Drawing.Size(113, 186);
+            this.agvInfo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.agvInfo1.TabIndex = 0;
+            this.agvInfo1.TabStop = false;
             // 
-            // bunifuPanel6
+            // detailPanel2
             // 
-            this.bunifuPanel6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(38)))), ((int)(((byte)(65)))));
-            this.bunifuPanel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel6.BackgroundImage")));
-            this.bunifuPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel6.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel6.BorderRadius = 10;
-            this.bunifuPanel6.BorderThickness = 0;
-            this.bunifuPanel6.Controls.Add(this.pictureBox12);
-            this.bunifuPanel6.Controls.Add(this.pictureBox11);
-            this.bunifuPanel6.Controls.Add(this.bunifuLabel15);
-            this.bunifuPanel6.Controls.Add(this.pictureBox6);
-            this.bunifuPanel6.Location = new System.Drawing.Point(839, 744);
-            this.bunifuPanel6.Name = "bunifuPanel6";
-            this.bunifuPanel6.ShowBorders = true;
-            this.bunifuPanel6.Size = new System.Drawing.Size(316, 252);
-            this.bunifuPanel6.TabIndex = 26;
+            this.detailPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(38)))), ((int)(((byte)(65)))));
+            this.detailPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("detailPanel2.BackgroundImage")));
+            this.detailPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.detailPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.detailPanel2.BorderRadius = 10;
+            this.detailPanel2.BorderThickness = 0;
+            this.detailPanel2.Controls.Add(this.bunifuLabel21);
+            this.detailPanel2.Controls.Add(this.rearSensor2);
+            this.detailPanel2.Controls.Add(this.bunifuLabel22);
+            this.detailPanel2.Controls.Add(this.frontSensor2);
+            this.detailPanel2.Controls.Add(this.bunifuLabel23);
+            this.detailPanel2.Controls.Add(this.bunifuLabel24);
+            this.detailPanel2.Controls.Add(this.bunifuLabel15);
+            this.detailPanel2.Controls.Add(this.bunifuLabel26);
+            this.detailPanel2.Controls.Add(this.agvInfo2);
+            this.detailPanel2.Controls.Add(this.bunifuLabel30);
+            this.detailPanel2.Controls.Add(this.bunifuLabel32);
+            this.detailPanel2.Controls.Add(this.bunifuLabel31);
+            this.detailPanel2.Location = new System.Drawing.Point(839, 744);
+            this.detailPanel2.Name = "detailPanel2";
+            this.detailPanel2.ShowBorders = true;
+            this.detailPanel2.Size = new System.Drawing.Size(316, 252);
+            this.detailPanel2.TabIndex = 26;
+            // 
+            // bunifuLabel21
+            // 
+            this.bunifuLabel21.AllowParentOverrides = false;
+            this.bunifuLabel21.AutoEllipsis = false;
+            this.bunifuLabel21.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel21.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel21.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel21.Location = new System.Drawing.Point(221, 190);
+            this.bunifuLabel21.Name = "bunifuLabel21";
+            this.bunifuLabel21.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel21.Size = new System.Drawing.Size(26, 23);
+            this.bunifuLabel21.TabIndex = 40;
+            this.bunifuLabel21.Text = "00";
+            this.bunifuLabel21.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel21.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // rearSensor2
+            // 
+            this.rearSensor2.BackColor = System.Drawing.Color.Transparent;
+            this.rearSensor2.Image = ((System.Drawing.Image)(resources.GetObject("rearSensor2.Image")));
+            this.rearSensor2.Location = new System.Drawing.Point(107, 194);
+            this.rearSensor2.Name = "rearSensor2";
+            this.rearSensor2.Size = new System.Drawing.Size(102, 3);
+            this.rearSensor2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rearSensor2.TabIndex = 34;
+            this.rearSensor2.TabStop = false;
+            this.rearSensor2.Visible = false;
+            // 
+            // bunifuLabel22
+            // 
+            this.bunifuLabel22.AllowParentOverrides = false;
+            this.bunifuLabel22.AutoEllipsis = false;
+            this.bunifuLabel22.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel22.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel22.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel22.Location = new System.Drawing.Point(221, 139);
+            this.bunifuLabel22.Name = "bunifuLabel22";
+            this.bunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel22.Size = new System.Drawing.Size(26, 23);
+            this.bunifuLabel22.TabIndex = 41;
+            this.bunifuLabel22.Text = "00";
+            this.bunifuLabel22.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel22.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // frontSensor2
+            // 
+            this.frontSensor2.BackColor = System.Drawing.Color.Transparent;
+            this.frontSensor2.Image = ((System.Drawing.Image)(resources.GetObject("frontSensor2.Image")));
+            this.frontSensor2.Location = new System.Drawing.Point(107, 27);
+            this.frontSensor2.Name = "frontSensor2";
+            this.frontSensor2.Size = new System.Drawing.Size(102, 3);
+            this.frontSensor2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.frontSensor2.TabIndex = 33;
+            this.frontSensor2.TabStop = false;
+            this.frontSensor2.Visible = false;
+            // 
+            // bunifuLabel23
+            // 
+            this.bunifuLabel23.AllowParentOverrides = false;
+            this.bunifuLabel23.AutoEllipsis = false;
+            this.bunifuLabel23.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel23.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel23.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel23.Location = new System.Drawing.Point(221, 87);
+            this.bunifuLabel23.Name = "bunifuLabel23";
+            this.bunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel23.Size = new System.Drawing.Size(26, 23);
+            this.bunifuLabel23.TabIndex = 45;
+            this.bunifuLabel23.Text = "00";
+            this.bunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel24
+            // 
+            this.bunifuLabel24.AllowParentOverrides = false;
+            this.bunifuLabel24.AutoEllipsis = false;
+            this.bunifuLabel24.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel24.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel24.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel24.Location = new System.Drawing.Point(221, 36);
+            this.bunifuLabel24.Name = "bunifuLabel24";
+            this.bunifuLabel24.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel24.Size = new System.Drawing.Size(26, 23);
+            this.bunifuLabel24.TabIndex = 38;
+            this.bunifuLabel24.Text = "00";
+            this.bunifuLabel24.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel24.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel15
             // 
@@ -1025,7 +1319,7 @@
             this.bunifuLabel15.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel15.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
-            this.bunifuLabel15.Location = new System.Drawing.Point(61, 217);
+            this.bunifuLabel15.Location = new System.Drawing.Point(61, 220);
             this.bunifuLabel15.Name = "bunifuLabel15";
             this.bunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel15.Size = new System.Drawing.Size(198, 25);
@@ -1034,16 +1328,80 @@
             this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // pictureBox6
+            // bunifuLabel26
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(102, 22);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(113, 186);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
+            this.bunifuLabel26.AllowParentOverrides = false;
+            this.bunifuLabel26.AutoEllipsis = false;
+            this.bunifuLabel26.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel26.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel26.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel26.Location = new System.Drawing.Point(221, 174);
+            this.bunifuLabel26.Name = "bunifuLabel26";
+            this.bunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel26.Size = new System.Drawing.Size(52, 16);
+            this.bunifuLabel26.TabIndex = 44;
+            this.bunifuLabel26.Text = "Route ID";
+            this.bunifuLabel26.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel26.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // agvInfo2
+            // 
+            this.agvInfo2.BackColor = System.Drawing.Color.Transparent;
+            this.agvInfo2.Image = ((System.Drawing.Image)(resources.GetObject("agvInfo2.Image")));
+            this.agvInfo2.Location = new System.Drawing.Point(102, 18);
+            this.agvInfo2.Name = "agvInfo2";
+            this.agvInfo2.Size = new System.Drawing.Size(113, 186);
+            this.agvInfo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.agvInfo2.TabIndex = 1;
+            this.agvInfo2.TabStop = false;
+            // 
+            // bunifuLabel30
+            // 
+            this.bunifuLabel30.AllowParentOverrides = false;
+            this.bunifuLabel30.AutoEllipsis = false;
+            this.bunifuLabel30.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel30.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel30.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel30.Location = new System.Drawing.Point(221, 121);
+            this.bunifuLabel30.Name = "bunifuLabel30";
+            this.bunifuLabel30.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel30.Size = new System.Drawing.Size(63, 16);
+            this.bunifuLabel30.TabIndex = 43;
+            this.bunifuLabel30.Text = "Mission ID";
+            this.bunifuLabel30.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel30.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel32
+            // 
+            this.bunifuLabel32.AllowParentOverrides = false;
+            this.bunifuLabel32.AutoEllipsis = false;
+            this.bunifuLabel32.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel32.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel32.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel32.Location = new System.Drawing.Point(221, 18);
+            this.bunifuLabel32.Name = "bunifuLabel32";
+            this.bunifuLabel32.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel32.Size = new System.Drawing.Size(41, 16);
+            this.bunifuLabel32.TabIndex = 39;
+            this.bunifuLabel32.Text = "Cycles";
+            this.bunifuLabel32.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel32.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel31
+            // 
+            this.bunifuLabel31.AllowParentOverrides = false;
+            this.bunifuLabel31.AutoEllipsis = false;
+            this.bunifuLabel31.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel31.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel31.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel31.Location = new System.Drawing.Point(221, 68);
+            this.bunifuLabel31.Name = "bunifuLabel31";
+            this.bunifuLabel31.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel31.Size = new System.Drawing.Size(73, 16);
+            this.bunifuLabel31.TabIndex = 42;
+            this.bunifuLabel31.Text = "Work Hours";
+            this.bunifuLabel31.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel31.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuPanel7
             // 
@@ -1118,6 +1476,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 30;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
             // 
             // pictureBox8
             // 
@@ -1129,39 +1488,411 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 31;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
+            // 
+            // station8
+            // 
+            this.station8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station8.BackgroundImage")));
+            this.station8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station8.BorderColor = System.Drawing.Color.Transparent;
+            this.station8.BorderRadius = 8;
+            this.station8.BorderThickness = 1;
+            this.station8.Location = new System.Drawing.Point(900, 353);
+            this.station8.Name = "station8";
+            this.station8.ShowBorders = true;
+            this.station8.Size = new System.Drawing.Size(437, 50);
+            this.station8.TabIndex = 32;
+            this.station8.Visible = false;
+            // 
+            // station7
+            // 
+            this.station7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station7.BackgroundImage")));
+            this.station7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station7.BorderColor = System.Drawing.Color.Transparent;
+            this.station7.BorderRadius = 8;
+            this.station7.BorderThickness = 1;
+            this.station7.Location = new System.Drawing.Point(900, 293);
+            this.station7.Name = "station7";
+            this.station7.ShowBorders = true;
+            this.station7.Size = new System.Drawing.Size(437, 50);
+            this.station7.TabIndex = 33;
+            this.station7.Visible = false;
+            // 
+            // station9
+            // 
+            this.station9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station9.BackgroundImage")));
+            this.station9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station9.BorderColor = System.Drawing.Color.Transparent;
+            this.station9.BorderRadius = 8;
+            this.station9.BorderThickness = 1;
+            this.station9.Location = new System.Drawing.Point(900, 413);
+            this.station9.Name = "station9";
+            this.station9.ShowBorders = true;
+            this.station9.Size = new System.Drawing.Size(437, 50);
+            this.station9.TabIndex = 33;
+            this.station9.Visible = false;
+            // 
+            // station10
+            // 
+            this.station10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station10.BackgroundImage")));
+            this.station10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station10.BorderColor = System.Drawing.Color.Transparent;
+            this.station10.BorderRadius = 8;
+            this.station10.BorderThickness = 1;
+            this.station10.Location = new System.Drawing.Point(900, 473);
+            this.station10.Name = "station10";
+            this.station10.ShowBorders = true;
+            this.station10.Size = new System.Drawing.Size(437, 50);
+            this.station10.TabIndex = 33;
+            this.station10.Visible = false;
+            // 
+            // station11
+            // 
+            this.station11.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station11.BackgroundImage")));
+            this.station11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station11.BorderColor = System.Drawing.Color.Transparent;
+            this.station11.BorderRadius = 8;
+            this.station11.BorderThickness = 1;
+            this.station11.Location = new System.Drawing.Point(900, 532);
+            this.station11.Name = "station11";
+            this.station11.ShowBorders = true;
+            this.station11.Size = new System.Drawing.Size(437, 50);
+            this.station11.TabIndex = 34;
+            this.station11.Visible = false;
+            // 
+            // station12
+            // 
+            this.station12.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station12.BackgroundImage")));
+            this.station12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station12.BorderColor = System.Drawing.Color.Transparent;
+            this.station12.BorderRadius = 8;
+            this.station12.BorderThickness = 1;
+            this.station12.Location = new System.Drawing.Point(900, 592);
+            this.station12.Name = "station12";
+            this.station12.ShowBorders = true;
+            this.station12.Size = new System.Drawing.Size(437, 50);
+            this.station12.TabIndex = 35;
+            this.station12.Visible = false;
+            // 
+            // station6
+            // 
+            this.station6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station6.BackgroundImage")));
+            this.station6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station6.BorderColor = System.Drawing.Color.Transparent;
+            this.station6.BorderRadius = 8;
+            this.station6.BorderThickness = 1;
+            this.station6.Location = new System.Drawing.Point(1397, 592);
+            this.station6.Name = "station6";
+            this.station6.ShowBorders = true;
+            this.station6.Size = new System.Drawing.Size(455, 50);
+            this.station6.TabIndex = 36;
+            this.station6.Visible = false;
+            // 
+            // station5
+            // 
+            this.station5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station5.BackgroundImage")));
+            this.station5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station5.BorderColor = System.Drawing.Color.Transparent;
+            this.station5.BorderRadius = 8;
+            this.station5.BorderThickness = 1;
+            this.station5.Location = new System.Drawing.Point(1397, 532);
+            this.station5.Name = "station5";
+            this.station5.ShowBorders = true;
+            this.station5.Size = new System.Drawing.Size(455, 50);
+            this.station5.TabIndex = 37;
+            this.station5.Visible = false;
+            // 
+            // station4
+            // 
+            this.station4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station4.BackgroundImage")));
+            this.station4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station4.BorderColor = System.Drawing.Color.Transparent;
+            this.station4.BorderRadius = 8;
+            this.station4.BorderThickness = 1;
+            this.station4.Location = new System.Drawing.Point(1397, 473);
+            this.station4.Name = "station4";
+            this.station4.ShowBorders = true;
+            this.station4.Size = new System.Drawing.Size(455, 50);
+            this.station4.TabIndex = 37;
+            this.station4.Visible = false;
+            // 
+            // station3
+            // 
+            this.station3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station3.BackgroundImage")));
+            this.station3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station3.BorderColor = System.Drawing.Color.Transparent;
+            this.station3.BorderRadius = 8;
+            this.station3.BorderThickness = 1;
+            this.station3.Location = new System.Drawing.Point(1397, 413);
+            this.station3.Name = "station3";
+            this.station3.ShowBorders = true;
+            this.station3.Size = new System.Drawing.Size(455, 50);
+            this.station3.TabIndex = 37;
+            this.station3.Visible = false;
+            // 
+            // station2
+            // 
+            this.station2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station2.BackgroundImage")));
+            this.station2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station2.BorderColor = System.Drawing.Color.Transparent;
+            this.station2.BorderRadius = 8;
+            this.station2.BorderThickness = 1;
+            this.station2.Location = new System.Drawing.Point(1397, 353);
+            this.station2.Name = "station2";
+            this.station2.ShowBorders = true;
+            this.station2.Size = new System.Drawing.Size(455, 50);
+            this.station2.TabIndex = 37;
+            this.station2.Visible = false;
+            // 
+            // station1
+            // 
+            this.station1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.station1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("station1.BackgroundImage")));
+            this.station1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.station1.BorderColor = System.Drawing.Color.Transparent;
+            this.station1.BorderRadius = 8;
+            this.station1.BorderThickness = 1;
+            this.station1.Location = new System.Drawing.Point(1397, 293);
+            this.station1.Name = "station1";
+            this.station1.ShowBorders = true;
+            this.station1.Size = new System.Drawing.Size(455, 50);
+            this.station1.TabIndex = 37;
+            this.station1.Visible = false;
+            // 
+            // palette1
+            // 
+            this.palette1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette1.BackgroundImage")));
+            this.palette1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette1.BorderColor = System.Drawing.Color.Transparent;
+            this.palette1.BorderRadius = 8;
+            this.palette1.BorderThickness = 1;
+            this.palette1.Location = new System.Drawing.Point(827, 242);
+            this.palette1.Name = "palette1";
+            this.palette1.ShowBorders = true;
+            this.palette1.Size = new System.Drawing.Size(24, 48);
+            this.palette1.TabIndex = 34;
+            this.palette1.Visible = false;
+            // 
+            // palette2
+            // 
+            this.palette2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette2.BackgroundImage")));
+            this.palette2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette2.BorderColor = System.Drawing.Color.Transparent;
+            this.palette2.BorderRadius = 8;
+            this.palette2.BorderThickness = 1;
+            this.palette2.Location = new System.Drawing.Point(801, 242);
+            this.palette2.Name = "palette2";
+            this.palette2.ShowBorders = true;
+            this.palette2.Size = new System.Drawing.Size(24, 48);
+            this.palette2.TabIndex = 35;
+            this.palette2.Visible = false;
+            // 
+            // palette3
+            // 
+            this.palette3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette3.BackgroundImage")));
+            this.palette3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette3.BorderColor = System.Drawing.Color.Transparent;
+            this.palette3.BorderRadius = 8;
+            this.palette3.BorderThickness = 1;
+            this.palette3.Location = new System.Drawing.Point(774, 242);
+            this.palette3.Name = "palette3";
+            this.palette3.ShowBorders = true;
+            this.palette3.Size = new System.Drawing.Size(24, 48);
+            this.palette3.TabIndex = 38;
+            this.palette3.Visible = false;
+            // 
+            // palette6
+            // 
+            this.palette6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette6.BackgroundImage")));
+            this.palette6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette6.BorderColor = System.Drawing.Color.Transparent;
+            this.palette6.BorderRadius = 8;
+            this.palette6.BorderThickness = 1;
+            this.palette6.Location = new System.Drawing.Point(694, 242);
+            this.palette6.Name = "palette6";
+            this.palette6.ShowBorders = true;
+            this.palette6.Size = new System.Drawing.Size(24, 48);
+            this.palette6.TabIndex = 41;
+            this.palette6.Visible = false;
+            // 
+            // palette5
+            // 
+            this.palette5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette5.BackgroundImage")));
+            this.palette5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette5.BorderColor = System.Drawing.Color.Transparent;
+            this.palette5.BorderRadius = 8;
+            this.palette5.BorderThickness = 1;
+            this.palette5.Location = new System.Drawing.Point(721, 242);
+            this.palette5.Name = "palette5";
+            this.palette5.ShowBorders = true;
+            this.palette5.Size = new System.Drawing.Size(24, 48);
+            this.palette5.TabIndex = 40;
+            this.palette5.Visible = false;
+            // 
+            // palette4
+            // 
+            this.palette4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette4.BackgroundImage")));
+            this.palette4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette4.BorderColor = System.Drawing.Color.Transparent;
+            this.palette4.BorderRadius = 8;
+            this.palette4.BorderThickness = 1;
+            this.palette4.Location = new System.Drawing.Point(747, 242);
+            this.palette4.Name = "palette4";
+            this.palette4.ShowBorders = true;
+            this.palette4.Size = new System.Drawing.Size(24, 48);
+            this.palette4.TabIndex = 39;
+            this.palette4.Visible = false;
+            // 
+            // palette12
+            // 
+            this.palette12.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette12.BackgroundImage")));
+            this.palette12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette12.BorderColor = System.Drawing.Color.Transparent;
+            this.palette12.BorderRadius = 8;
+            this.palette12.BorderThickness = 1;
+            this.palette12.Location = new System.Drawing.Point(534, 242);
+            this.palette12.Name = "palette12";
+            this.palette12.ShowBorders = true;
+            this.palette12.Size = new System.Drawing.Size(24, 48);
+            this.palette12.TabIndex = 47;
+            this.palette12.Visible = false;
+            // 
+            // palette11
+            // 
+            this.palette11.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette11.BackgroundImage")));
+            this.palette11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette11.BorderColor = System.Drawing.Color.Transparent;
+            this.palette11.BorderRadius = 8;
+            this.palette11.BorderThickness = 1;
+            this.palette11.Location = new System.Drawing.Point(561, 242);
+            this.palette11.Name = "palette11";
+            this.palette11.ShowBorders = true;
+            this.palette11.Size = new System.Drawing.Size(24, 48);
+            this.palette11.TabIndex = 46;
+            this.palette11.Visible = false;
+            // 
+            // palette9
+            // 
+            this.palette9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette9.BackgroundImage")));
+            this.palette9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette9.BorderColor = System.Drawing.Color.Transparent;
+            this.palette9.BorderRadius = 8;
+            this.palette9.BorderThickness = 1;
+            this.palette9.Location = new System.Drawing.Point(614, 242);
+            this.palette9.Name = "palette9";
+            this.palette9.ShowBorders = true;
+            this.palette9.Size = new System.Drawing.Size(24, 48);
+            this.palette9.TabIndex = 44;
+            this.palette9.Visible = false;
+            // 
+            // palette10
+            // 
+            this.palette10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette10.BackgroundImage")));
+            this.palette10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette10.BorderColor = System.Drawing.Color.Transparent;
+            this.palette10.BorderRadius = 8;
+            this.palette10.BorderThickness = 1;
+            this.palette10.Location = new System.Drawing.Point(587, 242);
+            this.palette10.Name = "palette10";
+            this.palette10.ShowBorders = true;
+            this.palette10.Size = new System.Drawing.Size(24, 48);
+            this.palette10.TabIndex = 45;
+            this.palette10.Visible = false;
+            // 
+            // palette8
+            // 
+            this.palette8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette8.BackgroundImage")));
+            this.palette8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette8.BorderColor = System.Drawing.Color.Transparent;
+            this.palette8.BorderRadius = 8;
+            this.palette8.BorderThickness = 1;
+            this.palette8.Location = new System.Drawing.Point(641, 242);
+            this.palette8.Name = "palette8";
+            this.palette8.ShowBorders = true;
+            this.palette8.Size = new System.Drawing.Size(24, 48);
+            this.palette8.TabIndex = 43;
+            this.palette8.Visible = false;
+            // 
+            // palette7
+            // 
+            this.palette7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.palette7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("palette7.BackgroundImage")));
+            this.palette7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.palette7.BorderColor = System.Drawing.Color.Transparent;
+            this.palette7.BorderRadius = 8;
+            this.palette7.BorderThickness = 1;
+            this.palette7.Location = new System.Drawing.Point(667, 242);
+            this.palette7.Name = "palette7";
+            this.palette7.ShowBorders = true;
+            this.palette7.Size = new System.Drawing.Size(24, 48);
+            this.palette7.TabIndex = 42;
+            this.palette7.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(523, 206);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(49, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 48;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(523, 161);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(49, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 49;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1359, 296);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 49);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 50;
+            this.pictureBox9.TabStop = false;
             // 
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(106, 198);
+            this.pictureBox10.Location = new System.Drawing.Point(863, 296);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(102, 3);
+            this.pictureBox10.Size = new System.Drawing.Size(32, 49);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 33;
+            this.pictureBox10.TabIndex = 51;
             this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(107, 31);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(102, 3);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 33;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(107, 198);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(102, 3);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 34;
-            this.pictureBox12.TabStop = false;
             // 
             // Form1
             // 
@@ -1169,18 +1900,46 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.palette12);
+            this.Controls.Add(this.palette11);
+            this.Controls.Add(this.palette6);
+            this.Controls.Add(this.palette9);
+            this.Controls.Add(this.palette5);
+            this.Controls.Add(this.palette10);
+            this.Controls.Add(this.palette3);
+            this.Controls.Add(this.palette8);
+            this.Controls.Add(this.palette4);
+            this.Controls.Add(this.palette7);
+            this.Controls.Add(this.palette2);
+            this.Controls.Add(this.palette1);
+            this.Controls.Add(this.station1);
+            this.Controls.Add(this.station2);
+            this.Controls.Add(this.station3);
+            this.Controls.Add(this.station4);
+            this.Controls.Add(this.station5);
+            this.Controls.Add(this.station6);
+            this.Controls.Add(this.station12);
+            this.Controls.Add(this.station11);
+            this.Controls.Add(this.station10);
+            this.Controls.Add(this.station9);
+            this.Controls.Add(this.station7);
+            this.Controls.Add(this.station8);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.bunifuLabel14);
             this.Controls.Add(this.bunifuLabel13);
             this.Controls.Add(this.bunifuLabel12);
             this.Controls.Add(this.bunifuPanel7);
-            this.Controls.Add(this.bunifuPanel6);
-            this.Controls.Add(this.bunifuPanel5);
+            this.Controls.Add(this.detailPanel2);
+            this.Controls.Add(this.detailPanel1);
             this.Controls.Add(this.bunifuLabel11);
-            this.Controls.Add(this.bunifuPanel4);
+            this.Controls.Add(this.standbyPanel2);
             this.Controls.Add(this.bunifuLabel3);
-            this.Controls.Add(this.bunifuPanel3);
+            this.Controls.Add(this.standbyPanel1);
             this.Controls.Add(this.homeIndicator);
             this.Controls.Add(this.timerIndicator);
             this.Controls.Add(this.logsIndicator);
@@ -1211,22 +1970,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.bunifuPanel3.ResumeLayout(false);
-            this.bunifuPanel3.PerformLayout();
-            this.bunifuPanel4.ResumeLayout(false);
-            this.bunifuPanel4.PerformLayout();
-            this.bunifuPanel5.ResumeLayout(false);
-            this.bunifuPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.bunifuPanel6.ResumeLayout(false);
-            this.bunifuPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.standbyPanel1.ResumeLayout(false);
+            this.standbyPanel1.PerformLayout();
+            this.standbyPanel2.ResumeLayout(false);
+            this.standbyPanel2.PerformLayout();
+            this.detailPanel1.ResumeLayout(false);
+            this.detailPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rearSensor1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frontSensor1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agvInfo1)).EndInit();
+            this.detailPanel2.ResumeLayout(false);
+            this.detailPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rearSensor2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frontSensor2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agvInfo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1257,32 +2020,76 @@
         private Bunifu.UI.WinForms.BunifuPanel logsIndicator;
         public Bunifu.UI.WinForms.BunifuLabel timerLabel;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
+        private Bunifu.UI.WinForms.BunifuPanel standbyPanel1;
         private Bunifu.UI.WinForms.BunifuLabel timerData;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel4;
+        private Bunifu.UI.WinForms.BunifuPanel standbyPanel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
         public Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel6;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel5;
+        private Bunifu.UI.WinForms.BunifuPanel detailPanel2;
+        private Bunifu.UI.WinForms.BunifuPanel detailPanel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel7;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel14;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel13;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel12;
         private System.Windows.Forms.Timer timer1;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
+        private PictureBox agvInfo2;
+        private PictureBox agvInfo1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel15;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel16;
         private PictureBox pictureBox8;
         private PictureBox pictureBox7;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox11;
+        private PictureBox frontSensor1;
+        private PictureBox rearSensor2;
+        private PictureBox frontSensor2;
+        private PictureBox rearSensor1;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel20;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel19;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel18;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel17;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel29;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel28;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel27;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel25;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel21;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel22;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel23;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel24;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel26;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel30;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel32;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel31;
+        private Bunifu.UI.WinForms.BunifuPanel station12;
+        private Bunifu.UI.WinForms.BunifuPanel station11;
+        private Bunifu.UI.WinForms.BunifuPanel station10;
+        private Bunifu.UI.WinForms.BunifuPanel station9;
+        private Bunifu.UI.WinForms.BunifuPanel station7;
+        private Bunifu.UI.WinForms.BunifuPanel station8;
+        private Bunifu.UI.WinForms.BunifuPanel station1;
+        private Bunifu.UI.WinForms.BunifuPanel station2;
+        private Bunifu.UI.WinForms.BunifuPanel station3;
+        private Bunifu.UI.WinForms.BunifuPanel station4;
+        private Bunifu.UI.WinForms.BunifuPanel station5;
+        private Bunifu.UI.WinForms.BunifuPanel station6;
+        private Bunifu.UI.WinForms.BunifuPanel palette3;
+        private Bunifu.UI.WinForms.BunifuPanel palette2;
+        private Bunifu.UI.WinForms.BunifuPanel palette1;
+        private Bunifu.UI.WinForms.BunifuPanel palette6;
+        private Bunifu.UI.WinForms.BunifuPanel palette5;
+        private Bunifu.UI.WinForms.BunifuPanel palette4;
+        private Bunifu.UI.WinForms.BunifuPanel palette12;
+        private Bunifu.UI.WinForms.BunifuPanel palette11;
+        private Bunifu.UI.WinForms.BunifuPanel palette9;
+        private Bunifu.UI.WinForms.BunifuPanel palette10;
+        private Bunifu.UI.WinForms.BunifuPanel palette8;
+        private Bunifu.UI.WinForms.BunifuPanel palette7;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox5;
         private PictureBox pictureBox10;
+        private PictureBox pictureBox9;
     }
 }
