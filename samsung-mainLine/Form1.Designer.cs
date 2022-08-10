@@ -32,6 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -71,6 +73,14 @@
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
             this.detailPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.labelDisconnect = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel33 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.rearSensorIden1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.rearSensor1Text = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel34 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel16 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.frontSensorIden1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.frontSensor1Text = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel29 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel28 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel27 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -81,11 +91,20 @@
             this.bunifuLabel17 = new Bunifu.UI.WinForms.BunifuLabel();
             this.rearSensor1 = new System.Windows.Forms.PictureBox();
             this.frontSensor1 = new System.Windows.Forms.PictureBox();
-            this.bunifuLabel16 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.EMG1Label = new Bunifu.UI.WinForms.BunifuLabel();
             this.agvInfo1 = new System.Windows.Forms.PictureBox();
             this.detailPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel35 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel21 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel41 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel36 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel37 = new Bunifu.UI.WinForms.BunifuLabel();
             this.rearSensor2 = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel38 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel40 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel39 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel22 = new Bunifu.UI.WinForms.BunifuLabel();
             this.frontSensor2 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel23 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -127,10 +146,25 @@
             this.palette10 = new Bunifu.UI.WinForms.BunifuPanel();
             this.palette8 = new Bunifu.UI.WinForms.BunifuPanel();
             this.palette7 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.agv1Horizontal = new System.Windows.Forms.PictureBox();
+            this.agv2Horizontal = new System.Windows.Forms.PictureBox();
+            this.agv1Vertical = new System.Windows.Forms.PictureBox();
+            this.agv2Vertical = new System.Windows.Forms.PictureBox();
+            this.giveUpButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.trafficButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.giveIndicator = new Bunifu.UI.WinForms.BunifuPanel();
+            this.trafficIndicator = new Bunifu.UI.WinForms.BunifuPanel();
+            this.batteryLevel1 = new Bunifu.UI.WinForms.BunifuProgressBar();
+            this.AGV1StatusLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.batValue1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.AGV2StatusLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.batteryLevel2 = new Bunifu.UI.WinForms.BunifuProgressBar();
+            this.batValue2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.AGV1StateLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.AGV1NameLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.AGV2StateLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.AGV2NameLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.labelDisconnect1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -140,19 +174,23 @@
             this.standbyPanel1.SuspendLayout();
             this.standbyPanel2.SuspendLayout();
             this.detailPanel1.SuspendLayout();
+            this.rearSensorIden1.SuspendLayout();
+            this.frontSensorIden1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rearSensor1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.frontSensor1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agvInfo1)).BeginInit();
             this.detailPanel2.SuspendLayout();
+            this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rearSensor2)).BeginInit();
+            this.bunifuPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.frontSensor2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agvInfo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agv1Horizontal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agv2Horizontal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agv1Vertical)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agv2Vertical)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -307,6 +345,7 @@
             this.gridViewDS.Size = new System.Drawing.Size(436, 646);
             this.gridViewDS.TabIndex = 3;
             this.gridViewDS.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Dark;
+            this.gridViewDS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewDS_CellContentClick);
             // 
             // bunifuLabel2
             // 
@@ -358,11 +397,11 @@
             this.timerButton.ButtonTextMarginLeft = 0;
             this.timerButton.ColorContrastOnClick = 45;
             this.timerButton.ColorContrastOnHover = 45;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.timerButton.CustomizableEdges = borderEdges4;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.timerButton.CustomizableEdges = borderEdges6;
             this.timerButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.timerButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.timerButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -388,7 +427,7 @@
             this.timerButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("timerButton.IdleIconLeftImage")));
             this.timerButton.IdleIconRightImage = null;
             this.timerButton.IndicateFocus = false;
-            this.timerButton.Location = new System.Drawing.Point(800, 1034);
+            this.timerButton.Location = new System.Drawing.Point(608, 1033);
             this.timerButton.Name = "timerButton";
             this.timerButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.timerButton.OnDisabledState.BorderRadius = 1;
@@ -419,7 +458,7 @@
             this.timerButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.timerButton.OnPressedState.BorderThickness = 1;
             this.timerButton.OnPressedState.FillColor = System.Drawing.Color.Transparent;
-            this.timerButton.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.timerButton.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(83)))), ((int)(((byte)(97)))));
             this.timerButton.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("timerButton.OnPressedState.IconLeftImage")));
             this.timerButton.OnPressedState.IconRightImage = null;
             this.timerButton.Size = new System.Drawing.Size(169, 47);
@@ -449,11 +488,11 @@
             this.homeButton.ButtonTextMarginLeft = 0;
             this.homeButton.ColorContrastOnClick = 45;
             this.homeButton.ColorContrastOnHover = 45;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.homeButton.CustomizableEdges = borderEdges3;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.homeButton.CustomizableEdges = borderEdges5;
             this.homeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.homeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.homeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -479,7 +518,7 @@
             this.homeButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("homeButton.IdleIconLeftImage")));
             this.homeButton.IdleIconRightImage = null;
             this.homeButton.IndicateFocus = false;
-            this.homeButton.Location = new System.Drawing.Point(699, 1038);
+            this.homeButton.Location = new System.Drawing.Point(507, 1037);
             this.homeButton.Name = "homeButton";
             this.homeButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.homeButton.OnDisabledState.BorderRadius = 1;
@@ -540,11 +579,11 @@
             this.modeButton.ButtonTextMarginLeft = 0;
             this.modeButton.ColorContrastOnClick = 45;
             this.modeButton.ColorContrastOnHover = 45;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.modeButton.CustomizableEdges = borderEdges2;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.modeButton.CustomizableEdges = borderEdges4;
             this.modeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.modeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -570,7 +609,7 @@
             this.modeButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("modeButton.IdleIconLeftImage")));
             this.modeButton.IdleIconRightImage = null;
             this.modeButton.IndicateFocus = false;
-            this.modeButton.Location = new System.Drawing.Point(1082, 1018);
+            this.modeButton.Location = new System.Drawing.Point(890, 1017);
             this.modeButton.Name = "modeButton";
             this.modeButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modeButton.OnDisabledState.BorderRadius = 1;
@@ -631,11 +670,11 @@
             this.logsButton.ButtonTextMarginLeft = 0;
             this.logsButton.ColorContrastOnClick = 45;
             this.logsButton.ColorContrastOnHover = 45;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.logsButton.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.logsButton.CustomizableEdges = borderEdges3;
             this.logsButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.logsButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logsButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -661,7 +700,7 @@
             this.logsButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("logsButton.IdleIconLeftImage")));
             this.logsButton.IdleIconRightImage = null;
             this.logsButton.IndicateFocus = false;
-            this.logsButton.Location = new System.Drawing.Point(978, 1038);
+            this.logsButton.Location = new System.Drawing.Point(786, 1037);
             this.logsButton.Name = "logsButton";
             this.logsButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logsButton.OnDisabledState.BorderRadius = 1;
@@ -730,10 +769,10 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 3;
             this.bunifuPanel2.BorderThickness = 0;
-            this.bunifuPanel2.Location = new System.Drawing.Point(683, 1029);
+            this.bunifuPanel2.Location = new System.Drawing.Point(485, 1029);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = false;
-            this.bunifuPanel2.Size = new System.Drawing.Size(551, 2);
+            this.bunifuPanel2.Size = new System.Drawing.Size(950, 2);
             this.bunifuPanel2.TabIndex = 14;
             // 
             // modeIndicator
@@ -744,7 +783,7 @@
             this.modeIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.modeIndicator.BorderRadius = 3;
             this.modeIndicator.BorderThickness = 0;
-            this.modeIndicator.Location = new System.Drawing.Point(1091, 1027);
+            this.modeIndicator.Location = new System.Drawing.Point(901, 1027);
             this.modeIndicator.Name = "modeIndicator";
             this.modeIndicator.ShowBorders = false;
             this.modeIndicator.Size = new System.Drawing.Size(120, 4);
@@ -759,7 +798,7 @@
             this.logsIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.logsIndicator.BorderRadius = 3;
             this.logsIndicator.BorderThickness = 0;
-            this.logsIndicator.Location = new System.Drawing.Point(988, 1027);
+            this.logsIndicator.Location = new System.Drawing.Point(794, 1027);
             this.logsIndicator.Name = "logsIndicator";
             this.logsIndicator.ShowBorders = false;
             this.logsIndicator.Size = new System.Drawing.Size(76, 4);
@@ -774,7 +813,7 @@
             this.timerIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.timerIndicator.BorderRadius = 3;
             this.timerIndicator.BorderThickness = 0;
-            this.timerIndicator.Location = new System.Drawing.Point(811, 1027);
+            this.timerIndicator.Location = new System.Drawing.Point(618, 1027);
             this.timerIndicator.Name = "timerIndicator";
             this.timerIndicator.ShowBorders = false;
             this.timerIndicator.Size = new System.Drawing.Size(150, 4);
@@ -789,7 +828,7 @@
             this.homeIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.homeIndicator.BorderRadius = 3;
             this.homeIndicator.BorderThickness = 0;
-            this.homeIndicator.Location = new System.Drawing.Point(707, 1027);
+            this.homeIndicator.Location = new System.Drawing.Point(518, 1027);
             this.homeIndicator.Name = "homeIndicator";
             this.homeIndicator.ShowBorders = false;
             this.homeIndicator.Size = new System.Drawing.Size(79, 4);
@@ -1000,6 +1039,11 @@
             this.detailPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.detailPanel1.BorderRadius = 10;
             this.detailPanel1.BorderThickness = 0;
+            this.detailPanel1.Controls.Add(this.labelDisconnect);
+            this.detailPanel1.Controls.Add(this.bunifuLabel33);
+            this.detailPanel1.Controls.Add(this.rearSensorIden1);
+            this.detailPanel1.Controls.Add(this.bunifuLabel16);
+            this.detailPanel1.Controls.Add(this.frontSensorIden1);
             this.detailPanel1.Controls.Add(this.bunifuLabel29);
             this.detailPanel1.Controls.Add(this.bunifuLabel28);
             this.detailPanel1.Controls.Add(this.bunifuLabel27);
@@ -1010,13 +1054,144 @@
             this.detailPanel1.Controls.Add(this.bunifuLabel17);
             this.detailPanel1.Controls.Add(this.rearSensor1);
             this.detailPanel1.Controls.Add(this.frontSensor1);
-            this.detailPanel1.Controls.Add(this.bunifuLabel16);
+            this.detailPanel1.Controls.Add(this.EMG1Label);
             this.detailPanel1.Controls.Add(this.agvInfo1);
             this.detailPanel1.Location = new System.Drawing.Point(476, 744);
             this.detailPanel1.Name = "detailPanel1";
             this.detailPanel1.ShowBorders = true;
             this.detailPanel1.Size = new System.Drawing.Size(316, 252);
             this.detailPanel1.TabIndex = 25;
+            // 
+            // labelDisconnect
+            // 
+            this.labelDisconnect.AllowParentOverrides = false;
+            this.labelDisconnect.AutoEllipsis = false;
+            this.labelDisconnect.CursorType = System.Windows.Forms.Cursors.Default;
+            this.labelDisconnect.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelDisconnect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(66)))), ((int)(((byte)(60)))));
+            this.labelDisconnect.Location = new System.Drawing.Point(42, 108);
+            this.labelDisconnect.Name = "labelDisconnect";
+            this.labelDisconnect.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelDisconnect.Size = new System.Drawing.Size(236, 25);
+            this.labelDisconnect.TabIndex = 59;
+            this.labelDisconnect.Text = "AGV 1 DISCONNECTED";
+            this.labelDisconnect.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.labelDisconnect.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.labelDisconnect.Visible = false;
+            // 
+            // bunifuLabel33
+            // 
+            this.bunifuLabel33.AllowParentOverrides = false;
+            this.bunifuLabel33.AutoEllipsis = false;
+            this.bunifuLabel33.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel33.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel33.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel33.Location = new System.Drawing.Point(14, 160);
+            this.bunifuLabel33.Name = "bunifuLabel33";
+            this.bunifuLabel33.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel33.Size = new System.Drawing.Size(76, 16);
+            this.bunifuLabel33.TabIndex = 58;
+            this.bunifuLabel33.Text = "Rear Sensor";
+            this.bunifuLabel33.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel33.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // rearSensorIden1
+            // 
+            this.rearSensorIden1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.rearSensorIden1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rearSensorIden1.BackgroundImage")));
+            this.rearSensorIden1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rearSensorIden1.BorderColor = System.Drawing.Color.Transparent;
+            this.rearSensorIden1.BorderRadius = 2;
+            this.rearSensorIden1.BorderThickness = 1;
+            this.rearSensorIden1.Controls.Add(this.rearSensor1Text);
+            this.rearSensorIden1.Controls.Add(this.bunifuLabel34);
+            this.rearSensorIden1.Location = new System.Drawing.Point(9, 176);
+            this.rearSensorIden1.Name = "rearSensorIden1";
+            this.rearSensorIden1.ShowBorders = true;
+            this.rearSensorIden1.Size = new System.Drawing.Size(101, 22);
+            this.rearSensorIden1.TabIndex = 57;
+            // 
+            // rearSensor1Text
+            // 
+            this.rearSensor1Text.AllowParentOverrides = false;
+            this.rearSensor1Text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rearSensor1Text.AutoEllipsis = false;
+            this.rearSensor1Text.CursorType = System.Windows.Forms.Cursors.Default;
+            this.rearSensor1Text.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rearSensor1Text.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.rearSensor1Text.Location = new System.Drawing.Point(5, 1);
+            this.rearSensor1Text.Name = "rearSensor1Text";
+            this.rearSensor1Text.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.rearSensor1Text.Size = new System.Drawing.Size(32, 17);
+            this.rearSensor1Text.TabIndex = 51;
+            this.rearSensor1Text.Text = "Clear";
+            this.rearSensor1Text.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.rearSensor1Text.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel34
+            // 
+            this.bunifuLabel34.AllowParentOverrides = false;
+            this.bunifuLabel34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuLabel34.AutoEllipsis = false;
+            this.bunifuLabel34.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel34.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel34.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel34.Location = new System.Drawing.Point(-94, 1);
+            this.bunifuLabel34.Name = "bunifuLabel34";
+            this.bunifuLabel34.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel34.Size = new System.Drawing.Size(32, 17);
+            this.bunifuLabel34.TabIndex = 50;
+            this.bunifuLabel34.Text = "Clear";
+            this.bunifuLabel34.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuLabel34.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel16
+            // 
+            this.bunifuLabel16.AllowParentOverrides = false;
+            this.bunifuLabel16.AutoEllipsis = false;
+            this.bunifuLabel16.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel16.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel16.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel16.Location = new System.Drawing.Point(14, 18);
+            this.bunifuLabel16.Name = "bunifuLabel16";
+            this.bunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel16.Size = new System.Drawing.Size(82, 16);
+            this.bunifuLabel16.TabIndex = 49;
+            this.bunifuLabel16.Text = "Front Sensor";
+            this.bunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // frontSensorIden1
+            // 
+            this.frontSensorIden1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.frontSensorIden1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("frontSensorIden1.BackgroundImage")));
+            this.frontSensorIden1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.frontSensorIden1.BorderColor = System.Drawing.Color.Transparent;
+            this.frontSensorIden1.BorderRadius = 2;
+            this.frontSensorIden1.BorderThickness = 1;
+            this.frontSensorIden1.Controls.Add(this.frontSensor1Text);
+            this.frontSensorIden1.Location = new System.Drawing.Point(9, 34);
+            this.frontSensorIden1.Name = "frontSensorIden1";
+            this.frontSensorIden1.ShowBorders = true;
+            this.frontSensorIden1.Size = new System.Drawing.Size(101, 22);
+            this.frontSensorIden1.TabIndex = 48;
+            // 
+            // frontSensor1Text
+            // 
+            this.frontSensor1Text.AllowParentOverrides = false;
+            this.frontSensor1Text.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.frontSensor1Text.AutoEllipsis = false;
+            this.frontSensor1Text.CursorType = System.Windows.Forms.Cursors.Default;
+            this.frontSensor1Text.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.frontSensor1Text.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.frontSensor1Text.Location = new System.Drawing.Point(5, 1);
+            this.frontSensor1Text.Name = "frontSensor1Text";
+            this.frontSensor1Text.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.frontSensor1Text.Size = new System.Drawing.Size(32, 17);
+            this.frontSensor1Text.TabIndex = 50;
+            this.frontSensor1Text.Text = "Clear";
+            this.frontSensor1Text.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.frontSensor1Text.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel29
             // 
@@ -1025,7 +1200,7 @@
             this.bunifuLabel29.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel29.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel29.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel29.Location = new System.Drawing.Point(220, 190);
+            this.bunifuLabel29.Location = new System.Drawing.Point(235, 190);
             this.bunifuLabel29.Name = "bunifuLabel29";
             this.bunifuLabel29.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel29.Size = new System.Drawing.Size(26, 23);
@@ -1041,7 +1216,7 @@
             this.bunifuLabel28.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel28.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel28.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel28.Location = new System.Drawing.Point(220, 139);
+            this.bunifuLabel28.Location = new System.Drawing.Point(235, 139);
             this.bunifuLabel28.Name = "bunifuLabel28";
             this.bunifuLabel28.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel28.Size = new System.Drawing.Size(26, 23);
@@ -1057,7 +1232,7 @@
             this.bunifuLabel27.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel27.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel27.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel27.Location = new System.Drawing.Point(220, 87);
+            this.bunifuLabel27.Location = new System.Drawing.Point(235, 87);
             this.bunifuLabel27.Name = "bunifuLabel27";
             this.bunifuLabel27.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel27.Size = new System.Drawing.Size(26, 23);
@@ -1073,7 +1248,7 @@
             this.bunifuLabel25.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel25.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel25.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel25.Location = new System.Drawing.Point(220, 36);
+            this.bunifuLabel25.Location = new System.Drawing.Point(235, 36);
             this.bunifuLabel25.Name = "bunifuLabel25";
             this.bunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel25.Size = new System.Drawing.Size(26, 23);
@@ -1089,7 +1264,7 @@
             this.bunifuLabel20.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel20.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel20.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel20.Location = new System.Drawing.Point(220, 174);
+            this.bunifuLabel20.Location = new System.Drawing.Point(235, 174);
             this.bunifuLabel20.Name = "bunifuLabel20";
             this.bunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel20.Size = new System.Drawing.Size(52, 16);
@@ -1105,7 +1280,7 @@
             this.bunifuLabel19.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel19.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel19.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel19.Location = new System.Drawing.Point(220, 121);
+            this.bunifuLabel19.Location = new System.Drawing.Point(235, 121);
             this.bunifuLabel19.Name = "bunifuLabel19";
             this.bunifuLabel19.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel19.Size = new System.Drawing.Size(63, 16);
@@ -1121,7 +1296,7 @@
             this.bunifuLabel18.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel18.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel18.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel18.Location = new System.Drawing.Point(220, 68);
+            this.bunifuLabel18.Location = new System.Drawing.Point(235, 68);
             this.bunifuLabel18.Name = "bunifuLabel18";
             this.bunifuLabel18.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel18.Size = new System.Drawing.Size(73, 16);
@@ -1137,7 +1312,7 @@
             this.bunifuLabel17.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel17.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel17.Location = new System.Drawing.Point(220, 18);
+            this.bunifuLabel17.Location = new System.Drawing.Point(235, 18);
             this.bunifuLabel17.Name = "bunifuLabel17";
             this.bunifuLabel17.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel17.Size = new System.Drawing.Size(41, 16);
@@ -1150,7 +1325,7 @@
             // 
             this.rearSensor1.BackColor = System.Drawing.Color.Transparent;
             this.rearSensor1.Image = ((System.Drawing.Image)(resources.GetObject("rearSensor1.Image")));
-            this.rearSensor1.Location = new System.Drawing.Point(106, 194);
+            this.rearSensor1.Location = new System.Drawing.Point(121, 194);
             this.rearSensor1.Name = "rearSensor1";
             this.rearSensor1.Size = new System.Drawing.Size(102, 3);
             this.rearSensor1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1162,7 +1337,7 @@
             // 
             this.frontSensor1.BackColor = System.Drawing.Color.Transparent;
             this.frontSensor1.Image = ((System.Drawing.Image)(resources.GetObject("frontSensor1.Image")));
-            this.frontSensor1.Location = new System.Drawing.Point(106, 27);
+            this.frontSensor1.Location = new System.Drawing.Point(121, 27);
             this.frontSensor1.Name = "frontSensor1";
             this.frontSensor1.Size = new System.Drawing.Size(102, 3);
             this.frontSensor1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1170,28 +1345,28 @@
             this.frontSensor1.TabStop = false;
             this.frontSensor1.Visible = false;
             // 
-            // bunifuLabel16
+            // EMG1Label
             // 
-            this.bunifuLabel16.AllowParentOverrides = false;
-            this.bunifuLabel16.AutoEllipsis = false;
-            this.bunifuLabel16.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel16.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(66)))), ((int)(((byte)(60)))));
-            this.bunifuLabel16.Location = new System.Drawing.Point(58, 220);
-            this.bunifuLabel16.Name = "bunifuLabel16";
-            this.bunifuLabel16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel16.Size = new System.Drawing.Size(198, 25);
-            this.bunifuLabel16.TabIndex = 31;
-            this.bunifuLabel16.Text = "EMERGENCY STOP";
-            this.bunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel16.Visible = false;
+            this.EMG1Label.AllowParentOverrides = false;
+            this.EMG1Label.AutoEllipsis = false;
+            this.EMG1Label.CursorType = System.Windows.Forms.Cursors.Default;
+            this.EMG1Label.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.EMG1Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(66)))), ((int)(((byte)(60)))));
+            this.EMG1Label.Location = new System.Drawing.Point(58, 220);
+            this.EMG1Label.Name = "EMG1Label";
+            this.EMG1Label.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.EMG1Label.Size = new System.Drawing.Size(198, 25);
+            this.EMG1Label.TabIndex = 31;
+            this.EMG1Label.Text = "EMERGENCY STOP";
+            this.EMG1Label.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.EMG1Label.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.EMG1Label.Visible = false;
             // 
             // agvInfo1
             // 
             this.agvInfo1.BackColor = System.Drawing.Color.Transparent;
             this.agvInfo1.Image = ((System.Drawing.Image)(resources.GetObject("agvInfo1.Image")));
-            this.agvInfo1.Location = new System.Drawing.Point(101, 18);
+            this.agvInfo1.Location = new System.Drawing.Point(116, 18);
             this.agvInfo1.Name = "agvInfo1";
             this.agvInfo1.Size = new System.Drawing.Size(113, 186);
             this.agvInfo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1200,14 +1375,19 @@
             // 
             // detailPanel2
             // 
-            this.detailPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(38)))), ((int)(((byte)(65)))));
+            this.detailPanel2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
             this.detailPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("detailPanel2.BackgroundImage")));
             this.detailPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.detailPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.detailPanel2.BorderRadius = 10;
             this.detailPanel2.BorderThickness = 0;
+            this.detailPanel2.Controls.Add(this.labelDisconnect1);
+            this.detailPanel2.Controls.Add(this.bunifuLabel35);
             this.detailPanel2.Controls.Add(this.bunifuLabel21);
+            this.detailPanel2.Controls.Add(this.bunifuPanel3);
             this.detailPanel2.Controls.Add(this.rearSensor2);
+            this.detailPanel2.Controls.Add(this.bunifuLabel38);
+            this.detailPanel2.Controls.Add(this.bunifuPanel4);
             this.detailPanel2.Controls.Add(this.bunifuLabel22);
             this.detailPanel2.Controls.Add(this.frontSensor2);
             this.detailPanel2.Controls.Add(this.bunifuLabel23);
@@ -1224,6 +1404,22 @@
             this.detailPanel2.Size = new System.Drawing.Size(316, 252);
             this.detailPanel2.TabIndex = 26;
             // 
+            // bunifuLabel35
+            // 
+            this.bunifuLabel35.AllowParentOverrides = false;
+            this.bunifuLabel35.AutoEllipsis = false;
+            this.bunifuLabel35.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel35.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel35.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel35.Location = new System.Drawing.Point(14, 160);
+            this.bunifuLabel35.Name = "bunifuLabel35";
+            this.bunifuLabel35.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel35.Size = new System.Drawing.Size(76, 16);
+            this.bunifuLabel35.TabIndex = 62;
+            this.bunifuLabel35.Text = "Rear Sensor";
+            this.bunifuLabel35.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel35.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // bunifuLabel21
             // 
             this.bunifuLabel21.AllowParentOverrides = false;
@@ -1231,7 +1427,7 @@
             this.bunifuLabel21.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel21.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel21.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel21.Location = new System.Drawing.Point(221, 190);
+            this.bunifuLabel21.Location = new System.Drawing.Point(235, 190);
             this.bunifuLabel21.Name = "bunifuLabel21";
             this.bunifuLabel21.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel21.Size = new System.Drawing.Size(26, 23);
@@ -1240,17 +1436,151 @@
             this.bunifuLabel21.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel21.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuPanel3
+            // 
+            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
+            this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel3.BorderRadius = 2;
+            this.bunifuPanel3.BorderThickness = 1;
+            this.bunifuPanel3.Controls.Add(this.bunifuLabel41);
+            this.bunifuPanel3.Controls.Add(this.bunifuLabel36);
+            this.bunifuPanel3.Controls.Add(this.bunifuLabel37);
+            this.bunifuPanel3.Location = new System.Drawing.Point(9, 176);
+            this.bunifuPanel3.Name = "bunifuPanel3";
+            this.bunifuPanel3.ShowBorders = true;
+            this.bunifuPanel3.Size = new System.Drawing.Size(101, 22);
+            this.bunifuPanel3.TabIndex = 61;
+            // 
+            // bunifuLabel41
+            // 
+            this.bunifuLabel41.AllowParentOverrides = false;
+            this.bunifuLabel41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuLabel41.AutoEllipsis = false;
+            this.bunifuLabel41.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel41.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel41.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel41.Location = new System.Drawing.Point(5, 1);
+            this.bunifuLabel41.Name = "bunifuLabel41";
+            this.bunifuLabel41.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel41.Size = new System.Drawing.Size(32, 17);
+            this.bunifuLabel41.TabIndex = 57;
+            this.bunifuLabel41.Text = "Clear";
+            this.bunifuLabel41.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuLabel41.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel36
+            // 
+            this.bunifuLabel36.AllowParentOverrides = false;
+            this.bunifuLabel36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuLabel36.AutoEllipsis = false;
+            this.bunifuLabel36.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel36.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel36.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel36.Location = new System.Drawing.Point(-94, 1);
+            this.bunifuLabel36.Name = "bunifuLabel36";
+            this.bunifuLabel36.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel36.Size = new System.Drawing.Size(32, 17);
+            this.bunifuLabel36.TabIndex = 51;
+            this.bunifuLabel36.Text = "Clear";
+            this.bunifuLabel36.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuLabel36.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel37
+            // 
+            this.bunifuLabel37.AllowParentOverrides = false;
+            this.bunifuLabel37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuLabel37.AutoEllipsis = false;
+            this.bunifuLabel37.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel37.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel37.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel37.Location = new System.Drawing.Point(-193, 1);
+            this.bunifuLabel37.Name = "bunifuLabel37";
+            this.bunifuLabel37.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel37.Size = new System.Drawing.Size(32, 17);
+            this.bunifuLabel37.TabIndex = 50;
+            this.bunifuLabel37.Text = "Clear";
+            this.bunifuLabel37.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuLabel37.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // rearSensor2
             // 
             this.rearSensor2.BackColor = System.Drawing.Color.Transparent;
             this.rearSensor2.Image = ((System.Drawing.Image)(resources.GetObject("rearSensor2.Image")));
-            this.rearSensor2.Location = new System.Drawing.Point(107, 194);
+            this.rearSensor2.Location = new System.Drawing.Point(123, 194);
             this.rearSensor2.Name = "rearSensor2";
             this.rearSensor2.Size = new System.Drawing.Size(102, 3);
             this.rearSensor2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.rearSensor2.TabIndex = 34;
             this.rearSensor2.TabStop = false;
             this.rearSensor2.Visible = false;
+            // 
+            // bunifuLabel38
+            // 
+            this.bunifuLabel38.AllowParentOverrides = false;
+            this.bunifuLabel38.AutoEllipsis = false;
+            this.bunifuLabel38.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel38.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel38.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel38.Location = new System.Drawing.Point(14, 18);
+            this.bunifuLabel38.Name = "bunifuLabel38";
+            this.bunifuLabel38.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel38.Size = new System.Drawing.Size(82, 16);
+            this.bunifuLabel38.TabIndex = 60;
+            this.bunifuLabel38.Text = "Front Sensor";
+            this.bunifuLabel38.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel38.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuPanel4
+            // 
+            this.bunifuPanel4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(202)))), ((int)(((byte)(147)))));
+            this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
+            this.bunifuPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel4.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel4.BorderRadius = 2;
+            this.bunifuPanel4.BorderThickness = 1;
+            this.bunifuPanel4.Controls.Add(this.bunifuLabel40);
+            this.bunifuPanel4.Controls.Add(this.bunifuLabel39);
+            this.bunifuPanel4.Location = new System.Drawing.Point(9, 34);
+            this.bunifuPanel4.Name = "bunifuPanel4";
+            this.bunifuPanel4.ShowBorders = true;
+            this.bunifuPanel4.Size = new System.Drawing.Size(101, 22);
+            this.bunifuPanel4.TabIndex = 59;
+            // 
+            // bunifuLabel40
+            // 
+            this.bunifuLabel40.AllowParentOverrides = false;
+            this.bunifuLabel40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuLabel40.AutoEllipsis = false;
+            this.bunifuLabel40.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel40.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel40.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel40.Location = new System.Drawing.Point(5, 1);
+            this.bunifuLabel40.Name = "bunifuLabel40";
+            this.bunifuLabel40.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel40.Size = new System.Drawing.Size(32, 17);
+            this.bunifuLabel40.TabIndex = 57;
+            this.bunifuLabel40.Text = "Clear";
+            this.bunifuLabel40.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuLabel40.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel39
+            // 
+            this.bunifuLabel39.AllowParentOverrides = false;
+            this.bunifuLabel39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuLabel39.AutoEllipsis = false;
+            this.bunifuLabel39.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel39.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bunifuLabel39.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuLabel39.Location = new System.Drawing.Point(-94, 1);
+            this.bunifuLabel39.Name = "bunifuLabel39";
+            this.bunifuLabel39.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel39.Size = new System.Drawing.Size(32, 17);
+            this.bunifuLabel39.TabIndex = 50;
+            this.bunifuLabel39.Text = "Clear";
+            this.bunifuLabel39.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuLabel39.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel22
             // 
@@ -1259,7 +1589,7 @@
             this.bunifuLabel22.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel22.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel22.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel22.Location = new System.Drawing.Point(221, 139);
+            this.bunifuLabel22.Location = new System.Drawing.Point(235, 139);
             this.bunifuLabel22.Name = "bunifuLabel22";
             this.bunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel22.Size = new System.Drawing.Size(26, 23);
@@ -1272,7 +1602,7 @@
             // 
             this.frontSensor2.BackColor = System.Drawing.Color.Transparent;
             this.frontSensor2.Image = ((System.Drawing.Image)(resources.GetObject("frontSensor2.Image")));
-            this.frontSensor2.Location = new System.Drawing.Point(107, 27);
+            this.frontSensor2.Location = new System.Drawing.Point(123, 27);
             this.frontSensor2.Name = "frontSensor2";
             this.frontSensor2.Size = new System.Drawing.Size(102, 3);
             this.frontSensor2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1287,7 +1617,7 @@
             this.bunifuLabel23.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel23.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel23.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel23.Location = new System.Drawing.Point(221, 87);
+            this.bunifuLabel23.Location = new System.Drawing.Point(235, 87);
             this.bunifuLabel23.Name = "bunifuLabel23";
             this.bunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel23.Size = new System.Drawing.Size(26, 23);
@@ -1303,7 +1633,7 @@
             this.bunifuLabel24.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel24.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel24.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel24.Location = new System.Drawing.Point(221, 36);
+            this.bunifuLabel24.Location = new System.Drawing.Point(235, 36);
             this.bunifuLabel24.Name = "bunifuLabel24";
             this.bunifuLabel24.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel24.Size = new System.Drawing.Size(26, 23);
@@ -1319,7 +1649,7 @@
             this.bunifuLabel15.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel15.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
-            this.bunifuLabel15.Location = new System.Drawing.Point(61, 220);
+            this.bunifuLabel15.Location = new System.Drawing.Point(58, 220);
             this.bunifuLabel15.Name = "bunifuLabel15";
             this.bunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel15.Size = new System.Drawing.Size(198, 25);
@@ -1327,6 +1657,7 @@
             this.bunifuLabel15.Text = "EMERGENCY STOP";
             this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel15.Visible = false;
             // 
             // bunifuLabel26
             // 
@@ -1335,7 +1666,7 @@
             this.bunifuLabel26.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel26.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel26.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel26.Location = new System.Drawing.Point(221, 174);
+            this.bunifuLabel26.Location = new System.Drawing.Point(235, 174);
             this.bunifuLabel26.Name = "bunifuLabel26";
             this.bunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel26.Size = new System.Drawing.Size(52, 16);
@@ -1348,7 +1679,7 @@
             // 
             this.agvInfo2.BackColor = System.Drawing.Color.Transparent;
             this.agvInfo2.Image = ((System.Drawing.Image)(resources.GetObject("agvInfo2.Image")));
-            this.agvInfo2.Location = new System.Drawing.Point(102, 18);
+            this.agvInfo2.Location = new System.Drawing.Point(116, 18);
             this.agvInfo2.Name = "agvInfo2";
             this.agvInfo2.Size = new System.Drawing.Size(113, 186);
             this.agvInfo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1362,7 +1693,7 @@
             this.bunifuLabel30.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel30.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel30.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel30.Location = new System.Drawing.Point(221, 121);
+            this.bunifuLabel30.Location = new System.Drawing.Point(235, 121);
             this.bunifuLabel30.Name = "bunifuLabel30";
             this.bunifuLabel30.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel30.Size = new System.Drawing.Size(63, 16);
@@ -1378,7 +1709,7 @@
             this.bunifuLabel32.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel32.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel32.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel32.Location = new System.Drawing.Point(221, 18);
+            this.bunifuLabel32.Location = new System.Drawing.Point(235, 18);
             this.bunifuLabel32.Name = "bunifuLabel32";
             this.bunifuLabel32.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel32.Size = new System.Drawing.Size(41, 16);
@@ -1394,7 +1725,7 @@
             this.bunifuLabel31.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel31.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bunifuLabel31.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel31.Location = new System.Drawing.Point(221, 68);
+            this.bunifuLabel31.Location = new System.Drawing.Point(235, 68);
             this.bunifuLabel31.Name = "bunifuLabel31";
             this.bunifuLabel31.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel31.Size = new System.Drawing.Size(73, 16);
@@ -1850,49 +2181,459 @@
             this.palette7.TabIndex = 42;
             this.palette7.Visible = false;
             // 
-            // pictureBox5
+            // agv1Horizontal
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(523, 206);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(49, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 48;
-            this.pictureBox5.TabStop = false;
+            this.agv1Horizontal.BackColor = System.Drawing.Color.Transparent;
+            this.agv1Horizontal.Image = ((System.Drawing.Image)(resources.GetObject("agv1Horizontal.Image")));
+            this.agv1Horizontal.Location = new System.Drawing.Point(523, 206);
+            this.agv1Horizontal.Name = "agv1Horizontal";
+            this.agv1Horizontal.Size = new System.Drawing.Size(49, 32);
+            this.agv1Horizontal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.agv1Horizontal.TabIndex = 48;
+            this.agv1Horizontal.TabStop = false;
             // 
-            // pictureBox6
+            // agv2Horizontal
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(523, 161);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(49, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 49;
-            this.pictureBox6.TabStop = false;
+            this.agv2Horizontal.BackColor = System.Drawing.Color.Transparent;
+            this.agv2Horizontal.Image = ((System.Drawing.Image)(resources.GetObject("agv2Horizontal.Image")));
+            this.agv2Horizontal.Location = new System.Drawing.Point(523, 161);
+            this.agv2Horizontal.Name = "agv2Horizontal";
+            this.agv2Horizontal.Size = new System.Drawing.Size(49, 32);
+            this.agv2Horizontal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.agv2Horizontal.TabIndex = 49;
+            this.agv2Horizontal.TabStop = false;
             // 
-            // pictureBox9
+            // agv1Vertical
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(1359, 296);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 49);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 50;
-            this.pictureBox9.TabStop = false;
+            this.agv1Vertical.BackColor = System.Drawing.Color.Transparent;
+            this.agv1Vertical.Image = ((System.Drawing.Image)(resources.GetObject("agv1Vertical.Image")));
+            this.agv1Vertical.Location = new System.Drawing.Point(1359, 296);
+            this.agv1Vertical.Name = "agv1Vertical";
+            this.agv1Vertical.Size = new System.Drawing.Size(32, 49);
+            this.agv1Vertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.agv1Vertical.TabIndex = 50;
+            this.agv1Vertical.TabStop = false;
             // 
-            // pictureBox10
+            // agv2Vertical
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(863, 296);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(32, 49);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 51;
-            this.pictureBox10.TabStop = false;
+            this.agv2Vertical.BackColor = System.Drawing.Color.Transparent;
+            this.agv2Vertical.Image = ((System.Drawing.Image)(resources.GetObject("agv2Vertical.Image")));
+            this.agv2Vertical.Location = new System.Drawing.Point(863, 296);
+            this.agv2Vertical.Name = "agv2Vertical";
+            this.agv2Vertical.Size = new System.Drawing.Size(32, 49);
+            this.agv2Vertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.agv2Vertical.TabIndex = 51;
+            this.agv2Vertical.TabStop = false;
+            // 
+            // giveUpButton
+            // 
+            this.giveUpButton.AllowAnimations = true;
+            this.giveUpButton.AllowMouseEffects = true;
+            this.giveUpButton.AllowToggling = false;
+            this.giveUpButton.AnimationSpeed = 200;
+            this.giveUpButton.AutoGenerateColors = false;
+            this.giveUpButton.AutoRoundBorders = false;
+            this.giveUpButton.AutoSizeLeftIcon = true;
+            this.giveUpButton.AutoSizeRightIcon = true;
+            this.giveUpButton.BackColor = System.Drawing.Color.Transparent;
+            this.giveUpButton.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.giveUpButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("giveUpButton.BackgroundImage")));
+            this.giveUpButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.giveUpButton.ButtonText = "GIVE UP MISSION";
+            this.giveUpButton.ButtonTextMarginLeft = 0;
+            this.giveUpButton.ColorContrastOnClick = 45;
+            this.giveUpButton.ColorContrastOnHover = 45;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.giveUpButton.CustomizableEdges = borderEdges2;
+            this.giveUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.giveUpButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.giveUpButton.DisabledFillColor = System.Drawing.Color.Empty;
+            this.giveUpButton.DisabledForecolor = System.Drawing.Color.Empty;
+            this.giveUpButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.giveUpButton.Font = new System.Drawing.Font("Inter Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.giveUpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(83)))), ((int)(((byte)(97)))));
+            this.giveUpButton.IconLeft = ((System.Drawing.Image)(resources.GetObject("giveUpButton.IconLeft")));
+            this.giveUpButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.giveUpButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.giveUpButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.giveUpButton.IconMarginLeft = 11;
+            this.giveUpButton.IconPadding = 10;
+            this.giveUpButton.IconRight = null;
+            this.giveUpButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.giveUpButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.giveUpButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.giveUpButton.IconSize = 25;
+            this.giveUpButton.IdleBorderColor = System.Drawing.Color.Empty;
+            this.giveUpButton.IdleBorderRadius = 0;
+            this.giveUpButton.IdleBorderThickness = 0;
+            this.giveUpButton.IdleFillColor = System.Drawing.Color.Empty;
+            this.giveUpButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("giveUpButton.IdleIconLeftImage")));
+            this.giveUpButton.IdleIconRightImage = null;
+            this.giveUpButton.IndicateFocus = false;
+            this.giveUpButton.Location = new System.Drawing.Point(1034, 1034);
+            this.giveUpButton.Name = "giveUpButton";
+            this.giveUpButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.giveUpButton.OnDisabledState.BorderRadius = 1;
+            this.giveUpButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.giveUpButton.OnDisabledState.BorderThickness = 1;
+            this.giveUpButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.giveUpButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.giveUpButton.OnDisabledState.IconLeftImage = null;
+            this.giveUpButton.OnDisabledState.IconRightImage = null;
+            this.giveUpButton.onHoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.giveUpButton.onHoverState.BorderRadius = 1;
+            this.giveUpButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.giveUpButton.onHoverState.BorderThickness = 1;
+            this.giveUpButton.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.giveUpButton.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.giveUpButton.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("giveUpButton.onHoverState.IconLeftImage")));
+            this.giveUpButton.onHoverState.IconRightImage = null;
+            this.giveUpButton.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.giveUpButton.OnIdleState.BorderRadius = 1;
+            this.giveUpButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.giveUpButton.OnIdleState.BorderThickness = 1;
+            this.giveUpButton.OnIdleState.FillColor = System.Drawing.Color.Transparent;
+            this.giveUpButton.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(83)))), ((int)(((byte)(97)))));
+            this.giveUpButton.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("giveUpButton.OnIdleState.IconLeftImage")));
+            this.giveUpButton.OnIdleState.IconRightImage = null;
+            this.giveUpButton.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
+            this.giveUpButton.OnPressedState.BorderRadius = 1;
+            this.giveUpButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.giveUpButton.OnPressedState.BorderThickness = 1;
+            this.giveUpButton.OnPressedState.FillColor = System.Drawing.Color.Transparent;
+            this.giveUpButton.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.giveUpButton.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("giveUpButton.OnPressedState.IconLeftImage")));
+            this.giveUpButton.OnPressedState.IconRightImage = null;
+            this.giveUpButton.Size = new System.Drawing.Size(187, 46);
+            this.giveUpButton.TabIndex = 55;
+            this.giveUpButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.giveUpButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.giveUpButton.TextMarginLeft = 0;
+            this.giveUpButton.TextPadding = new System.Windows.Forms.Padding(0);
+            this.giveUpButton.UseDefaultRadiusAndThickness = true;
+            this.giveUpButton.Click += new System.EventHandler(this.giveUpButton_Click);
+            // 
+            // trafficButton
+            // 
+            this.trafficButton.AllowAnimations = true;
+            this.trafficButton.AllowMouseEffects = true;
+            this.trafficButton.AllowToggling = false;
+            this.trafficButton.AnimationSpeed = 200;
+            this.trafficButton.AutoGenerateColors = false;
+            this.trafficButton.AutoRoundBorders = false;
+            this.trafficButton.AutoSizeLeftIcon = true;
+            this.trafficButton.AutoSizeRightIcon = true;
+            this.trafficButton.BackColor = System.Drawing.Color.Transparent;
+            this.trafficButton.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.trafficButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("trafficButton.BackgroundImage")));
+            this.trafficButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.trafficButton.ButtonText = "CLEAR TRAFFIC";
+            this.trafficButton.ButtonTextMarginLeft = 0;
+            this.trafficButton.ColorContrastOnClick = 45;
+            this.trafficButton.ColorContrastOnHover = 45;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.trafficButton.CustomizableEdges = borderEdges1;
+            this.trafficButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.trafficButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.trafficButton.DisabledFillColor = System.Drawing.Color.Empty;
+            this.trafficButton.DisabledForecolor = System.Drawing.Color.Empty;
+            this.trafficButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.trafficButton.Font = new System.Drawing.Font("Inter Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.trafficButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(83)))), ((int)(((byte)(97)))));
+            this.trafficButton.IconLeft = ((System.Drawing.Image)(resources.GetObject("trafficButton.IconLeft")));
+            this.trafficButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.trafficButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.trafficButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.trafficButton.IconMarginLeft = 11;
+            this.trafficButton.IconPadding = 10;
+            this.trafficButton.IconRight = null;
+            this.trafficButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.trafficButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.trafficButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.trafficButton.IconSize = 25;
+            this.trafficButton.IdleBorderColor = System.Drawing.Color.Empty;
+            this.trafficButton.IdleBorderRadius = 0;
+            this.trafficButton.IdleBorderThickness = 0;
+            this.trafficButton.IdleFillColor = System.Drawing.Color.Empty;
+            this.trafficButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("trafficButton.IdleIconLeftImage")));
+            this.trafficButton.IdleIconRightImage = null;
+            this.trafficButton.IndicateFocus = false;
+            this.trafficButton.Location = new System.Drawing.Point(1230, 1034);
+            this.trafficButton.Name = "trafficButton";
+            this.trafficButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.trafficButton.OnDisabledState.BorderRadius = 1;
+            this.trafficButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.trafficButton.OnDisabledState.BorderThickness = 1;
+            this.trafficButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.trafficButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.trafficButton.OnDisabledState.IconLeftImage = null;
+            this.trafficButton.OnDisabledState.IconRightImage = null;
+            this.trafficButton.onHoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.trafficButton.onHoverState.BorderRadius = 1;
+            this.trafficButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.trafficButton.onHoverState.BorderThickness = 1;
+            this.trafficButton.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.trafficButton.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.trafficButton.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("trafficButton.onHoverState.IconLeftImage")));
+            this.trafficButton.onHoverState.IconRightImage = null;
+            this.trafficButton.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.trafficButton.OnIdleState.BorderRadius = 1;
+            this.trafficButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.trafficButton.OnIdleState.BorderThickness = 1;
+            this.trafficButton.OnIdleState.FillColor = System.Drawing.Color.Transparent;
+            this.trafficButton.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(83)))), ((int)(((byte)(97)))));
+            this.trafficButton.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("trafficButton.OnIdleState.IconLeftImage")));
+            this.trafficButton.OnIdleState.IconRightImage = null;
+            this.trafficButton.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
+            this.trafficButton.OnPressedState.BorderRadius = 1;
+            this.trafficButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.trafficButton.OnPressedState.BorderThickness = 1;
+            this.trafficButton.OnPressedState.FillColor = System.Drawing.Color.Transparent;
+            this.trafficButton.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.trafficButton.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("trafficButton.OnPressedState.IconLeftImage")));
+            this.trafficButton.OnPressedState.IconRightImage = null;
+            this.trafficButton.Size = new System.Drawing.Size(187, 46);
+            this.trafficButton.TabIndex = 56;
+            this.trafficButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.trafficButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.trafficButton.TextMarginLeft = 0;
+            this.trafficButton.TextPadding = new System.Windows.Forms.Padding(0);
+            this.trafficButton.UseDefaultRadiusAndThickness = true;
+            // 
+            // giveIndicator
+            // 
+            this.giveIndicator.BackgroundColor = System.Drawing.Color.White;
+            this.giveIndicator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("giveIndicator.BackgroundImage")));
+            this.giveIndicator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.giveIndicator.BorderColor = System.Drawing.Color.Transparent;
+            this.giveIndicator.BorderRadius = 3;
+            this.giveIndicator.BorderThickness = 0;
+            this.giveIndicator.Location = new System.Drawing.Point(1048, 1027);
+            this.giveIndicator.Name = "giveIndicator";
+            this.giveIndicator.ShowBorders = false;
+            this.giveIndicator.Size = new System.Drawing.Size(168, 4);
+            this.giveIndicator.TabIndex = 16;
+            this.giveIndicator.Visible = false;
+            // 
+            // trafficIndicator
+            // 
+            this.trafficIndicator.BackgroundColor = System.Drawing.Color.White;
+            this.trafficIndicator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("trafficIndicator.BackgroundImage")));
+            this.trafficIndicator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.trafficIndicator.BorderColor = System.Drawing.Color.Transparent;
+            this.trafficIndicator.BorderRadius = 3;
+            this.trafficIndicator.BorderThickness = 0;
+            this.trafficIndicator.Location = new System.Drawing.Point(1241, 1027);
+            this.trafficIndicator.Name = "trafficIndicator";
+            this.trafficIndicator.ShowBorders = false;
+            this.trafficIndicator.Size = new System.Drawing.Size(168, 4);
+            this.trafficIndicator.TabIndex = 17;
+            this.trafficIndicator.Visible = false;
+            // 
+            // batteryLevel1
+            // 
+            this.batteryLevel1.AllowAnimations = false;
+            this.batteryLevel1.Animation = 0;
+            this.batteryLevel1.AnimationSpeed = 500;
+            this.batteryLevel1.AnimationStep = 10;
+            this.batteryLevel1.BackColor = System.Drawing.Color.Transparent;
+            this.batteryLevel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("batteryLevel1.BackgroundImage")));
+            this.batteryLevel1.BorderColor = System.Drawing.Color.Transparent;
+            this.batteryLevel1.BorderRadius = 9;
+            this.batteryLevel1.BorderThickness = 1;
+            this.batteryLevel1.Location = new System.Drawing.Point(34, 174);
+            this.batteryLevel1.Margin = new System.Windows.Forms.Padding(1);
+            this.batteryLevel1.Maximum = 100;
+            this.batteryLevel1.MaximumValue = 100;
+            this.batteryLevel1.Minimum = 0;
+            this.batteryLevel1.MinimumValue = 0;
+            this.batteryLevel1.Name = "batteryLevel1";
+            this.batteryLevel1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.batteryLevel1.ProgressBackColor = System.Drawing.Color.Transparent;
+            this.batteryLevel1.ProgressColorLeft = System.Drawing.Color.LawnGreen;
+            this.batteryLevel1.ProgressColorRight = System.Drawing.Color.LimeGreen;
+            this.batteryLevel1.Size = new System.Drawing.Size(77, 28);
+            this.batteryLevel1.TabIndex = 57;
+            this.batteryLevel1.Value = 0;
+            this.batteryLevel1.ValueByTransition = 0;
+            // 
+            // AGV1StatusLabel
+            // 
+            this.AGV1StatusLabel.AllowParentOverrides = false;
+            this.AGV1StatusLabel.AutoEllipsis = false;
+            this.AGV1StatusLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.AGV1StatusLabel.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AGV1StatusLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.AGV1StatusLabel.Location = new System.Drawing.Point(374, 174);
+            this.AGV1StatusLabel.Name = "AGV1StatusLabel";
+            this.AGV1StatusLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AGV1StatusLabel.Size = new System.Drawing.Size(41, 16);
+            this.AGV1StatusLabel.TabIndex = 58;
+            this.AGV1StatusLabel.Text = "Cycles";
+            this.AGV1StatusLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.AGV1StatusLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // batValue1
+            // 
+            this.batValue1.AllowParentOverrides = false;
+            this.batValue1.AutoEllipsis = false;
+            this.batValue1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.batValue1.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.batValue1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.batValue1.Location = new System.Drawing.Point(54, 151);
+            this.batValue1.Name = "batValue1";
+            this.batValue1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.batValue1.Size = new System.Drawing.Size(41, 16);
+            this.batValue1.TabIndex = 59;
+            this.batValue1.Text = "Cycles";
+            this.batValue1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.batValue1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // AGV2StatusLabel
+            // 
+            this.AGV2StatusLabel.AllowParentOverrides = false;
+            this.AGV2StatusLabel.AutoEllipsis = false;
+            this.AGV2StatusLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.AGV2StatusLabel.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AGV2StatusLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.AGV2StatusLabel.Location = new System.Drawing.Point(374, 255);
+            this.AGV2StatusLabel.Name = "AGV2StatusLabel";
+            this.AGV2StatusLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AGV2StatusLabel.Size = new System.Drawing.Size(41, 16);
+            this.AGV2StatusLabel.TabIndex = 60;
+            this.AGV2StatusLabel.Text = "Cycles";
+            this.AGV2StatusLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.AGV2StatusLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // batteryLevel2
+            // 
+            this.batteryLevel2.AllowAnimations = false;
+            this.batteryLevel2.Animation = 0;
+            this.batteryLevel2.AnimationSpeed = 500;
+            this.batteryLevel2.AnimationStep = 10;
+            this.batteryLevel2.BackColor = System.Drawing.Color.Transparent;
+            this.batteryLevel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("batteryLevel2.BackgroundImage")));
+            this.batteryLevel2.BorderColor = System.Drawing.Color.Transparent;
+            this.batteryLevel2.BorderRadius = 9;
+            this.batteryLevel2.BorderThickness = 1;
+            this.batteryLevel2.Location = new System.Drawing.Point(34, 248);
+            this.batteryLevel2.Margin = new System.Windows.Forms.Padding(1);
+            this.batteryLevel2.Maximum = 100;
+            this.batteryLevel2.MaximumValue = 100;
+            this.batteryLevel2.Minimum = 0;
+            this.batteryLevel2.MinimumValue = 0;
+            this.batteryLevel2.Name = "batteryLevel2";
+            this.batteryLevel2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.batteryLevel2.ProgressBackColor = System.Drawing.Color.Transparent;
+            this.batteryLevel2.ProgressColorLeft = System.Drawing.Color.LawnGreen;
+            this.batteryLevel2.ProgressColorRight = System.Drawing.Color.LimeGreen;
+            this.batteryLevel2.Size = new System.Drawing.Size(77, 28);
+            this.batteryLevel2.TabIndex = 61;
+            this.batteryLevel2.Value = 0;
+            this.batteryLevel2.ValueByTransition = 0;
+            // 
+            // batValue2
+            // 
+            this.batValue2.AllowParentOverrides = false;
+            this.batValue2.AutoEllipsis = false;
+            this.batValue2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.batValue2.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.batValue2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.batValue2.Location = new System.Drawing.Point(54, 226);
+            this.batValue2.Name = "batValue2";
+            this.batValue2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.batValue2.Size = new System.Drawing.Size(41, 16);
+            this.batValue2.TabIndex = 62;
+            this.batValue2.Text = "Cycles";
+            this.batValue2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.batValue2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // AGV1StateLabel
+            // 
+            this.AGV1StateLabel.AllowParentOverrides = false;
+            this.AGV1StateLabel.AutoEllipsis = false;
+            this.AGV1StateLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.AGV1StateLabel.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AGV1StateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.AGV1StateLabel.Location = new System.Drawing.Point(276, 174);
+            this.AGV1StateLabel.Name = "AGV1StateLabel";
+            this.AGV1StateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AGV1StateLabel.Size = new System.Drawing.Size(41, 16);
+            this.AGV1StateLabel.TabIndex = 63;
+            this.AGV1StateLabel.Text = "Cycles";
+            this.AGV1StateLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.AGV1StateLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // AGV1NameLabel
+            // 
+            this.AGV1NameLabel.AllowParentOverrides = false;
+            this.AGV1NameLabel.AutoEllipsis = false;
+            this.AGV1NameLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.AGV1NameLabel.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AGV1NameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.AGV1NameLabel.Location = new System.Drawing.Point(178, 174);
+            this.AGV1NameLabel.Name = "AGV1NameLabel";
+            this.AGV1NameLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AGV1NameLabel.Size = new System.Drawing.Size(41, 16);
+            this.AGV1NameLabel.TabIndex = 64;
+            this.AGV1NameLabel.Text = "Cycles";
+            this.AGV1NameLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.AGV1NameLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // AGV2StateLabel
+            // 
+            this.AGV2StateLabel.AllowParentOverrides = false;
+            this.AGV2StateLabel.AutoEllipsis = false;
+            this.AGV2StateLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.AGV2StateLabel.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AGV2StateLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.AGV2StateLabel.Location = new System.Drawing.Point(276, 255);
+            this.AGV2StateLabel.Name = "AGV2StateLabel";
+            this.AGV2StateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AGV2StateLabel.Size = new System.Drawing.Size(41, 16);
+            this.AGV2StateLabel.TabIndex = 65;
+            this.AGV2StateLabel.Text = "Cycles";
+            this.AGV2StateLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.AGV2StateLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // AGV2NameLabel
+            // 
+            this.AGV2NameLabel.AllowParentOverrides = false;
+            this.AGV2NameLabel.AutoEllipsis = false;
+            this.AGV2NameLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.AGV2NameLabel.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AGV2NameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.AGV2NameLabel.Location = new System.Drawing.Point(178, 255);
+            this.AGV2NameLabel.Name = "AGV2NameLabel";
+            this.AGV2NameLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AGV2NameLabel.Size = new System.Drawing.Size(41, 16);
+            this.AGV2NameLabel.TabIndex = 66;
+            this.AGV2NameLabel.Text = "Cycles";
+            this.AGV2NameLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.AGV2NameLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // labelDisconnect1
+            // 
+            this.labelDisconnect1.AllowParentOverrides = false;
+            this.labelDisconnect1.AutoEllipsis = false;
+            this.labelDisconnect1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.labelDisconnect1.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelDisconnect1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(66)))), ((int)(((byte)(60)))));
+            this.labelDisconnect1.Location = new System.Drawing.Point(42, 108);
+            this.labelDisconnect1.Name = "labelDisconnect1";
+            this.labelDisconnect1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelDisconnect1.Size = new System.Drawing.Size(236, 25);
+            this.labelDisconnect1.TabIndex = 60;
+            this.labelDisconnect1.Text = "AGV 1 DISCONNECTED";
+            this.labelDisconnect1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.labelDisconnect1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.labelDisconnect1.Visible = false;
             // 
             // Form1
             // 
@@ -1900,10 +2641,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1920, 1061);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.AGV2NameLabel);
+            this.Controls.Add(this.AGV2StateLabel);
+            this.Controls.Add(this.AGV1NameLabel);
+            this.Controls.Add(this.AGV1StateLabel);
+            this.Controls.Add(this.batValue2);
+            this.Controls.Add(this.batteryLevel2);
+            this.Controls.Add(this.AGV2StatusLabel);
+            this.Controls.Add(this.batValue1);
+            this.Controls.Add(this.AGV1StatusLabel);
+            this.Controls.Add(this.batteryLevel1);
+            this.Controls.Add(this.homeIndicator);
+            this.Controls.Add(this.trafficIndicator);
+            this.Controls.Add(this.giveIndicator);
+            this.Controls.Add(this.trafficButton);
+            this.Controls.Add(this.giveUpButton);
+            this.Controls.Add(this.agv2Vertical);
+            this.Controls.Add(this.agv1Vertical);
+            this.Controls.Add(this.agv2Horizontal);
+            this.Controls.Add(this.agv1Horizontal);
             this.Controls.Add(this.palette12);
             this.Controls.Add(this.palette11);
             this.Controls.Add(this.palette6);
@@ -1940,7 +2696,6 @@
             this.Controls.Add(this.standbyPanel2);
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.standbyPanel1);
-            this.Controls.Add(this.homeIndicator);
             this.Controls.Add(this.timerIndicator);
             this.Controls.Add(this.logsIndicator);
             this.Controls.Add(this.modeIndicator);
@@ -1976,20 +2731,28 @@
             this.standbyPanel2.PerformLayout();
             this.detailPanel1.ResumeLayout(false);
             this.detailPanel1.PerformLayout();
+            this.rearSensorIden1.ResumeLayout(false);
+            this.rearSensorIden1.PerformLayout();
+            this.frontSensorIden1.ResumeLayout(false);
+            this.frontSensorIden1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rearSensor1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.frontSensor1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agvInfo1)).EndInit();
             this.detailPanel2.ResumeLayout(false);
             this.detailPanel2.PerformLayout();
+            this.bunifuPanel3.ResumeLayout(false);
+            this.bunifuPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rearSensor2)).EndInit();
+            this.bunifuPanel4.ResumeLayout(false);
+            this.bunifuPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.frontSensor2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agvInfo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agv1Horizontal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agv2Horizontal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agv1Vertical)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.agv2Vertical)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2040,7 +2803,7 @@
         private PictureBox agvInfo2;
         private PictureBox agvInfo1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel15;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel16;
+        private Bunifu.UI.WinForms.BunifuLabel EMG1Label;
         private PictureBox pictureBox8;
         private PictureBox pictureBox7;
         private PictureBox frontSensor1;
@@ -2087,9 +2850,41 @@
         private Bunifu.UI.WinForms.BunifuPanel palette10;
         private Bunifu.UI.WinForms.BunifuPanel palette8;
         private Bunifu.UI.WinForms.BunifuPanel palette7;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox9;
+        private PictureBox agv2Horizontal;
+        private PictureBox agv1Horizontal;
+        private PictureBox agv2Vertical;
+        private PictureBox agv1Vertical;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel16;
+        private Bunifu.UI.WinForms.BunifuPanel frontSensorIden1;
+        private Bunifu.UI.WinForms.BunifuLabel frontSensor1Text;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton giveUpButton;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton trafficButton;
+        private Bunifu.UI.WinForms.BunifuPanel trafficIndicator;
+        private Bunifu.UI.WinForms.BunifuPanel giveIndicator;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel33;
+        private Bunifu.UI.WinForms.BunifuPanel rearSensorIden1;
+        private Bunifu.UI.WinForms.BunifuLabel rearSensor1Text;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel34;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel35;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel36;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel37;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel38;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel4;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel39;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel41;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel40;
+        private Bunifu.UI.WinForms.BunifuProgressBar batteryLevel1;
+        private Bunifu.UI.WinForms.BunifuLabel labelDisconnect;
+        private Bunifu.UI.WinForms.BunifuLabel AGV1StatusLabel;
+        private Bunifu.UI.WinForms.BunifuLabel batValue1;
+        private Bunifu.UI.WinForms.BunifuProgressBar batteryLevel2;
+        private Bunifu.UI.WinForms.BunifuLabel AGV2StatusLabel;
+        private Bunifu.UI.WinForms.BunifuLabel batValue2;
+        private Bunifu.UI.WinForms.BunifuLabel AGV1StateLabel;
+        private Bunifu.UI.WinForms.BunifuLabel AGV1NameLabel;
+        private Bunifu.UI.WinForms.BunifuLabel AGV2NameLabel;
+        private Bunifu.UI.WinForms.BunifuLabel AGV2StateLabel;
+        private Bunifu.UI.WinForms.BunifuLabel labelDisconnect1;
     }
 }
