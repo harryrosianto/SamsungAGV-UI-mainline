@@ -1536,7 +1536,7 @@
   <data name="frontSensor1Text.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 1px;font-family: 'Inter Light'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(245, 245, 245); text-align: right; }</value>
   </data>
-  <data name="bunifuLabel29.BaseStylesheet" xml:space="preserve">
+  <data name="rfidLabel1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Inter Semi Bold'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(245, 245, 245); text-align: left; }</value>
   </data>
   <data name="bunifuLabel28.BaseStylesheet" xml:space="preserve">

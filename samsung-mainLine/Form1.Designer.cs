@@ -81,7 +81,7 @@
             this.bunifuLabel16 = new Bunifu.UI.WinForms.BunifuLabel();
             this.frontSensorIden1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.frontSensor1Text = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel29 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.rfidLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel28 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel27 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel25 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -94,6 +94,7 @@
             this.EMG1Label = new Bunifu.UI.WinForms.BunifuLabel();
             this.agvInfo1 = new System.Windows.Forms.PictureBox();
             this.detailPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.labelDisconnect1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel35 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel21 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -164,7 +165,6 @@
             this.AGV1NameLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.AGV2StateLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.AGV2NameLabel = new Bunifu.UI.WinForms.BunifuLabel();
-            this.labelDisconnect1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1044,7 +1044,7 @@
             this.detailPanel1.Controls.Add(this.rearSensorIden1);
             this.detailPanel1.Controls.Add(this.bunifuLabel16);
             this.detailPanel1.Controls.Add(this.frontSensorIden1);
-            this.detailPanel1.Controls.Add(this.bunifuLabel29);
+            this.detailPanel1.Controls.Add(this.rfidLabel1);
             this.detailPanel1.Controls.Add(this.bunifuLabel28);
             this.detailPanel1.Controls.Add(this.bunifuLabel27);
             this.detailPanel1.Controls.Add(this.bunifuLabel25);
@@ -1193,21 +1193,21 @@
             this.frontSensor1Text.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.frontSensor1Text.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel29
+            // rfidLabel1
             // 
-            this.bunifuLabel29.AllowParentOverrides = false;
-            this.bunifuLabel29.AutoEllipsis = false;
-            this.bunifuLabel29.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel29.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel29.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel29.Location = new System.Drawing.Point(235, 190);
-            this.bunifuLabel29.Name = "bunifuLabel29";
-            this.bunifuLabel29.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel29.Size = new System.Drawing.Size(26, 23);
-            this.bunifuLabel29.TabIndex = 32;
-            this.bunifuLabel29.Text = "00";
-            this.bunifuLabel29.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel29.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.rfidLabel1.AllowParentOverrides = false;
+            this.rfidLabel1.AutoEllipsis = false;
+            this.rfidLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.rfidLabel1.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rfidLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.rfidLabel1.Location = new System.Drawing.Point(14, 220);
+            this.rfidLabel1.Name = "rfidLabel1";
+            this.rfidLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.rfidLabel1.Size = new System.Drawing.Size(26, 23);
+            this.rfidLabel1.TabIndex = 32;
+            this.rfidLabel1.Text = "00";
+            this.rfidLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.rfidLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel28
             // 
@@ -1403,6 +1403,23 @@
             this.detailPanel2.ShowBorders = true;
             this.detailPanel2.Size = new System.Drawing.Size(316, 252);
             this.detailPanel2.TabIndex = 26;
+            // 
+            // labelDisconnect1
+            // 
+            this.labelDisconnect1.AllowParentOverrides = false;
+            this.labelDisconnect1.AutoEllipsis = false;
+            this.labelDisconnect1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.labelDisconnect1.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelDisconnect1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(66)))), ((int)(((byte)(60)))));
+            this.labelDisconnect1.Location = new System.Drawing.Point(42, 108);
+            this.labelDisconnect1.Name = "labelDisconnect1";
+            this.labelDisconnect1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelDisconnect1.Size = new System.Drawing.Size(236, 25);
+            this.labelDisconnect1.TabIndex = 60;
+            this.labelDisconnect1.Text = "AGV 1 DISCONNECTED";
+            this.labelDisconnect1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.labelDisconnect1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.labelDisconnect1.Visible = false;
             // 
             // bunifuLabel35
             // 
@@ -2618,23 +2635,6 @@
             this.AGV2NameLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.AGV2NameLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // labelDisconnect1
-            // 
-            this.labelDisconnect1.AllowParentOverrides = false;
-            this.labelDisconnect1.AutoEllipsis = false;
-            this.labelDisconnect1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.labelDisconnect1.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelDisconnect1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(66)))), ((int)(((byte)(60)))));
-            this.labelDisconnect1.Location = new System.Drawing.Point(42, 108);
-            this.labelDisconnect1.Name = "labelDisconnect1";
-            this.labelDisconnect1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelDisconnect1.Size = new System.Drawing.Size(236, 25);
-            this.labelDisconnect1.TabIndex = 60;
-            this.labelDisconnect1.Text = "AGV 1 DISCONNECTED";
-            this.labelDisconnect1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.labelDisconnect1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.labelDisconnect1.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -2814,7 +2814,7 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel19;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel18;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel17;
-        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel29;
+        public Bunifu.UI.WinForms.BunifuLabel rfidLabel1;
         public Bunifu.UI.WinForms.BunifuLabel bunifuLabel28;
         public Bunifu.UI.WinForms.BunifuLabel bunifuLabel27;
         public Bunifu.UI.WinForms.BunifuLabel bunifuLabel25;

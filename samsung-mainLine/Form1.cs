@@ -67,7 +67,6 @@ namespace samsung_mainLine
 
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
             timerData.Text = Convert.ToString(counts);
-            Console.WriteLine(flags);
 
         }
         private async Task<ResponseData> API(string command)
@@ -426,6 +425,7 @@ namespace samsung_mainLine
                 for (int i = 0; i < data.msg.Count; i++)
                 {
                     double power = data.msg[i][7];
+                    double rfidNow = data.msg[i][33];
 
                     //"³µ" Read RFID and detail Car activity
                     double dataMovement = data.msg[i][15], dataRute = data.msg[i][31], dataRfid = data.msg[i][33], readAddress = data.msg[i][0];
@@ -446,6 +446,8 @@ namespace samsung_mainLine
                         agv1Vertical.BackColor = agvColor;
                         agv1Horizontal.BackColor = agvColor;
                         AGV1StatusLabel.Text = agvStatus;
+
+                        rfidLabel1.Text = rfidNow.ToString();
 
                         batteryLevel1.Value = (int)power;
 
@@ -562,6 +564,8 @@ namespace samsung_mainLine
                 errorTime2 = DateTime.Now.ToString();
                 ResponseData2 datanonArray = await APInonArray("devC.deviceDic[1].optionsLoader.load(carLib.RAM.DEV.BTN_EMC)");
                 ResponseData2 datanonArray2 = await APInonArray("devC.deviceDic[1].optionsLoader.load(carLib.RAM.DEV.BTN_EMC)");
+
+                Console.WriteLine("KONDISI EMG SEKARANG: {0}", datanonArray.msg[1]);
 
                 try
                 {
@@ -702,47 +706,21 @@ namespace samsung_mainLine
                 //gridViewError.Invoke((MethodInvoker)delegate { gridViewError.DataSource = showError; });
 
             }
-
+            
+            else if (data.errMark == "err")
+            {
+                agvState = "OFF";
+                agv2State = "OFF";
+                string disc = agvName + " DISCONNECTED";
+                //Console.WriteLine(disc);
+                labelDisconnect.Text = disc;
+                labelDisconnect.Visible = true;
+            }
+            callAPI();
 
             //List<AGVErrorModel> errorData = new();
             //missionTime = DateTime.Now.ToString("HH:mm:ss");
-
-            //AGVCallingModel temp = new(missionTime, "AGV-1", "Line 3", "Finish");
-            //AGVCallingModel temp2 = new(missionTime, "AGV-2", "Line 7", "Running");
-            //AGVCallingModel temp3 = new(missionTime, "AGV-1", "Line 3", "Finish");
-            //AGVCallingModel temp4 = new(missionTime, "AGV-2", "Line 7", "Running");
-            //AGVCallingModel temp5 = new(missionTime, "AGV-1", "Line 3", "Finish");
-            //AGVCallingModel temp6 = new(missionTime, "AGV-2", "Line 7", "Running");
-            //AGVCallingModel temp7 = new(missionTime, "AGV-1", "Line 3", "Finish");
-            //AGVCallingModel temp8 = new(missionTime, "AGV-2", "Line 7", "Running");
-            //AGVCallingModel temp9 = new(missionTime, "AGV-2", "Line 9", "Running");
-            //AGVCallingModel temp10 = new(missionTime, "AGV -2", "Line 9", "Running");
-            //showData.Add(temp);
-            //showData.Add(temp2);
-            //showData.Add(temp3);
-            //showData.Add(temp4);
-            //showData.Add(temp5);
-            //showData.Add(temp6);
-            //showData.Add(temp7);
-            //showData.Add(temp8);
-            //showData.Add(temp9);
-            //showData.Add(temp10);
-            //showData.Add(temp);
-            //showData.Add(temp2);
-            //showData.Add(temp3);
-            //showData.Add(temp4);
-            //showData.Add(temp5);
-            //showData.Add(temp6);
-
-            //AGVErrorModel err = new("1", "AGV-1", "EMC STOP", "OBS STOP");
-            //AGVErrorModel err2 = new("2", "AGV-2", "EMC STOP", "OBS STOP");
-            //errorData.Add(err);
-            //errorData.Add(err2);
-
-            //gridViewDS.DataSource = showData;
-            ////gridViewError.DataSource = errorData;
-            //Console.WriteLine(counts);
-            ////timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");   
+            //timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");   
         }
 
         public class AGVCallingModel
