@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -82,9 +82,9 @@
             this.frontSensorIden1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.frontSensor1Text = new Bunifu.UI.WinForms.BunifuLabel();
             this.rfidLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel28 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel27 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel25 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.routeLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.whoursLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.cycleLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel20 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel19 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel18 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -96,7 +96,7 @@
             this.detailPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.labelDisconnect1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel35 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel21 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.rfidLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel41 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel36 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -106,11 +106,11 @@
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel40 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel39 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel22 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.routeLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.frontSensor2 = new System.Windows.Forms.PictureBox();
-            this.bunifuLabel23 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel24 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.whoursLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.cycleLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.EMG2Label = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel26 = new Bunifu.UI.WinForms.BunifuLabel();
             this.agvInfo2 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel30 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -288,22 +288,22 @@
             // gridViewDS
             // 
             this.gridViewDS.AllowCustomTheming = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.gridViewDS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            this.gridViewDS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewDS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewDS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
             this.gridViewDS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewDS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridViewDS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewDS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewDS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridViewDS.ColumnHeadersHeight = 42;
             this.gridViewDS.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
             this.gridViewDS.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -323,14 +323,14 @@
             this.gridViewDS.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.gridViewDS.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
             this.gridViewDS.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewDS.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewDS.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridViewDS.EnableHeadersVisualStyles = false;
             this.gridViewDS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(60)))));
             this.gridViewDS.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
@@ -397,11 +397,11 @@
             this.timerButton.ButtonTextMarginLeft = 0;
             this.timerButton.ColorContrastOnClick = 45;
             this.timerButton.ColorContrastOnHover = 45;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.timerButton.CustomizableEdges = borderEdges6;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.timerButton.CustomizableEdges = borderEdges12;
             this.timerButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.timerButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.timerButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -488,11 +488,11 @@
             this.homeButton.ButtonTextMarginLeft = 0;
             this.homeButton.ColorContrastOnClick = 45;
             this.homeButton.ColorContrastOnHover = 45;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.homeButton.CustomizableEdges = borderEdges5;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.homeButton.CustomizableEdges = borderEdges11;
             this.homeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.homeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.homeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -579,11 +579,11 @@
             this.modeButton.ButtonTextMarginLeft = 0;
             this.modeButton.ColorContrastOnClick = 45;
             this.modeButton.ColorContrastOnHover = 45;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.modeButton.CustomizableEdges = borderEdges4;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.modeButton.CustomizableEdges = borderEdges10;
             this.modeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.modeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -670,11 +670,11 @@
             this.logsButton.ButtonTextMarginLeft = 0;
             this.logsButton.ColorContrastOnClick = 45;
             this.logsButton.ColorContrastOnHover = 45;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.logsButton.CustomizableEdges = borderEdges3;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.logsButton.CustomizableEdges = borderEdges9;
             this.logsButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.logsButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logsButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1045,9 +1045,9 @@
             this.detailPanel1.Controls.Add(this.bunifuLabel16);
             this.detailPanel1.Controls.Add(this.frontSensorIden1);
             this.detailPanel1.Controls.Add(this.rfidLabel1);
-            this.detailPanel1.Controls.Add(this.bunifuLabel28);
-            this.detailPanel1.Controls.Add(this.bunifuLabel27);
-            this.detailPanel1.Controls.Add(this.bunifuLabel25);
+            this.detailPanel1.Controls.Add(this.routeLabel1);
+            this.detailPanel1.Controls.Add(this.whoursLabel1);
+            this.detailPanel1.Controls.Add(this.cycleLabel1);
             this.detailPanel1.Controls.Add(this.bunifuLabel20);
             this.detailPanel1.Controls.Add(this.bunifuLabel19);
             this.detailPanel1.Controls.Add(this.bunifuLabel18);
@@ -1200,7 +1200,7 @@
             this.rfidLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.rfidLabel1.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rfidLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.rfidLabel1.Location = new System.Drawing.Point(14, 220);
+            this.rfidLabel1.Location = new System.Drawing.Point(235, 190);
             this.rfidLabel1.Name = "rfidLabel1";
             this.rfidLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.rfidLabel1.Size = new System.Drawing.Size(26, 23);
@@ -1209,53 +1209,53 @@
             this.rfidLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.rfidLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel28
+            // routeLabel1
             // 
-            this.bunifuLabel28.AllowParentOverrides = false;
-            this.bunifuLabel28.AutoEllipsis = false;
-            this.bunifuLabel28.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel28.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel28.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel28.Location = new System.Drawing.Point(235, 139);
-            this.bunifuLabel28.Name = "bunifuLabel28";
-            this.bunifuLabel28.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel28.Size = new System.Drawing.Size(26, 23);
-            this.bunifuLabel28.TabIndex = 32;
-            this.bunifuLabel28.Text = "00";
-            this.bunifuLabel28.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel28.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.routeLabel1.AllowParentOverrides = false;
+            this.routeLabel1.AutoEllipsis = false;
+            this.routeLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.routeLabel1.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.routeLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.routeLabel1.Location = new System.Drawing.Point(235, 139);
+            this.routeLabel1.Name = "routeLabel1";
+            this.routeLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.routeLabel1.Size = new System.Drawing.Size(26, 23);
+            this.routeLabel1.TabIndex = 32;
+            this.routeLabel1.Text = "00";
+            this.routeLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.routeLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel27
+            // whoursLabel1
             // 
-            this.bunifuLabel27.AllowParentOverrides = false;
-            this.bunifuLabel27.AutoEllipsis = false;
-            this.bunifuLabel27.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel27.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel27.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel27.Location = new System.Drawing.Point(235, 87);
-            this.bunifuLabel27.Name = "bunifuLabel27";
-            this.bunifuLabel27.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel27.Size = new System.Drawing.Size(26, 23);
-            this.bunifuLabel27.TabIndex = 37;
-            this.bunifuLabel27.Text = "00";
-            this.bunifuLabel27.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel27.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.whoursLabel1.AllowParentOverrides = false;
+            this.whoursLabel1.AutoEllipsis = false;
+            this.whoursLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.whoursLabel1.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.whoursLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.whoursLabel1.Location = new System.Drawing.Point(235, 87);
+            this.whoursLabel1.Name = "whoursLabel1";
+            this.whoursLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.whoursLabel1.Size = new System.Drawing.Size(26, 23);
+            this.whoursLabel1.TabIndex = 37;
+            this.whoursLabel1.Text = "00";
+            this.whoursLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.whoursLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel25
+            // cycleLabel1
             // 
-            this.bunifuLabel25.AllowParentOverrides = false;
-            this.bunifuLabel25.AutoEllipsis = false;
-            this.bunifuLabel25.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel25.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel25.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel25.Location = new System.Drawing.Point(235, 36);
-            this.bunifuLabel25.Name = "bunifuLabel25";
-            this.bunifuLabel25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel25.Size = new System.Drawing.Size(26, 23);
-            this.bunifuLabel25.TabIndex = 25;
-            this.bunifuLabel25.Text = "00";
-            this.bunifuLabel25.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel25.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.cycleLabel1.AllowParentOverrides = false;
+            this.cycleLabel1.AutoEllipsis = false;
+            this.cycleLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.cycleLabel1.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cycleLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.cycleLabel1.Location = new System.Drawing.Point(235, 36);
+            this.cycleLabel1.Name = "cycleLabel1";
+            this.cycleLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cycleLabel1.Size = new System.Drawing.Size(26, 23);
+            this.cycleLabel1.TabIndex = 25;
+            this.cycleLabel1.Text = "00";
+            this.cycleLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.cycleLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel20
             // 
@@ -1267,9 +1267,9 @@
             this.bunifuLabel20.Location = new System.Drawing.Point(235, 174);
             this.bunifuLabel20.Name = "bunifuLabel20";
             this.bunifuLabel20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel20.Size = new System.Drawing.Size(52, 16);
+            this.bunifuLabel20.Size = new System.Drawing.Size(60, 16);
             this.bunifuLabel20.TabIndex = 36;
-            this.bunifuLabel20.Text = "Route ID";
+            this.bunifuLabel20.Text = "RFID Now";
             this.bunifuLabel20.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel20.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1283,9 +1283,9 @@
             this.bunifuLabel19.Location = new System.Drawing.Point(235, 121);
             this.bunifuLabel19.Name = "bunifuLabel19";
             this.bunifuLabel19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel19.Size = new System.Drawing.Size(63, 16);
+            this.bunifuLabel19.Size = new System.Drawing.Size(52, 16);
             this.bunifuLabel19.TabIndex = 35;
-            this.bunifuLabel19.Text = "Mission ID";
+            this.bunifuLabel19.Text = "Route ID";
             this.bunifuLabel19.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel19.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1383,16 +1383,16 @@
             this.detailPanel2.BorderThickness = 0;
             this.detailPanel2.Controls.Add(this.labelDisconnect1);
             this.detailPanel2.Controls.Add(this.bunifuLabel35);
-            this.detailPanel2.Controls.Add(this.bunifuLabel21);
+            this.detailPanel2.Controls.Add(this.rfidLabel2);
             this.detailPanel2.Controls.Add(this.bunifuPanel3);
             this.detailPanel2.Controls.Add(this.rearSensor2);
             this.detailPanel2.Controls.Add(this.bunifuLabel38);
             this.detailPanel2.Controls.Add(this.bunifuPanel4);
-            this.detailPanel2.Controls.Add(this.bunifuLabel22);
+            this.detailPanel2.Controls.Add(this.routeLabel2);
             this.detailPanel2.Controls.Add(this.frontSensor2);
-            this.detailPanel2.Controls.Add(this.bunifuLabel23);
-            this.detailPanel2.Controls.Add(this.bunifuLabel24);
-            this.detailPanel2.Controls.Add(this.bunifuLabel15);
+            this.detailPanel2.Controls.Add(this.whoursLabel2);
+            this.detailPanel2.Controls.Add(this.cycleLabel2);
+            this.detailPanel2.Controls.Add(this.EMG2Label);
             this.detailPanel2.Controls.Add(this.bunifuLabel26);
             this.detailPanel2.Controls.Add(this.agvInfo2);
             this.detailPanel2.Controls.Add(this.bunifuLabel30);
@@ -1437,21 +1437,21 @@
             this.bunifuLabel35.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel35.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel21
+            // rfidLabel2
             // 
-            this.bunifuLabel21.AllowParentOverrides = false;
-            this.bunifuLabel21.AutoEllipsis = false;
-            this.bunifuLabel21.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel21.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel21.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel21.Location = new System.Drawing.Point(235, 190);
-            this.bunifuLabel21.Name = "bunifuLabel21";
-            this.bunifuLabel21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel21.Size = new System.Drawing.Size(26, 23);
-            this.bunifuLabel21.TabIndex = 40;
-            this.bunifuLabel21.Text = "00";
-            this.bunifuLabel21.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel21.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.rfidLabel2.AllowParentOverrides = false;
+            this.rfidLabel2.AutoEllipsis = false;
+            this.rfidLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.rfidLabel2.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rfidLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.rfidLabel2.Location = new System.Drawing.Point(235, 190);
+            this.rfidLabel2.Name = "rfidLabel2";
+            this.rfidLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.rfidLabel2.Size = new System.Drawing.Size(26, 23);
+            this.rfidLabel2.TabIndex = 40;
+            this.rfidLabel2.Text = "00";
+            this.rfidLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.rfidLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuPanel3
             // 
@@ -1599,21 +1599,21 @@
             this.bunifuLabel39.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.bunifuLabel39.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel22
+            // routeLabel2
             // 
-            this.bunifuLabel22.AllowParentOverrides = false;
-            this.bunifuLabel22.AutoEllipsis = false;
-            this.bunifuLabel22.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel22.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel22.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel22.Location = new System.Drawing.Point(235, 139);
-            this.bunifuLabel22.Name = "bunifuLabel22";
-            this.bunifuLabel22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel22.Size = new System.Drawing.Size(26, 23);
-            this.bunifuLabel22.TabIndex = 41;
-            this.bunifuLabel22.Text = "00";
-            this.bunifuLabel22.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel22.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.routeLabel2.AllowParentOverrides = false;
+            this.routeLabel2.AutoEllipsis = false;
+            this.routeLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.routeLabel2.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.routeLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.routeLabel2.Location = new System.Drawing.Point(235, 139);
+            this.routeLabel2.Name = "routeLabel2";
+            this.routeLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.routeLabel2.Size = new System.Drawing.Size(26, 23);
+            this.routeLabel2.TabIndex = 41;
+            this.routeLabel2.Text = "00";
+            this.routeLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.routeLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // frontSensor2
             // 
@@ -1627,54 +1627,54 @@
             this.frontSensor2.TabStop = false;
             this.frontSensor2.Visible = false;
             // 
-            // bunifuLabel23
+            // whoursLabel2
             // 
-            this.bunifuLabel23.AllowParentOverrides = false;
-            this.bunifuLabel23.AutoEllipsis = false;
-            this.bunifuLabel23.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel23.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel23.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel23.Location = new System.Drawing.Point(235, 87);
-            this.bunifuLabel23.Name = "bunifuLabel23";
-            this.bunifuLabel23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel23.Size = new System.Drawing.Size(26, 23);
-            this.bunifuLabel23.TabIndex = 45;
-            this.bunifuLabel23.Text = "00";
-            this.bunifuLabel23.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel23.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.whoursLabel2.AllowParentOverrides = false;
+            this.whoursLabel2.AutoEllipsis = false;
+            this.whoursLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.whoursLabel2.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.whoursLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.whoursLabel2.Location = new System.Drawing.Point(235, 87);
+            this.whoursLabel2.Name = "whoursLabel2";
+            this.whoursLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.whoursLabel2.Size = new System.Drawing.Size(26, 23);
+            this.whoursLabel2.TabIndex = 45;
+            this.whoursLabel2.Text = "00";
+            this.whoursLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.whoursLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel24
+            // cycleLabel2
             // 
-            this.bunifuLabel24.AllowParentOverrides = false;
-            this.bunifuLabel24.AutoEllipsis = false;
-            this.bunifuLabel24.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel24.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel24.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel24.Location = new System.Drawing.Point(235, 36);
-            this.bunifuLabel24.Name = "bunifuLabel24";
-            this.bunifuLabel24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel24.Size = new System.Drawing.Size(26, 23);
-            this.bunifuLabel24.TabIndex = 38;
-            this.bunifuLabel24.Text = "00";
-            this.bunifuLabel24.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel24.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.cycleLabel2.AllowParentOverrides = false;
+            this.cycleLabel2.AutoEllipsis = false;
+            this.cycleLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.cycleLabel2.Font = new System.Drawing.Font("Inter Semi Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cycleLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.cycleLabel2.Location = new System.Drawing.Point(235, 36);
+            this.cycleLabel2.Name = "cycleLabel2";
+            this.cycleLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cycleLabel2.Size = new System.Drawing.Size(26, 23);
+            this.cycleLabel2.TabIndex = 38;
+            this.cycleLabel2.Text = "00";
+            this.cycleLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.cycleLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel15
+            // EMG2Label
             // 
-            this.bunifuLabel15.AllowParentOverrides = false;
-            this.bunifuLabel15.AutoEllipsis = false;
-            this.bunifuLabel15.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel15.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
-            this.bunifuLabel15.Location = new System.Drawing.Point(58, 220);
-            this.bunifuLabel15.Name = "bunifuLabel15";
-            this.bunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel15.Size = new System.Drawing.Size(198, 25);
-            this.bunifuLabel15.TabIndex = 30;
-            this.bunifuLabel15.Text = "EMERGENCY STOP";
-            this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel15.Visible = false;
+            this.EMG2Label.AllowParentOverrides = false;
+            this.EMG2Label.AutoEllipsis = false;
+            this.EMG2Label.CursorType = System.Windows.Forms.Cursors.Default;
+            this.EMG2Label.Font = new System.Drawing.Font("Inter Semi Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.EMG2Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(68)))), ((int)(((byte)(60)))));
+            this.EMG2Label.Location = new System.Drawing.Point(58, 220);
+            this.EMG2Label.Name = "EMG2Label";
+            this.EMG2Label.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.EMG2Label.Size = new System.Drawing.Size(198, 25);
+            this.EMG2Label.TabIndex = 30;
+            this.EMG2Label.Text = "EMERGENCY STOP";
+            this.EMG2Label.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.EMG2Label.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.EMG2Label.Visible = false;
             // 
             // bunifuLabel26
             // 
@@ -1686,9 +1686,9 @@
             this.bunifuLabel26.Location = new System.Drawing.Point(235, 174);
             this.bunifuLabel26.Name = "bunifuLabel26";
             this.bunifuLabel26.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel26.Size = new System.Drawing.Size(52, 16);
+            this.bunifuLabel26.Size = new System.Drawing.Size(60, 16);
             this.bunifuLabel26.TabIndex = 44;
-            this.bunifuLabel26.Text = "Route ID";
+            this.bunifuLabel26.Text = "RFID Now";
             this.bunifuLabel26.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel26.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1713,9 +1713,9 @@
             this.bunifuLabel30.Location = new System.Drawing.Point(235, 121);
             this.bunifuLabel30.Name = "bunifuLabel30";
             this.bunifuLabel30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel30.Size = new System.Drawing.Size(63, 16);
+            this.bunifuLabel30.Size = new System.Drawing.Size(52, 16);
             this.bunifuLabel30.TabIndex = 43;
-            this.bunifuLabel30.Text = "Mission ID";
+            this.bunifuLabel30.Text = "Route ID";
             this.bunifuLabel30.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel30.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -2260,11 +2260,11 @@
             this.giveUpButton.ButtonTextMarginLeft = 0;
             this.giveUpButton.ColorContrastOnClick = 45;
             this.giveUpButton.ColorContrastOnHover = 45;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.giveUpButton.CustomizableEdges = borderEdges2;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.giveUpButton.CustomizableEdges = borderEdges8;
             this.giveUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.giveUpButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.giveUpButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2351,11 +2351,11 @@
             this.trafficButton.ButtonTextMarginLeft = 0;
             this.trafficButton.ColorContrastOnClick = 45;
             this.trafficButton.ColorContrastOnHover = 45;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.trafficButton.CustomizableEdges = borderEdges1;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.trafficButton.CustomizableEdges = borderEdges7;
             this.trafficButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.trafficButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.trafficButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2802,7 +2802,7 @@
         private System.Windows.Forms.Timer timer1;
         private PictureBox agvInfo2;
         private PictureBox agvInfo1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel15;
+        private Bunifu.UI.WinForms.BunifuLabel EMG2Label;
         private Bunifu.UI.WinForms.BunifuLabel EMG1Label;
         private PictureBox pictureBox8;
         private PictureBox pictureBox7;
@@ -2815,13 +2815,13 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel18;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel17;
         public Bunifu.UI.WinForms.BunifuLabel rfidLabel1;
-        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel28;
-        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel27;
-        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel25;
-        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel21;
-        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel22;
-        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel23;
-        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel24;
+        public Bunifu.UI.WinForms.BunifuLabel routeLabel1;
+        public Bunifu.UI.WinForms.BunifuLabel whoursLabel1;
+        public Bunifu.UI.WinForms.BunifuLabel cycleLabel1;
+        public Bunifu.UI.WinForms.BunifuLabel rfidLabel2;
+        public Bunifu.UI.WinForms.BunifuLabel routeLabel2;
+        public Bunifu.UI.WinForms.BunifuLabel whoursLabel2;
+        public Bunifu.UI.WinForms.BunifuLabel cycleLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel26;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel30;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel32;

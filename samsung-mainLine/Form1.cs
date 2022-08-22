@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Threading;
 using System.IO;
@@ -8,12 +10,26 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Text;
 using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Net;
+using System.IO;
+//using GroupDocs.Parser.Data;
+//using GroupDocs.Parser.Options;
+//using GroupDocs.Parser;
+using System.Net.Http;
+using System.Threading;
+using System.Resources;
+
 
 namespace samsung_mainLine
 {
     public partial class Form1 : Form
     {
-
         public List<AGVCallingModel> AGVData = new();
         public List<AGVErrorModel> AGVError = new();
         public int counts;
@@ -40,6 +56,7 @@ namespace samsung_mainLine
         public string trafficJob;
         public string jobData;
         public string SMDdata;
+        public int waitingTime = 0, moveCnt = 0;
 
         public string url = "http://10.10.100.100:8000/req";
 
@@ -48,6 +65,7 @@ namespace samsung_mainLine
             double scaled = minScale + (double)(value - min) / (max - min) * (maxScale - minScale);
             return scaled;
         }
+        [Obsolete]
         public Form1()
         {   
             InitializeComponent();
@@ -426,6 +444,8 @@ namespace samsung_mainLine
                 {
                     double power = data.msg[i][7];
                     double rfidNow = data.msg[i][33];
+                    double routeNow = data.msg[i][31];
+                    Console.WriteLine(power);
 
                     //"车" Read RFID and detail Car activity
                     double dataMovement = data.msg[i][15], dataRute = data.msg[i][31], dataRfid = data.msg[i][33], readAddress = data.msg[i][0];
@@ -436,7 +456,7 @@ namespace samsung_mainLine
 
                     int agvRfid = (int)dataRfid;
 
-                    if (readAddress == 1 && readType == "车" && i == 0)
+                    if (readAddress == 1 && readType == "车")
                     {
                         if (dataMovement == 0) { agvStatus = "STOP"; agvColor = Color.Yellow; }
                         else if (dataMovement == 1) { agvStatus = "PAUSE"; agvColor = Color.Yellow; }
@@ -448,6 +468,7 @@ namespace samsung_mainLine
                         AGV1StatusLabel.Text = agvStatus;
 
                         rfidLabel1.Text = rfidNow.ToString();
+                        routeLabel1.Text = routeNow.ToString();
 
                         batteryLevel1.Value = (int)power;
 
@@ -464,7 +485,7 @@ namespace samsung_mainLine
                         bool verticalTarget = arrayRFIDVertical.Contains(searchRFID);
                     }
 
-                    else if (readAddress == 2 && readType == "车" && i == 1)
+                    if (readAddress == 2 && readType == "车")
                     {
                         if (dataMovement == 0) { agv2Status = "STOP"; agvColor = Color.Yellow; }
                         else if (dataMovement == 1) { agv2Status = "PAUSE"; agvColor = Color.Yellow; }
@@ -474,7 +495,17 @@ namespace samsung_mainLine
                         agv2Vertical.BackColor = agvColor;
                         agv2Horizontal.BackColor = agvColor;
                         AGV2StatusLabel.Text = agv2Status;
-                        batteryLevel2.Value = (int)power;
+
+                        if (data.msg.Count == 2)
+                        {
+                            double power2 = data.msg[1][7];
+                            batteryLevel2.Value = (int)power2;
+                        }
+                        else
+                        {
+                            batteryLevel2.Value = (int)power;
+                        }
+                        
 
                         if (batValue2.InvokeRequired)
                         {
@@ -496,10 +527,11 @@ namespace samsung_mainLine
 
                 for (int i = 0; i < data.msg.Count; i++)
                 {
-                    agvAddress = data.msg[0][3]; 
-                    agvAddress2 = data.msg[0][3];
-                    offTime = data.msg[0][6];
-                    offTime2 = data.msg[0][6];
+                    agvAddress = data.msg[i][3]; 
+                    agvAddress2 = data.msg[i][3];
+                    offTime = data.msg[0][i];
+                    offTime2 = data.msg[i][6];
+
                     if ((agvAddress == 1) && readType == "车" && offTime >= 10)
                     {
                         agvState = "OFF";
@@ -509,6 +541,7 @@ namespace samsung_mainLine
                         AGV1StateLabel.Text = agvState;
                         labelDisconnect.Text = disc;
                         labelDisconnect.Visible = true;
+                        detailPanel1.BackgroundColor = Color.FromArgb(255, 87, 38, 65);
                     }
                     else if (agvAddress == 1 && readType == "车" && offTime < 1)
                     {
@@ -517,16 +550,18 @@ namespace samsung_mainLine
                         AGV1NameLabel.Text = agvName;
                         AGV1StateLabel.Text = "ON";
                         labelDisconnect.Visible = false;
+                        detailPanel1.BackgroundColor = Color.FromArgb(255, 50, 50, 71);
                     }
                     else
                     {
                         agvState = "OFF";
                         AGV1NameLabel.Text = agvName;
-                        string disc = "AGV-1" + " DISCONNECTED but strange";
+                        string disc = "AGV-1" + " DISCONNECTED";
                         Console.WriteLine(disc);
                         AGV1StateLabel.Text = agvState;
                         labelDisconnect.Text = disc;
                         labelDisconnect.Visible = true;
+                        detailPanel1.BackgroundColor = Color.FromArgb(255, 87, 38, 65);
                     }
                     if ((agvAddress2 == 2) && readType == "车" && offTime2 >= 10)
                     {
@@ -545,6 +580,7 @@ namespace samsung_mainLine
                         AGV2NameLabel.Text = agv2Name;
                         AGV2StateLabel.Text = "ON";
                         labelDisconnect1.Visible = false;
+                        detailPanel2.BackgroundColor = Color.FromArgb(255, 50, 50, 71);
                     }
                     else
                     {
@@ -563,23 +599,24 @@ namespace samsung_mainLine
                 errorTime = DateTime.Now.ToString();
                 errorTime2 = DateTime.Now.ToString();
                 ResponseData2 datanonArray = await APInonArray("devC.deviceDic[1].optionsLoader.load(carLib.RAM.DEV.BTN_EMC)");
-                ResponseData2 datanonArray2 = await APInonArray("devC.deviceDic[1].optionsLoader.load(carLib.RAM.DEV.BTN_EMC)");
+                ResponseData2 datanonArray2 = await APInonArray("devC.deviceDic[2].optionsLoader.load(carLib.RAM.DEV.BTN_EMC)");
 
-                Console.WriteLine("KONDISI EMG SEKARANG: {0}", datanonArray.msg[1]);
+                //Console.WriteLine("KONDISI EMG SEKARANG: {0}", datanonArray.msg[1]);
 
                 try
                 {
-                    btnState = datanonArray.msg[1];
+                    //btnState = datanonArray.msg[1];
                 }
-                catch
+                catch (NullReferenceException)
                 {
                     btnState = 1;
                 }
+
                 try
                 {
                     btnState2 = datanonArray2.msg[1];
                 }
-                catch
+                catch (NullReferenceException)
                 {
                     btnState2 = 1;
                 }
@@ -618,12 +655,16 @@ namespace samsung_mainLine
                         errorCode2 = "EMC STOP";
                         agv1Horizontal.BackColor = Color.Red;
                         agv1Vertical.BackColor = Color.Red;
+                        detailPanel2.BackgroundColor = Color.FromArgb(255, 87, 38, 65);
+                        EMG2Label.Visible = true;
                     }
                     else if (btnState2 == 1)
                     {
                         errorCode2 = "-";
                         agv1Vertical.BackColor = agvColor;
                         agv1Horizontal.BackColor = agvColor;
+                        detailPanel2.BackgroundColor = Color.FromArgb(255, 50, 50, 71);
+                        EMG2Label.Visible = false;
                     }
                 }
                 else
@@ -633,11 +674,11 @@ namespace samsung_mainLine
                 }
 
                 ResponseData2 nonArrayOBS = await APInonArray("devC.deviceDic[1].optionsLoader.load(carLib.RAM.DEV.OBS)");
-                ResponseData2 nonArrayOBS2 = await APInonArray("devC.deviceDic[1].optionsLoader.load(carLib.RAM.DEV.OBS)");
+                ResponseData2 nonArrayOBS2 = await APInonArray("devC.deviceDic[2].optionsLoader.load(carLib.RAM.DEV.OBS)");
 
                 try
                 {
-                    obsState = nonArrayOBS.msg[2];
+                    //obsState = nonArrayOBS.msg[2];
                 }
                 catch (NullReferenceException)
                 {
@@ -646,7 +687,7 @@ namespace samsung_mainLine
 
                 try
                 {
-                    obsState2 = nonArrayOBS2.msg[2];
+                    //obsState2 = nonArrayOBS2.msg[2];
                 }
                 catch (NullReferenceException)
                 {
@@ -721,6 +762,11 @@ namespace samsung_mainLine
             //List<AGVErrorModel> errorData = new();
             //missionTime = DateTime.Now.ToString("HH:mm:ss");
             //timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");   
+        }
+
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            waitingTime += 1;
         }
 
         public class AGVCallingModel
