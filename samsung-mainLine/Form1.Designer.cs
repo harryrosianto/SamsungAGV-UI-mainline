@@ -32,13 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -68,9 +68,9 @@
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.standbyPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.timerData2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.timerLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
             this.detailPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.labelDisconnect = new Bunifu.UI.WinForms.BunifuLabel();
@@ -397,11 +397,11 @@
             this.timerButton.ButtonTextMarginLeft = 0;
             this.timerButton.ColorContrastOnClick = 45;
             this.timerButton.ColorContrastOnHover = 45;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.timerButton.CustomizableEdges = borderEdges12;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.timerButton.CustomizableEdges = borderEdges7;
             this.timerButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.timerButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.timerButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -488,11 +488,11 @@
             this.homeButton.ButtonTextMarginLeft = 0;
             this.homeButton.ColorContrastOnClick = 45;
             this.homeButton.ColorContrastOnHover = 45;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.homeButton.CustomizableEdges = borderEdges11;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.homeButton.CustomizableEdges = borderEdges8;
             this.homeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.homeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.homeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -559,7 +559,6 @@
             this.homeButton.TextMarginLeft = 0;
             this.homeButton.TextPadding = new System.Windows.Forms.Padding(0);
             this.homeButton.UseDefaultRadiusAndThickness = true;
-            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // modeButton
             // 
@@ -579,11 +578,11 @@
             this.modeButton.ButtonTextMarginLeft = 0;
             this.modeButton.ColorContrastOnClick = 45;
             this.modeButton.ColorContrastOnHover = 45;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.modeButton.CustomizableEdges = borderEdges10;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.modeButton.CustomizableEdges = borderEdges9;
             this.modeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.modeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -670,11 +669,11 @@
             this.logsButton.ButtonTextMarginLeft = 0;
             this.logsButton.ColorContrastOnClick = 45;
             this.logsButton.ColorContrastOnHover = 45;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.logsButton.CustomizableEdges = borderEdges9;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.logsButton.CustomizableEdges = borderEdges10;
             this.logsButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.logsButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logsButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -942,9 +941,9 @@
             this.standbyPanel2.BorderRadius = 10;
             this.standbyPanel2.BorderThickness = 0;
             this.standbyPanel2.Controls.Add(this.bunifuLabel7);
-            this.standbyPanel2.Controls.Add(this.bunifuLabel8);
+            this.standbyPanel2.Controls.Add(this.timerData2);
             this.standbyPanel2.Controls.Add(this.bunifuLabel9);
-            this.standbyPanel2.Controls.Add(this.bunifuLabel10);
+            this.standbyPanel2.Controls.Add(this.timerLabel2);
             this.standbyPanel2.Location = new System.Drawing.Point(1213, 888);
             this.standbyPanel2.Name = "standbyPanel2";
             this.standbyPanel2.ShowBorders = true;
@@ -967,21 +966,21 @@
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel8
+            // timerData2
             // 
-            this.bunifuLabel8.AllowParentOverrides = false;
-            this.bunifuLabel8.AutoEllipsis = false;
-            this.bunifuLabel8.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel8.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel8.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel8.Location = new System.Drawing.Point(83, 8);
-            this.bunifuLabel8.Name = "bunifuLabel8";
-            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(6, 16);
-            this.bunifuLabel8.TabIndex = 23;
-            this.bunifuLabel8.Text = "-";
-            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.timerData2.AllowParentOverrides = false;
+            this.timerData2.AutoEllipsis = false;
+            this.timerData2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.timerData2.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.timerData2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.timerData2.Location = new System.Drawing.Point(83, 8);
+            this.timerData2.Name = "timerData2";
+            this.timerData2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.timerData2.Size = new System.Drawing.Size(6, 16);
+            this.timerData2.TabIndex = 23;
+            this.timerData2.Text = "-";
+            this.timerData2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.timerData2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel9
             // 
@@ -999,21 +998,21 @@
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel10
+            // timerLabel2
             // 
-            this.bunifuLabel10.AllowParentOverrides = false;
-            this.bunifuLabel10.AutoEllipsis = false;
-            this.bunifuLabel10.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel10.Font = new System.Drawing.Font("Inter Semi Bold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bunifuLabel10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuLabel10.Location = new System.Drawing.Point(18, 35);
-            this.bunifuLabel10.Name = "bunifuLabel10";
-            this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(142, 58);
-            this.bunifuLabel10.TabIndex = 19;
-            this.bunifuLabel10.Text = "00:00";
-            this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.timerLabel2.AllowParentOverrides = false;
+            this.timerLabel2.AutoEllipsis = false;
+            this.timerLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.timerLabel2.Font = new System.Drawing.Font("Inter Semi Bold", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.timerLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.timerLabel2.Location = new System.Drawing.Point(18, 35);
+            this.timerLabel2.Name = "timerLabel2";
+            this.timerLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.timerLabel2.Size = new System.Drawing.Size(142, 58);
+            this.timerLabel2.TabIndex = 19;
+            this.timerLabel2.Text = "00:00";
+            this.timerLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.timerLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel11
             // 
@@ -2260,11 +2259,11 @@
             this.giveUpButton.ButtonTextMarginLeft = 0;
             this.giveUpButton.ColorContrastOnClick = 45;
             this.giveUpButton.ColorContrastOnHover = 45;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.giveUpButton.CustomizableEdges = borderEdges8;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.giveUpButton.CustomizableEdges = borderEdges11;
             this.giveUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.giveUpButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.giveUpButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2351,11 +2350,11 @@
             this.trafficButton.ButtonTextMarginLeft = 0;
             this.trafficButton.ColorContrastOnClick = 45;
             this.trafficButton.ColorContrastOnHover = 45;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.trafficButton.CustomizableEdges = borderEdges7;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.trafficButton.CustomizableEdges = borderEdges12;
             this.trafficButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.trafficButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.trafficButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2422,6 +2421,7 @@
             this.trafficButton.TextMarginLeft = 0;
             this.trafficButton.TextPadding = new System.Windows.Forms.Padding(0);
             this.trafficButton.UseDefaultRadiusAndThickness = true;
+            this.trafficButton.Click += new System.EventHandler(this.trafficButton_Click);
             // 
             // giveIndicator
             // 
@@ -2790,9 +2790,9 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
         private Bunifu.UI.WinForms.BunifuPanel standbyPanel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
+        private Bunifu.UI.WinForms.BunifuLabel timerData2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
-        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
+        public Bunifu.UI.WinForms.BunifuLabel timerLabel2;
         private Bunifu.UI.WinForms.BunifuPanel detailPanel2;
         private Bunifu.UI.WinForms.BunifuPanel detailPanel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel7;

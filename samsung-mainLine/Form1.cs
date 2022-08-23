@@ -15,7 +15,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
+
 using System.Windows.Forms;
+
 using System.Net;
 using System.IO;
 //using GroupDocs.Parser.Data;
@@ -26,10 +28,14 @@ using System.Threading;
 using System.Resources;
 
 
+
 namespace samsung_mainLine
 {
     public partial class Form1 : Form
     {
+        System.Drawing.Point location = System.Drawing.Point.Empty;
+        private System.Drawing.Point _mouseLoc;
+        private static string m_exePath = string.Empty;
         public List<AGVCallingModel> AGVData = new();
         public List<AGVErrorModel> AGVError = new();
         public int counts;
@@ -58,6 +64,8 @@ namespace samsung_mainLine
         public string SMDdata;
         public int waitingTime = 0, moveCnt = 0;
 
+
+
         public string url = "http://10.10.100.100:8000/req";
 
         private double batScale(double value, double min, double max, double minScale, double maxScale)
@@ -84,8 +92,9 @@ namespace samsung_mainLine
             trafficButton.MouseLeave += trafficButton_MouseLeave;
 
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+            timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
             timerData.Text = Convert.ToString(counts);
-
+            timerData2.Text = Convert.ToString(counts);
         }
         private async Task<ResponseData> API(string command)
         {
@@ -448,13 +457,13 @@ namespace samsung_mainLine
                     Console.WriteLine(power);
 
                     //"车" Read RFID and detail Car activity
-                    double dataMovement = data.msg[i][15], dataRute = data.msg[i][31], dataRfid = data.msg[i][33], readAddress = data.msg[i][0];
+                    double dataMovement = data.msg[i][15], readAddress = data.msg[i][0];
                     readType = data.msg[i][2];
-                    string searchRFID = dataRfid.ToString();
+                    string searchRFID = rfidNow.ToString();
 
-                    agvRoute = dataRute.ToString();
+                    agvRoute = routeNow.ToString();
 
-                    int agvRfid = (int)dataRfid;
+                    int agvRfid = (int)rfidNow;
 
                     if (readAddress == 1 && readType == "车")
                     {
@@ -483,6 +492,16 @@ namespace samsung_mainLine
 
                         bool horizontalTarget = arrayRFIDHorizontal.Contains(searchRFID);
                         bool verticalTarget = arrayRFIDVertical.Contains(searchRFID);
+
+                        if (rfidNow == 92)
+                        {
+                            timer1 = new System.Windows.Forms.Timer();
+                            timer1.Tick += new EventHandler(timer1_Tick);
+                            timer1.Interval = 1000; // 1 second
+                            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+                            timer1.Start();
+                        }
+
                     }
 
                     if (readAddress == 2 && readType == "车")
@@ -499,10 +518,19 @@ namespace samsung_mainLine
                         if (data.msg.Count == 2)
                         {
                             double power2 = data.msg[1][7];
+                            double rfidNow2 = data.msg[1][33];
+                            double routeNow2 = data.msg[1][31];
+
+                            rfidLabel2.Text = rfidNow2.ToString();
+                            routeLabel2.Text = routeNow2.ToString();
+
                             batteryLevel2.Value = (int)power2;
                         }
                         else
                         {
+                            rfidLabel2.Text = rfidNow.ToString();
+                            routeLabel2.Text = routeNow.ToString();
+
                             batteryLevel2.Value = (int)power;
                         }
                         
@@ -513,6 +541,15 @@ namespace samsung_mainLine
                             return;
                         }
                         batValue2.Text = power.ToString();
+
+                        if (rfidNow == 91)
+                        {
+                            timer1 = new System.Windows.Forms.Timer();
+                            timer1.Tick += new EventHandler(timer1_Tick);
+                            timer1.Interval = 1000; // 1 second
+                            timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
+                            timer1.Start();
+                        }
                     }
                 }
                     
@@ -532,7 +569,10 @@ namespace samsung_mainLine
                     offTime = data.msg[0][i];
                     offTime2 = data.msg[i][6];
 
-                    if ((agvAddress == 1) && readType == "车" && offTime >= 10)
+                    Console.WriteLine(agvAddress);
+                    Console.WriteLine(readType);
+
+                    if (agvAddress == 1 && readType == "车" && offTime >= 10)
                     {
                         agvState = "OFF";
                         string disc = "AGV-1" + " DISCONNECTED";
@@ -556,7 +596,7 @@ namespace samsung_mainLine
                     {
                         agvState = "OFF";
                         AGV1NameLabel.Text = agvName;
-                        string disc = "AGV-1" + " DISCONNECTED";
+                        string disc = "AGV-1" + " DISCONNECTED but Strange";
                         Console.WriteLine(disc);
                         AGV1StateLabel.Text = agvState;
                         labelDisconnect.Text = disc;
@@ -601,11 +641,11 @@ namespace samsung_mainLine
                 ResponseData2 datanonArray = await APInonArray("devC.deviceDic[1].optionsLoader.load(carLib.RAM.DEV.BTN_EMC)");
                 ResponseData2 datanonArray2 = await APInonArray("devC.deviceDic[2].optionsLoader.load(carLib.RAM.DEV.BTN_EMC)");
 
-                //Console.WriteLine("KONDISI EMG SEKARANG: {0}", datanonArray.msg[1]);
+                Console.WriteLine("KONDISI EMG SEKARANG: {0}", btnState2);
 
                 try
                 {
-                    //btnState = datanonArray.msg[1];
+                    btnState = datanonArray.msg[1];
                 }
                 catch (NullReferenceException)
                 {
@@ -678,7 +718,7 @@ namespace samsung_mainLine
 
                 try
                 {
-                    //obsState = nonArrayOBS.msg[2];
+                    obsState = nonArrayOBS.msg[2];
                 }
                 catch (NullReferenceException)
                 {
@@ -687,7 +727,7 @@ namespace samsung_mainLine
 
                 try
                 {
-                    //obsState2 = nonArrayOBS2.msg[2];
+                    obsState2 = nonArrayOBS2.msg[2];
                 }
                 catch (NullReferenceException)
                 {
@@ -801,30 +841,45 @@ namespace samsung_mainLine
             //flags = 1;
             counts = Convert.ToInt32(FormTimer.secondsValue);
             timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+            timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
             timerData.Text = FormTimer.secondsValue;
+            timerData2.Text = FormTimer.secondsValue;
             //if (flags == 1)
             //{
             //    bunifuPanel3.BackColor = Color.Yellow;
             //}
         }
-        public void homeButton_Click(object sender, EventArgs e)
-        {
-            timer1 = new System.Windows.Forms.Timer();
-            timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Interval = 1000; // 1 second
-            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
-            timer1.Start();
-        }
+        //public void homeButton_Click(object sender, EventArgs e)
+        //{
+        //    timer1 = new System.Windows.Forms.Timer();
+        //    timer1.Tick += new EventHandler(timer1_Tick);
+        //    timer1.Interval = 1000; // 1 second
+        //    timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+        //    timer1.Start();
+        //}
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private async void trafficButton_Click(object sender, EventArgs e)
+        {
+            await API("missionC.netMissionAdd('CLEAR_TRAFFIC')");
+        }
+    
+        private async void timer1_Tick(object sender, EventArgs e)
         {
             counts--;
             if (counts == 0)
             {
                 timer1.Stop();
+                try
+                {
+                    await API("missionC.netMissionAdd('TEST_TIMER')");
+                }
+                catch (Newtonsoft.Json.JsonSerializationException)
+                {
+                    Console.WriteLine("Start Mission");
+                }
             }
-            Console.WriteLine(flags);
-            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+            //Console.WriteLine(flags);
+            //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
         }
 
         private void modeButton_Click(object sender, EventArgs e)
