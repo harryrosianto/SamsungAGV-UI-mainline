@@ -63,6 +63,9 @@ namespace samsung_mainLine
         public string jobData;
         public string SMDdata;
         public int waitingTime = 0, moveCnt = 0;
+        public double rfid2, route2;
+        public string chargingTime, timeNow;
+        public int cycleCount = 0, workHour = 0;
 
 
 
@@ -91,8 +94,8 @@ namespace samsung_mainLine
             trafficButton.MouseHover += trafficButton_MouseHover;
             trafficButton.MouseLeave += trafficButton_MouseLeave;
 
-            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
-            timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
+            //timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+            //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
             timerData.Text = Convert.ToString(counts);
             timerData2.Text = Convert.ToString(counts);
         }
@@ -302,15 +305,25 @@ namespace samsung_mainLine
                                                    "BRANCHHOME","RELEASE2","STRAIGHTLINE2","TRAFFICHOME2","STRAIGHTLINE2","STRAIGHTLINE2","STRAIGHTLINE2","STRAIGHTLINE2", // --- 8rfid
                                                    "SMD07","SMD07","SMD08","SMD08","SMD09","SMD09","SMD10","SMD10","SMD11","SMD11","SMD12","SMD12","ENDLINE"};
 
-            string[] arrayRFID = new string[] { "128","129","126","127","46","131","13","130",                                                      //HOME to WIP --- 8rfid
-                                                "125","124","123","122","121","120","2",                                                            //WIP to LINE --- 7rfid
-                                                "119","1","117","11","56","54","53","52","31","32",                                                 //to Line 1-6 --- 10rfid
-                                                "33", "34", "15","16","37","38","39","40","41","42","43","44","8",                                  //Line 1-6 --- 13rfid
-                                                "30","118","101","116","48","49","102","103",                                                       //to Line 7-12 --- 8rfid
-                                                "104","105","106","107","108,","109","110","111","112","113","114","115" ,"8"};                     //Line 7-12 --- 13rfid
+            string[] arrayRFID = new string[] { "501","502","503","504","505",                                                              
+                                                "601","602","603","604","605","606",
+                                                "200","201","202","203","204","205","206","207","208","209","210","211","212","213",
+                                                "200","2011","2021","2031","2041","2051","2061","207","2081","2091","2101","2111","2121","213",
+                                                "100","101","102","103","104","105","106","107","108","109","110","111","112",
+                                                "1031","1091",
+                                                "301","302","303","304",
+                                                "401","402","403","404"};             
 
-            string[] arrayRFIDHorizontal = new string[] { "128", "129", "126", "127", "119", "1", "117", "11", "56", "54", "53", "52", "31", "32", "30", "118", "101", "116", "48", "49", "102" };
-            string[] arrayRFIDVertical = new string[] { "46", "131", "13", "130", "33", "34", "15", "16", "37", "38", "39", "40", "41", "42", "43", "44", "8", "104", "105", "106", "107", "108,", "109", "110", "111", "112", "113", "114", "115", "8" };
+            string[] arrayRFIDHorizontal = new string[] { "501","502","503","504","505",
+                                                          "601","602","603","604","605","606",
+                                                          "201","202","203","204","205","206","207","208","209","210","211","212","213",
+                                                          "2011","2021","2031","2041","2051","2061","207","2081","2091","2101","2111","2121","213",
+                                                          "100",
+                                                          "1031","1091",
+                                                          "301","302","303","304",
+                                                          "401","402","403" };
+
+            string[] arrayRFIDVertical = new string[] { "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "404", "200" };
 
             ResponseData data = await API("missionC.missionGetActiveList()");
 
@@ -326,7 +339,7 @@ namespace samsung_mainLine
                     agvTime = UnixTimeStampToDateTime(data.msg[i][11]).ToString();
                     statusDelivery = data.msg[i][10];
                     jobId = data.msg[i][0];
-                    lastTIme = agvTime;
+                    lastTIme = agvTime;.s
                     SMDdata = data.msg[i][1].ToString();
                     jobData = data.msg[i][0].ToString();
 
@@ -421,6 +434,7 @@ namespace samsung_mainLine
                     else if (statusDelivery == "Õý³£½áÊø")
                     {
                         statusDelivery = "FINISH";
+                        cycleCount = cycleCount + 1;
                         AGVCallingModel temp = new AGVCallingModel(agvTime, AGVUniversalName, SMDdata + " (" + jobData + ")", statusDelivery);
                         showData.Add(temp);
                     }
@@ -493,13 +507,13 @@ namespace samsung_mainLine
                         bool horizontalTarget = arrayRFIDHorizontal.Contains(searchRFID);
                         bool verticalTarget = arrayRFIDVertical.Contains(searchRFID);
 
-                        if (rfidNow == 92)
+                        if (rfidNow == 501)
                         {
-                            timer1 = new System.Windows.Forms.Timer();
-                            timer1.Tick += new EventHandler(timer1_Tick);
-                            timer1.Interval = 1000; // 1 second
-                            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
-                            timer1.Start();
+                            //timer1 = new System.Windows.Forms.Timer();
+                            //timer1.Tick += new EventHandler(timer1_Tick);
+                            //timer1.Interval = 1000; // 1 second
+                            //timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
+                            //timer1.Start();
                         }
 
                     }
@@ -521,34 +535,219 @@ namespace samsung_mainLine
                             double rfidNow2 = data.msg[1][33];
                             double routeNow2 = data.msg[1][31];
 
-                            rfidLabel2.Text = rfidNow2.ToString();
-                            routeLabel2.Text = routeNow2.ToString();
+                            rfid2 = rfidNow2;
+                            route2 = routeNow2;
 
                             batteryLevel2.Value = (int)power2;
+
+                            if (batValue2.InvokeRequired)
+                            {
+                                batValue2.Invoke(new Action(callAPI));
+                                return;
+                            }
+                            batValue2.Text = power2.ToString();
                         }
                         else
                         {
-                            rfidLabel2.Text = rfidNow.ToString();
-                            routeLabel2.Text = routeNow.ToString();
+                            rfid2 = rfidNow;
+                            route2 = routeNow;
 
                             batteryLevel2.Value = (int)power;
-                        }
-                        
 
-                        if (batValue2.InvokeRequired)
-                        {
-                            batValue2.Invoke(new Action(callAPI));
-                            return;
+                            if (batValue2.InvokeRequired)
+                            {
+                                batValue2.Invoke(new Action(callAPI));
+                                return;
+                            }
+                            batValue2.Text = power.ToString();
                         }
-                        batValue2.Text = power.ToString();
 
-                        if (rfidNow == 91)
+                        rfidLabel2.Text = rfid2.ToString();
+                        routeLabel2.Text = route2.ToString();
+                        chargingTime = "11:40:00";
+                        timeNow = DateTime.Now.ToString();
+
+                        if (timeNow == chargingTime)
                         {
+                            try
+                            {
+                                await API("missionC.netMissionAdd('CHARGING')");
+                            }
+                            catch (Newtonsoft.Json.JsonSerializationException)
+                            {
+                                Console.WriteLine("Start Mission");
+                            }
+
                             timer1 = new System.Windows.Forms.Timer();
                             timer1.Tick += new EventHandler(timer1_Tick);
                             timer1.Interval = 1000; // 1 second
                             timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
                             timer1.Start();
+                        }
+
+                        if (rfid2 == 213 && route2 == 210)
+                        {
+                            try
+                            {
+                                await API("missionC.netMissionAdd('ROW_2')");
+                            }
+                            catch (Newtonsoft.Json.JsonSerializationException)
+                            {
+                                Console.WriteLine("Start Mission");
+                            }
+                            //timer1 = new System.Windows.Forms.Timer();
+                            //timer1.Tick += new EventHandler(timer1_Tick);
+                            //timer1.Interval = 1000; // 1 second
+                            //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
+                            //timer1.Start();
+                        }
+
+                        else if (rfid2 == 601)
+                        {
+                            agv2Horizontal.Left = rfid601.Left;
+                            agv2Horizontal.Top = rfid601.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 602)
+                        {
+                            agv2Horizontal.Left = rfid602.Left;
+                            agv2Horizontal.Top = rfid602.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 213)
+                        {
+                            agv2Horizontal.Left = rfid213.Left;
+                            agv2Horizontal.Top = rfid213.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 207)
+                        {
+                            agv2Horizontal.Left = rfid207.Left;
+                            agv2Horizontal.Top = rfid207.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 208)
+                        {
+                            agv2Horizontal.Left = rfid208.Left;
+                            agv2Horizontal.Top = rfid208.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 209)
+                        {
+                            agv2Horizontal.Left = rfid209.Left;
+                            agv2Horizontal.Top = rfid209.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 210)
+                        {
+                            agv2Horizontal.Left = rfid210.Left;
+                            agv2Horizontal.Top = rfid210.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 211)
+                        {
+                            agv2Horizontal.Left = rfid211.Left;
+                            agv2Horizontal.Top = rfid211.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 212)
+                        {
+                            agv2Horizontal.Left = rfid212.Left;
+                            agv2Horizontal.Top = rfid212.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 604)
+                        {
+                            agv2Horizontal.Left = rfid604.Left;
+                            agv2Horizontal.Top = rfid604.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 606)
+                        {
+                            agv2Horizontal.Left = rfid606.Left;
+                            agv2Horizontal.Top = rfid606.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 402)
+                        {
+                            agv2Horizontal.Left = rfid402.Left;
+                            agv2Horizontal.Top = rfid402.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 403)
+                        {
+                            agv2Horizontal.Left = rfid403.Left;
+                            agv2Horizontal.Top = rfid403.Top;
+                            agv2Horizontal.Visible = true;
+                            agv2Vertical.Visible = false;
+                        }
+                        else if (rfid2 == 200)
+                        {
+                            agv2Vertical.Left = rfid200.Left;
+                            agv2Vertical.Top = rfid200.Top;
+                            agv2Horizontal.Visible = false;
+                            agv2Vertical.Visible = true;
+                        }
+                        else if (rfid2 == 404)
+                        {
+                            agv2Vertical.Left = rfid404.Left;
+                            agv2Vertical.Top = rfid404.Top;
+                            agv2Horizontal.Visible = false;
+                            agv2Vertical.Visible = true;
+                        }
+                        else if (rfid2 == 107)
+                        {
+                            agv2Vertical.Left = rfid107.Left;
+                            agv2Vertical.Top = rfid107.Top;
+                            agv2Horizontal.Visible = false;
+                            agv2Vertical.Visible = true;
+                        }
+                        else if (rfid2 == 108)
+                        {
+                            agv2Vertical.Left = rfid108.Left;
+                            agv2Vertical.Top = rfid108.Top;
+                            agv2Horizontal.Visible = false;
+                            agv2Vertical.Visible = true;
+                        }
+                        else if (rfid2 == 109)
+                        {
+                            agv2Vertical.Left = rfid109.Left;
+                            agv2Vertical.Top = rfid109.Top;
+                            agv2Horizontal.Visible = false;
+                            agv2Vertical.Visible = true;
+                        }
+                        else if (rfid2 == 110)
+                        {
+                            agv2Vertical.Left = rfid110.Left;
+                            agv2Vertical.Top = rfid110.Top;
+                            agv2Horizontal.Visible = false;
+                            agv2Vertical.Visible = true;
+                        }
+                        else if (rfid2 == 111)
+                        {
+                            agv2Vertical.Left = rfid111.Left;
+                            agv2Vertical.Top = rfid111.Top;
+                            agv2Horizontal.Visible = false;
+                            agv2Vertical.Visible = true;
+                        }
+                        else if (rfid2 == 112)
+                        {
+                            agv2Vertical.Left = rfid112.Left;
+                            agv2Vertical.Top = rfid112.Top;
+                            agv2Horizontal.Visible = false;
+                            agv2Vertical.Visible = true;
                         }
                     }
                 }
@@ -849,14 +1048,18 @@ namespace samsung_mainLine
             //    bunifuPanel3.BackColor = Color.Yellow;
             //}
         }
-        //public void homeButton_Click(object sender, EventArgs e)
-        //{
-        //    timer1 = new System.Windows.Forms.Timer();
-        //    timer1.Tick += new EventHandler(timer1_Tick);
-        //    timer1.Interval = 1000; // 1 second
-        //    timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
-        //    timer1.Start();
-        //}
+
+        private void homeButton_DoubleClick(object sender, EventArgs e)
+        {
+            //timer2.Enabled = true;
+        }
+
+        public void homeButton_Click(object sender, EventArgs e)
+        {
+            timer2.Stop();
+        }
+
+
 
         private async void trafficButton_Click(object sender, EventArgs e)
         {
@@ -871,7 +1074,7 @@ namespace samsung_mainLine
                 timer1.Stop();
                 try
                 {
-                    await API("missionC.netMissionAdd('TEST_TIMER')");
+                    await API("missionC.netMissionAdd('ROW_2')");
                 }
                 catch (Newtonsoft.Json.JsonSerializationException)
                 {
@@ -880,6 +1083,12 @@ namespace samsung_mainLine
             }
             //Console.WriteLine(flags);
             //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            workHour++;
+            whoursLabel2.Text = TimeSpan.FromSeconds(workHour).ToString("mm\\:ss");
         }
 
         private void modeButton_Click(object sender, EventArgs e)

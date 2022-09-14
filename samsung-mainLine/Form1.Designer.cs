@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -124,6 +124,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.station8 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.agv1Vertical = new System.Windows.Forms.PictureBox();
             this.station7 = new Bunifu.UI.WinForms.BunifuPanel();
             this.station9 = new Bunifu.UI.WinForms.BunifuPanel();
             this.station10 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -149,7 +150,6 @@
             this.palette7 = new Bunifu.UI.WinForms.BunifuPanel();
             this.agv1Horizontal = new System.Windows.Forms.PictureBox();
             this.agv2Horizontal = new System.Windows.Forms.PictureBox();
-            this.agv1Vertical = new System.Windows.Forms.PictureBox();
             this.agv2Vertical = new System.Windows.Forms.PictureBox();
             this.giveUpButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.trafficButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -165,6 +165,37 @@
             this.AGV1NameLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.AGV2StateLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.AGV2NameLabel = new Bunifu.UI.WinForms.BunifuLabel();
+            this.rfid601 = new System.Windows.Forms.TextBox();
+            this.rfid602 = new System.Windows.Forms.TextBox();
+            this.rfid207 = new System.Windows.Forms.TextBox();
+            this.rfid208 = new System.Windows.Forms.TextBox();
+            this.rfid209 = new System.Windows.Forms.TextBox();
+            this.rfid210 = new System.Windows.Forms.TextBox();
+            this.rfid211 = new System.Windows.Forms.TextBox();
+            this.rfid212 = new System.Windows.Forms.TextBox();
+            this.rfid604 = new System.Windows.Forms.TextBox();
+            this.rfid606 = new System.Windows.Forms.TextBox();
+            this.rfid402 = new System.Windows.Forms.TextBox();
+            this.rfid403 = new System.Windows.Forms.TextBox();
+            this.rfid200 = new System.Windows.Forms.TextBox();
+            this.rfid404 = new System.Windows.Forms.TextBox();
+            this.rfid107 = new System.Windows.Forms.TextBox();
+            this.rfid108 = new System.Windows.Forms.TextBox();
+            this.rfid109 = new System.Windows.Forms.TextBox();
+            this.rfid110 = new System.Windows.Forms.TextBox();
+            this.rfid111 = new System.Windows.Forms.TextBox();
+            this.rfid112 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.rfid213 = new System.Windows.Forms.TextBox();
+            this.rfid605 = new System.Windows.Forms.TextBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -187,9 +218,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.agvInfo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.station8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.agv1Vertical)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv1Horizontal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv2Horizontal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agv1Vertical)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv2Vertical)).BeginInit();
             this.SuspendLayout();
             // 
@@ -288,22 +320,22 @@
             // gridViewDS
             // 
             this.gridViewDS.AllowCustomTheming = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            this.gridViewDS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.gridViewDS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridViewDS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewDS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
             this.gridViewDS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewDS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridViewDS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewDS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewDS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridViewDS.ColumnHeadersHeight = 42;
             this.gridViewDS.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
             this.gridViewDS.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -323,14 +355,14 @@
             this.gridViewDS.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.gridViewDS.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
             this.gridViewDS.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewDS.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewDS.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridViewDS.EnableHeadersVisualStyles = false;
             this.gridViewDS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(60)))));
             this.gridViewDS.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
@@ -397,11 +429,11 @@
             this.timerButton.ButtonTextMarginLeft = 0;
             this.timerButton.ColorContrastOnClick = 45;
             this.timerButton.ColorContrastOnHover = 45;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.timerButton.CustomizableEdges = borderEdges7;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.timerButton.CustomizableEdges = borderEdges6;
             this.timerButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.timerButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.timerButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -488,11 +520,11 @@
             this.homeButton.ButtonTextMarginLeft = 0;
             this.homeButton.ColorContrastOnClick = 45;
             this.homeButton.ColorContrastOnHover = 45;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.homeButton.CustomizableEdges = borderEdges8;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.homeButton.CustomizableEdges = borderEdges5;
             this.homeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.homeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.homeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -559,6 +591,7 @@
             this.homeButton.TextMarginLeft = 0;
             this.homeButton.TextPadding = new System.Windows.Forms.Padding(0);
             this.homeButton.UseDefaultRadiusAndThickness = true;
+            this.homeButton.DoubleClick += new System.EventHandler(this.homeButton_DoubleClick);
             // 
             // modeButton
             // 
@@ -578,11 +611,11 @@
             this.modeButton.ButtonTextMarginLeft = 0;
             this.modeButton.ColorContrastOnClick = 45;
             this.modeButton.ColorContrastOnHover = 45;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.modeButton.CustomizableEdges = borderEdges9;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.modeButton.CustomizableEdges = borderEdges4;
             this.modeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.modeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -669,11 +702,11 @@
             this.logsButton.ButtonTextMarginLeft = 0;
             this.logsButton.ColorContrastOnClick = 45;
             this.logsButton.ColorContrastOnHover = 45;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.logsButton.CustomizableEdges = borderEdges10;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.logsButton.CustomizableEdges = borderEdges3;
             this.logsButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.logsButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logsButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -926,9 +959,9 @@
             this.bunifuLabel3.Location = new System.Drawing.Point(1213, 720);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(139, 16);
+            this.bunifuLabel3.Size = new System.Drawing.Size(145, 16);
             this.bunifuLabel3.TabIndex = 21;
-            this.bunifuLabel3.Text = "AGV #1 Standby Timer";
+            this.bunifuLabel3.Text = "AGV #1 Charging Timer";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1024,9 +1057,9 @@
             this.bunifuLabel11.Location = new System.Drawing.Point(1213, 864);
             this.bunifuLabel11.Name = "bunifuLabel11";
             this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel11.Size = new System.Drawing.Size(141, 16);
+            this.bunifuLabel11.Size = new System.Drawing.Size(147, 16);
             this.bunifuLabel11.TabIndex = 26;
-            this.bunifuLabel11.Text = "AGV #2 Standby Timer";
+            this.bunifuLabel11.Text = "AGV #2 Charging Timer";
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1806,9 +1839,9 @@
             this.bunifuLabel14.Location = new System.Drawing.Point(1435, 720);
             this.bunifuLabel14.Name = "bunifuLabel14";
             this.bunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel14.Size = new System.Drawing.Size(139, 16);
+            this.bunifuLabel14.Size = new System.Drawing.Size(145, 16);
             this.bunifuLabel14.TabIndex = 29;
-            this.bunifuLabel14.Text = "AGV #1 Standby Timer";
+            this.bunifuLabel14.Text = "AGV #1 Charging Timer";
             this.bunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel14.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel14.Click += new System.EventHandler(this.bunifuLabel14_Click);
@@ -1817,7 +1850,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(485, 166);
+            this.pictureBox7.Location = new System.Drawing.Point(484, 145);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(17, 21);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1829,7 +1862,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(485, 212);
+            this.pictureBox8.Location = new System.Drawing.Point(484, 183);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(17, 21);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1845,12 +1878,24 @@
             this.station8.BorderColor = System.Drawing.Color.Transparent;
             this.station8.BorderRadius = 8;
             this.station8.BorderThickness = 1;
-            this.station8.Location = new System.Drawing.Point(900, 353);
+            this.station8.Controls.Add(this.agv1Vertical);
+            this.station8.Location = new System.Drawing.Point(1103, 340);
             this.station8.Name = "station8";
             this.station8.ShowBorders = true;
-            this.station8.Size = new System.Drawing.Size(437, 50);
+            this.station8.Size = new System.Drawing.Size(371, 54);
             this.station8.TabIndex = 32;
             this.station8.Visible = false;
+            // 
+            // agv1Vertical
+            // 
+            this.agv1Vertical.BackColor = System.Drawing.Color.Transparent;
+            this.agv1Vertical.Image = ((System.Drawing.Image)(resources.GetObject("agv1Vertical.Image")));
+            this.agv1Vertical.Location = new System.Drawing.Point(323, 5);
+            this.agv1Vertical.Name = "agv1Vertical";
+            this.agv1Vertical.Size = new System.Drawing.Size(32, 49);
+            this.agv1Vertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.agv1Vertical.TabIndex = 50;
+            this.agv1Vertical.TabStop = false;
             // 
             // station7
             // 
@@ -1860,10 +1905,10 @@
             this.station7.BorderColor = System.Drawing.Color.Transparent;
             this.station7.BorderRadius = 8;
             this.station7.BorderThickness = 1;
-            this.station7.Location = new System.Drawing.Point(900, 293);
+            this.station7.Location = new System.Drawing.Point(1103, 272);
             this.station7.Name = "station7";
             this.station7.ShowBorders = true;
-            this.station7.Size = new System.Drawing.Size(437, 50);
+            this.station7.Size = new System.Drawing.Size(371, 54);
             this.station7.TabIndex = 33;
             this.station7.Visible = false;
             // 
@@ -1875,10 +1920,10 @@
             this.station9.BorderColor = System.Drawing.Color.Transparent;
             this.station9.BorderRadius = 8;
             this.station9.BorderThickness = 1;
-            this.station9.Location = new System.Drawing.Point(900, 413);
+            this.station9.Location = new System.Drawing.Point(1103, 407);
             this.station9.Name = "station9";
             this.station9.ShowBorders = true;
-            this.station9.Size = new System.Drawing.Size(437, 50);
+            this.station9.Size = new System.Drawing.Size(371, 54);
             this.station9.TabIndex = 33;
             this.station9.Visible = false;
             // 
@@ -1890,10 +1935,10 @@
             this.station10.BorderColor = System.Drawing.Color.Transparent;
             this.station10.BorderRadius = 8;
             this.station10.BorderThickness = 1;
-            this.station10.Location = new System.Drawing.Point(900, 473);
+            this.station10.Location = new System.Drawing.Point(1103, 475);
             this.station10.Name = "station10";
             this.station10.ShowBorders = true;
-            this.station10.Size = new System.Drawing.Size(437, 50);
+            this.station10.Size = new System.Drawing.Size(371, 54);
             this.station10.TabIndex = 33;
             this.station10.Visible = false;
             // 
@@ -1905,10 +1950,10 @@
             this.station11.BorderColor = System.Drawing.Color.Transparent;
             this.station11.BorderRadius = 8;
             this.station11.BorderThickness = 1;
-            this.station11.Location = new System.Drawing.Point(900, 532);
+            this.station11.Location = new System.Drawing.Point(1103, 542);
             this.station11.Name = "station11";
             this.station11.ShowBorders = true;
-            this.station11.Size = new System.Drawing.Size(437, 50);
+            this.station11.Size = new System.Drawing.Size(371, 54);
             this.station11.TabIndex = 34;
             this.station11.Visible = false;
             // 
@@ -1920,10 +1965,10 @@
             this.station12.BorderColor = System.Drawing.Color.Transparent;
             this.station12.BorderRadius = 8;
             this.station12.BorderThickness = 1;
-            this.station12.Location = new System.Drawing.Point(900, 592);
+            this.station12.Location = new System.Drawing.Point(1103, 610);
             this.station12.Name = "station12";
             this.station12.ShowBorders = true;
-            this.station12.Size = new System.Drawing.Size(437, 50);
+            this.station12.Size = new System.Drawing.Size(371, 54);
             this.station12.TabIndex = 35;
             this.station12.Visible = false;
             // 
@@ -1935,10 +1980,10 @@
             this.station6.BorderColor = System.Drawing.Color.Transparent;
             this.station6.BorderRadius = 8;
             this.station6.BorderThickness = 1;
-            this.station6.Location = new System.Drawing.Point(1397, 592);
+            this.station6.Location = new System.Drawing.Point(1516, 610);
             this.station6.Name = "station6";
             this.station6.ShowBorders = true;
-            this.station6.Size = new System.Drawing.Size(455, 50);
+            this.station6.Size = new System.Drawing.Size(371, 54);
             this.station6.TabIndex = 36;
             this.station6.Visible = false;
             // 
@@ -1950,10 +1995,10 @@
             this.station5.BorderColor = System.Drawing.Color.Transparent;
             this.station5.BorderRadius = 8;
             this.station5.BorderThickness = 1;
-            this.station5.Location = new System.Drawing.Point(1397, 532);
+            this.station5.Location = new System.Drawing.Point(1515, 542);
             this.station5.Name = "station5";
             this.station5.ShowBorders = true;
-            this.station5.Size = new System.Drawing.Size(455, 50);
+            this.station5.Size = new System.Drawing.Size(371, 54);
             this.station5.TabIndex = 37;
             this.station5.Visible = false;
             // 
@@ -1965,10 +2010,10 @@
             this.station4.BorderColor = System.Drawing.Color.Transparent;
             this.station4.BorderRadius = 8;
             this.station4.BorderThickness = 1;
-            this.station4.Location = new System.Drawing.Point(1397, 473);
+            this.station4.Location = new System.Drawing.Point(1516, 475);
             this.station4.Name = "station4";
             this.station4.ShowBorders = true;
-            this.station4.Size = new System.Drawing.Size(455, 50);
+            this.station4.Size = new System.Drawing.Size(371, 54);
             this.station4.TabIndex = 37;
             this.station4.Visible = false;
             // 
@@ -1980,10 +2025,10 @@
             this.station3.BorderColor = System.Drawing.Color.Transparent;
             this.station3.BorderRadius = 8;
             this.station3.BorderThickness = 1;
-            this.station3.Location = new System.Drawing.Point(1397, 413);
+            this.station3.Location = new System.Drawing.Point(1515, 407);
             this.station3.Name = "station3";
             this.station3.ShowBorders = true;
-            this.station3.Size = new System.Drawing.Size(455, 50);
+            this.station3.Size = new System.Drawing.Size(371, 54);
             this.station3.TabIndex = 37;
             this.station3.Visible = false;
             // 
@@ -1995,10 +2040,10 @@
             this.station2.BorderColor = System.Drawing.Color.Transparent;
             this.station2.BorderRadius = 8;
             this.station2.BorderThickness = 1;
-            this.station2.Location = new System.Drawing.Point(1397, 353);
+            this.station2.Location = new System.Drawing.Point(1516, 340);
             this.station2.Name = "station2";
             this.station2.ShowBorders = true;
-            this.station2.Size = new System.Drawing.Size(455, 50);
+            this.station2.Size = new System.Drawing.Size(371, 54);
             this.station2.TabIndex = 37;
             this.station2.Visible = false;
             // 
@@ -2010,10 +2055,10 @@
             this.station1.BorderColor = System.Drawing.Color.Transparent;
             this.station1.BorderRadius = 8;
             this.station1.BorderThickness = 1;
-            this.station1.Location = new System.Drawing.Point(1397, 293);
+            this.station1.Location = new System.Drawing.Point(1515, 272);
             this.station1.Name = "station1";
             this.station1.ShowBorders = true;
-            this.station1.Size = new System.Drawing.Size(455, 50);
+            this.station1.Size = new System.Drawing.Size(371, 54);
             this.station1.TabIndex = 37;
             this.station1.Visible = false;
             // 
@@ -2025,10 +2070,10 @@
             this.palette1.BorderColor = System.Drawing.Color.Transparent;
             this.palette1.BorderRadius = 8;
             this.palette1.BorderThickness = 1;
-            this.palette1.Location = new System.Drawing.Point(827, 242);
+            this.palette1.Location = new System.Drawing.Point(859, 226);
             this.palette1.Name = "palette1";
             this.palette1.ShowBorders = true;
-            this.palette1.Size = new System.Drawing.Size(24, 48);
+            this.palette1.Size = new System.Drawing.Size(31, 41);
             this.palette1.TabIndex = 34;
             this.palette1.Visible = false;
             // 
@@ -2040,10 +2085,10 @@
             this.palette2.BorderColor = System.Drawing.Color.Transparent;
             this.palette2.BorderRadius = 8;
             this.palette2.BorderThickness = 1;
-            this.palette2.Location = new System.Drawing.Point(801, 242);
+            this.palette2.Location = new System.Drawing.Point(891, 226);
             this.palette2.Name = "palette2";
             this.palette2.ShowBorders = true;
-            this.palette2.Size = new System.Drawing.Size(24, 48);
+            this.palette2.Size = new System.Drawing.Size(31, 41);
             this.palette2.TabIndex = 35;
             this.palette2.Visible = false;
             // 
@@ -2055,10 +2100,10 @@
             this.palette3.BorderColor = System.Drawing.Color.Transparent;
             this.palette3.BorderRadius = 8;
             this.palette3.BorderThickness = 1;
-            this.palette3.Location = new System.Drawing.Point(774, 242);
+            this.palette3.Location = new System.Drawing.Point(923, 226);
             this.palette3.Name = "palette3";
             this.palette3.ShowBorders = true;
-            this.palette3.Size = new System.Drawing.Size(24, 48);
+            this.palette3.Size = new System.Drawing.Size(31, 41);
             this.palette3.TabIndex = 38;
             this.palette3.Visible = false;
             // 
@@ -2070,10 +2115,10 @@
             this.palette6.BorderColor = System.Drawing.Color.Transparent;
             this.palette6.BorderRadius = 8;
             this.palette6.BorderThickness = 1;
-            this.palette6.Location = new System.Drawing.Point(694, 242);
+            this.palette6.Location = new System.Drawing.Point(1019, 226);
             this.palette6.Name = "palette6";
             this.palette6.ShowBorders = true;
-            this.palette6.Size = new System.Drawing.Size(24, 48);
+            this.palette6.Size = new System.Drawing.Size(31, 41);
             this.palette6.TabIndex = 41;
             this.palette6.Visible = false;
             // 
@@ -2085,10 +2130,10 @@
             this.palette5.BorderColor = System.Drawing.Color.Transparent;
             this.palette5.BorderRadius = 8;
             this.palette5.BorderThickness = 1;
-            this.palette5.Location = new System.Drawing.Point(721, 242);
+            this.palette5.Location = new System.Drawing.Point(987, 226);
             this.palette5.Name = "palette5";
             this.palette5.ShowBorders = true;
-            this.palette5.Size = new System.Drawing.Size(24, 48);
+            this.palette5.Size = new System.Drawing.Size(31, 41);
             this.palette5.TabIndex = 40;
             this.palette5.Visible = false;
             // 
@@ -2100,10 +2145,10 @@
             this.palette4.BorderColor = System.Drawing.Color.Transparent;
             this.palette4.BorderRadius = 8;
             this.palette4.BorderThickness = 1;
-            this.palette4.Location = new System.Drawing.Point(747, 242);
+            this.palette4.Location = new System.Drawing.Point(955, 226);
             this.palette4.Name = "palette4";
             this.palette4.ShowBorders = true;
-            this.palette4.Size = new System.Drawing.Size(24, 48);
+            this.palette4.Size = new System.Drawing.Size(31, 41);
             this.palette4.TabIndex = 39;
             this.palette4.Visible = false;
             // 
@@ -2115,10 +2160,10 @@
             this.palette12.BorderColor = System.Drawing.Color.Transparent;
             this.palette12.BorderRadius = 8;
             this.palette12.BorderThickness = 1;
-            this.palette12.Location = new System.Drawing.Point(534, 242);
+            this.palette12.Location = new System.Drawing.Point(799, 226);
             this.palette12.Name = "palette12";
             this.palette12.ShowBorders = true;
-            this.palette12.Size = new System.Drawing.Size(24, 48);
+            this.palette12.Size = new System.Drawing.Size(31, 41);
             this.palette12.TabIndex = 47;
             this.palette12.Visible = false;
             // 
@@ -2130,10 +2175,10 @@
             this.palette11.BorderColor = System.Drawing.Color.Transparent;
             this.palette11.BorderRadius = 8;
             this.palette11.BorderThickness = 1;
-            this.palette11.Location = new System.Drawing.Point(561, 242);
+            this.palette11.Location = new System.Drawing.Point(767, 226);
             this.palette11.Name = "palette11";
             this.palette11.ShowBorders = true;
-            this.palette11.Size = new System.Drawing.Size(24, 48);
+            this.palette11.Size = new System.Drawing.Size(31, 41);
             this.palette11.TabIndex = 46;
             this.palette11.Visible = false;
             // 
@@ -2145,10 +2190,10 @@
             this.palette9.BorderColor = System.Drawing.Color.Transparent;
             this.palette9.BorderRadius = 8;
             this.palette9.BorderThickness = 1;
-            this.palette9.Location = new System.Drawing.Point(614, 242);
+            this.palette9.Location = new System.Drawing.Point(703, 226);
             this.palette9.Name = "palette9";
             this.palette9.ShowBorders = true;
-            this.palette9.Size = new System.Drawing.Size(24, 48);
+            this.palette9.Size = new System.Drawing.Size(31, 41);
             this.palette9.TabIndex = 44;
             this.palette9.Visible = false;
             // 
@@ -2160,10 +2205,10 @@
             this.palette10.BorderColor = System.Drawing.Color.Transparent;
             this.palette10.BorderRadius = 8;
             this.palette10.BorderThickness = 1;
-            this.palette10.Location = new System.Drawing.Point(587, 242);
+            this.palette10.Location = new System.Drawing.Point(735, 226);
             this.palette10.Name = "palette10";
             this.palette10.ShowBorders = true;
-            this.palette10.Size = new System.Drawing.Size(24, 48);
+            this.palette10.Size = new System.Drawing.Size(31, 41);
             this.palette10.TabIndex = 45;
             this.palette10.Visible = false;
             // 
@@ -2175,10 +2220,10 @@
             this.palette8.BorderColor = System.Drawing.Color.Transparent;
             this.palette8.BorderRadius = 8;
             this.palette8.BorderThickness = 1;
-            this.palette8.Location = new System.Drawing.Point(641, 242);
+            this.palette8.Location = new System.Drawing.Point(671, 226);
             this.palette8.Name = "palette8";
             this.palette8.ShowBorders = true;
-            this.palette8.Size = new System.Drawing.Size(24, 48);
+            this.palette8.Size = new System.Drawing.Size(31, 41);
             this.palette8.TabIndex = 43;
             this.palette8.Visible = false;
             // 
@@ -2190,10 +2235,10 @@
             this.palette7.BorderColor = System.Drawing.Color.Transparent;
             this.palette7.BorderRadius = 8;
             this.palette7.BorderThickness = 1;
-            this.palette7.Location = new System.Drawing.Point(667, 242);
+            this.palette7.Location = new System.Drawing.Point(639, 226);
             this.palette7.Name = "palette7";
             this.palette7.ShowBorders = true;
-            this.palette7.Size = new System.Drawing.Size(24, 48);
+            this.palette7.Size = new System.Drawing.Size(31, 41);
             this.palette7.TabIndex = 42;
             this.palette7.Visible = false;
             // 
@@ -2201,7 +2246,7 @@
             // 
             this.agv1Horizontal.BackColor = System.Drawing.Color.Transparent;
             this.agv1Horizontal.Image = ((System.Drawing.Image)(resources.GetObject("agv1Horizontal.Image")));
-            this.agv1Horizontal.Location = new System.Drawing.Point(523, 206);
+            this.agv1Horizontal.Location = new System.Drawing.Point(951, 345);
             this.agv1Horizontal.Name = "agv1Horizontal";
             this.agv1Horizontal.Size = new System.Drawing.Size(49, 32);
             this.agv1Horizontal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2212,29 +2257,18 @@
             // 
             this.agv2Horizontal.BackColor = System.Drawing.Color.Transparent;
             this.agv2Horizontal.Image = ((System.Drawing.Image)(resources.GetObject("agv2Horizontal.Image")));
-            this.agv2Horizontal.Location = new System.Drawing.Point(523, 161);
+            this.agv2Horizontal.Location = new System.Drawing.Point(763, 362);
             this.agv2Horizontal.Name = "agv2Horizontal";
             this.agv2Horizontal.Size = new System.Drawing.Size(49, 32);
             this.agv2Horizontal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.agv2Horizontal.TabIndex = 49;
             this.agv2Horizontal.TabStop = false;
             // 
-            // agv1Vertical
-            // 
-            this.agv1Vertical.BackColor = System.Drawing.Color.Transparent;
-            this.agv1Vertical.Image = ((System.Drawing.Image)(resources.GetObject("agv1Vertical.Image")));
-            this.agv1Vertical.Location = new System.Drawing.Point(1359, 296);
-            this.agv1Vertical.Name = "agv1Vertical";
-            this.agv1Vertical.Size = new System.Drawing.Size(32, 49);
-            this.agv1Vertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.agv1Vertical.TabIndex = 50;
-            this.agv1Vertical.TabStop = false;
-            // 
             // agv2Vertical
             // 
             this.agv2Vertical.BackColor = System.Drawing.Color.Transparent;
             this.agv2Vertical.Image = ((System.Drawing.Image)(resources.GetObject("agv2Vertical.Image")));
-            this.agv2Vertical.Location = new System.Drawing.Point(863, 296);
+            this.agv2Vertical.Location = new System.Drawing.Point(929, 425);
             this.agv2Vertical.Name = "agv2Vertical";
             this.agv2Vertical.Size = new System.Drawing.Size(32, 49);
             this.agv2Vertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2259,11 +2293,11 @@
             this.giveUpButton.ButtonTextMarginLeft = 0;
             this.giveUpButton.ColorContrastOnClick = 45;
             this.giveUpButton.ColorContrastOnHover = 45;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.giveUpButton.CustomizableEdges = borderEdges11;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.giveUpButton.CustomizableEdges = borderEdges2;
             this.giveUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.giveUpButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.giveUpButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2350,11 +2384,11 @@
             this.trafficButton.ButtonTextMarginLeft = 0;
             this.trafficButton.ColorContrastOnClick = 45;
             this.trafficButton.ColorContrastOnHover = 45;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.trafficButton.CustomizableEdges = borderEdges12;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.trafficButton.CustomizableEdges = borderEdges1;
             this.trafficButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.trafficButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.trafficButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2635,12 +2669,348 @@
             this.AGV2NameLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.AGV2NameLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // rfid601
+            // 
+            this.rfid601.Location = new System.Drawing.Point(512, 183);
+            this.rfid601.Name = "rfid601";
+            this.rfid601.Size = new System.Drawing.Size(27, 21);
+            this.rfid601.TabIndex = 67;
+            this.rfid601.Text = "601";
+            this.rfid601.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid601.Visible = false;
+            // 
+            // rfid602
+            // 
+            this.rfid602.Location = new System.Drawing.Point(545, 183);
+            this.rfid602.Name = "rfid602";
+            this.rfid602.Size = new System.Drawing.Size(27, 21);
+            this.rfid602.TabIndex = 68;
+            this.rfid602.Text = "602";
+            this.rfid602.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid602.Visible = false;
+            // 
+            // rfid207
+            // 
+            this.rfid207.Location = new System.Drawing.Point(630, 199);
+            this.rfid207.Name = "rfid207";
+            this.rfid207.Size = new System.Drawing.Size(27, 21);
+            this.rfid207.TabIndex = 69;
+            this.rfid207.Text = "207";
+            this.rfid207.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid207.Visible = false;
+            // 
+            // rfid208
+            // 
+            this.rfid208.Location = new System.Drawing.Point(662, 199);
+            this.rfid208.Name = "rfid208";
+            this.rfid208.Size = new System.Drawing.Size(27, 21);
+            this.rfid208.TabIndex = 70;
+            this.rfid208.Text = "208";
+            this.rfid208.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid208.Visible = false;
+            // 
+            // rfid209
+            // 
+            this.rfid209.Location = new System.Drawing.Point(694, 199);
+            this.rfid209.Name = "rfid209";
+            this.rfid209.Size = new System.Drawing.Size(27, 21);
+            this.rfid209.TabIndex = 71;
+            this.rfid209.Text = "209";
+            this.rfid209.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid209.Visible = false;
+            // 
+            // rfid210
+            // 
+            this.rfid210.Location = new System.Drawing.Point(726, 199);
+            this.rfid210.Name = "rfid210";
+            this.rfid210.Size = new System.Drawing.Size(27, 21);
+            this.rfid210.TabIndex = 72;
+            this.rfid210.Text = "210";
+            this.rfid210.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid210.Visible = false;
+            // 
+            // rfid211
+            // 
+            this.rfid211.Location = new System.Drawing.Point(758, 199);
+            this.rfid211.Name = "rfid211";
+            this.rfid211.Size = new System.Drawing.Size(27, 21);
+            this.rfid211.TabIndex = 73;
+            this.rfid211.Text = "211";
+            this.rfid211.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid211.Visible = false;
+            // 
+            // rfid212
+            // 
+            this.rfid212.Location = new System.Drawing.Point(791, 199);
+            this.rfid212.Name = "rfid212";
+            this.rfid212.Size = new System.Drawing.Size(27, 21);
+            this.rfid212.TabIndex = 74;
+            this.rfid212.Text = "212";
+            this.rfid212.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid212.Visible = false;
+            // 
+            // rfid604
+            // 
+            this.rfid604.Location = new System.Drawing.Point(835, 199);
+            this.rfid604.Name = "rfid604";
+            this.rfid604.Size = new System.Drawing.Size(27, 21);
+            this.rfid604.TabIndex = 75;
+            this.rfid604.Text = "604";
+            this.rfid604.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid604.Visible = false;
+            // 
+            // rfid606
+            // 
+            this.rfid606.Location = new System.Drawing.Point(881, 181);
+            this.rfid606.Name = "rfid606";
+            this.rfid606.Size = new System.Drawing.Size(27, 21);
+            this.rfid606.TabIndex = 76;
+            this.rfid606.Text = "606";
+            this.rfid606.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid606.Visible = false;
+            // 
+            // rfid402
+            // 
+            this.rfid402.Location = new System.Drawing.Point(929, 164);
+            this.rfid402.Name = "rfid402";
+            this.rfid402.Size = new System.Drawing.Size(27, 21);
+            this.rfid402.TabIndex = 77;
+            this.rfid402.Text = "402";
+            this.rfid402.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid402.Visible = false;
+            // 
+            // rfid403
+            // 
+            this.rfid403.Location = new System.Drawing.Point(1022, 164);
+            this.rfid403.Name = "rfid403";
+            this.rfid403.Size = new System.Drawing.Size(27, 21);
+            this.rfid403.TabIndex = 78;
+            this.rfid403.Text = "403";
+            this.rfid403.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid403.Visible = false;
+            // 
+            // rfid200
+            // 
+            this.rfid200.Location = new System.Drawing.Point(1070, 218);
+            this.rfid200.Name = "rfid200";
+            this.rfid200.Size = new System.Drawing.Size(27, 21);
+            this.rfid200.TabIndex = 79;
+            this.rfid200.Text = "200";
+            this.rfid200.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid200.Visible = false;
+            // 
+            // rfid404
+            // 
+            this.rfid404.Location = new System.Drawing.Point(1070, 254);
+            this.rfid404.Name = "rfid404";
+            this.rfid404.Size = new System.Drawing.Size(27, 21);
+            this.rfid404.TabIndex = 80;
+            this.rfid404.Text = "404";
+            this.rfid404.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid404.Visible = false;
+            // 
+            // rfid107
+            // 
+            this.rfid107.Location = new System.Drawing.Point(1070, 276);
+            this.rfid107.Name = "rfid107";
+            this.rfid107.Size = new System.Drawing.Size(27, 21);
+            this.rfid107.TabIndex = 81;
+            this.rfid107.Text = "107";
+            this.rfid107.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid107.Visible = false;
+            // 
+            // rfid108
+            // 
+            this.rfid108.Location = new System.Drawing.Point(1070, 345);
+            this.rfid108.Name = "rfid108";
+            this.rfid108.Size = new System.Drawing.Size(27, 21);
+            this.rfid108.TabIndex = 82;
+            this.rfid108.Text = "108";
+            this.rfid108.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid108.Visible = false;
+            // 
+            // rfid109
+            // 
+            this.rfid109.Location = new System.Drawing.Point(1070, 412);
+            this.rfid109.Name = "rfid109";
+            this.rfid109.Size = new System.Drawing.Size(27, 21);
+            this.rfid109.TabIndex = 83;
+            this.rfid109.Text = "109";
+            this.rfid109.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid109.Visible = false;
+            // 
+            // rfid110
+            // 
+            this.rfid110.Location = new System.Drawing.Point(1070, 480);
+            this.rfid110.Name = "rfid110";
+            this.rfid110.Size = new System.Drawing.Size(27, 21);
+            this.rfid110.TabIndex = 84;
+            this.rfid110.Text = "110";
+            this.rfid110.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid110.Visible = false;
+            // 
+            // rfid111
+            // 
+            this.rfid111.Location = new System.Drawing.Point(1070, 547);
+            this.rfid111.Name = "rfid111";
+            this.rfid111.Size = new System.Drawing.Size(27, 21);
+            this.rfid111.TabIndex = 85;
+            this.rfid111.Text = "111";
+            this.rfid111.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid111.Visible = false;
+            // 
+            // rfid112
+            // 
+            this.rfid112.Location = new System.Drawing.Point(1070, 615);
+            this.rfid112.Name = "rfid112";
+            this.rfid112.Size = new System.Drawing.Size(27, 21);
+            this.rfid112.TabIndex = 86;
+            this.rfid112.Text = "112";
+            this.rfid112.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid112.Visible = false;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(1108, 235);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(27, 21);
+            this.textBox19.TabIndex = 87;
+            this.textBox19.Text = "602";
+            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox19.Visible = false;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(1447, 235);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(27, 21);
+            this.textBox20.TabIndex = 88;
+            this.textBox20.Text = "602";
+            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox20.Visible = false;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(1482, 277);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(27, 21);
+            this.textBox21.TabIndex = 89;
+            this.textBox21.Text = "602";
+            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox21.Visible = false;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(1483, 345);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(27, 21);
+            this.textBox22.TabIndex = 90;
+            this.textBox22.Text = "602";
+            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox22.Visible = false;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(1483, 412);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(27, 21);
+            this.textBox23.TabIndex = 91;
+            this.textBox23.Text = "602";
+            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox23.Visible = false;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(1483, 480);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(27, 21);
+            this.textBox24.TabIndex = 92;
+            this.textBox24.Text = "602";
+            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox24.Visible = false;
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(1483, 547);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(27, 21);
+            this.textBox25.TabIndex = 93;
+            this.textBox25.Text = "602";
+            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox25.Visible = false;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(1483, 615);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(27, 21);
+            this.textBox26.TabIndex = 94;
+            this.textBox26.Text = "602";
+            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox26.Visible = false;
+            // 
+            // rfid213
+            // 
+            this.rfid213.Location = new System.Drawing.Point(618, 199);
+            this.rfid213.Name = "rfid213";
+            this.rfid213.Size = new System.Drawing.Size(27, 21);
+            this.rfid213.TabIndex = 95;
+            this.rfid213.Text = "213";
+            this.rfid213.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid213.Visible = false;
+            // 
+            // rfid605
+            // 
+            this.rfid605.Location = new System.Drawing.Point(840, 199);
+            this.rfid605.Name = "rfid605";
+            this.rfid605.Size = new System.Drawing.Size(27, 21);
+            this.rfid605.TabIndex = 96;
+            this.rfid605.Text = "605";
+            this.rfid605.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rfid605.Visible = false;
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.rfid605);
+            this.Controls.Add(this.rfid213);
+            this.Controls.Add(this.textBox26);
+            this.Controls.Add(this.textBox25);
+            this.Controls.Add(this.textBox24);
+            this.Controls.Add(this.textBox23);
+            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.textBox20);
+            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.rfid112);
+            this.Controls.Add(this.rfid111);
+            this.Controls.Add(this.rfid110);
+            this.Controls.Add(this.rfid109);
+            this.Controls.Add(this.rfid108);
+            this.Controls.Add(this.rfid107);
+            this.Controls.Add(this.rfid404);
+            this.Controls.Add(this.rfid200);
+            this.Controls.Add(this.rfid403);
+            this.Controls.Add(this.rfid402);
+            this.Controls.Add(this.rfid606);
+            this.Controls.Add(this.rfid604);
+            this.Controls.Add(this.rfid212);
+            this.Controls.Add(this.rfid211);
+            this.Controls.Add(this.rfid210);
+            this.Controls.Add(this.rfid209);
+            this.Controls.Add(this.rfid208);
+            this.Controls.Add(this.rfid207);
+            this.Controls.Add(this.rfid602);
+            this.Controls.Add(this.rfid601);
             this.Controls.Add(this.AGV2NameLabel);
             this.Controls.Add(this.AGV2StateLabel);
             this.Controls.Add(this.AGV1NameLabel);
@@ -2657,7 +3027,6 @@
             this.Controls.Add(this.trafficButton);
             this.Controls.Add(this.giveUpButton);
             this.Controls.Add(this.agv2Vertical);
-            this.Controls.Add(this.agv1Vertical);
             this.Controls.Add(this.agv2Horizontal);
             this.Controls.Add(this.agv1Horizontal);
             this.Controls.Add(this.palette12);
@@ -2749,9 +3118,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.agvInfo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.station8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.agv1Vertical)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv1Horizontal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv2Horizontal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agv1Vertical)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv2Vertical)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -2886,5 +3256,36 @@
         private Bunifu.UI.WinForms.BunifuLabel AGV2NameLabel;
         private Bunifu.UI.WinForms.BunifuLabel AGV2StateLabel;
         private Bunifu.UI.WinForms.BunifuLabel labelDisconnect1;
+        private TextBox rfid112;
+        private TextBox rfid111;
+        private TextBox rfid110;
+        private TextBox rfid109;
+        private TextBox rfid108;
+        private TextBox rfid107;
+        private TextBox rfid404;
+        private TextBox rfid200;
+        private TextBox rfid403;
+        private TextBox rfid402;
+        private TextBox rfid606;
+        private TextBox rfid604;
+        private TextBox rfid212;
+        private TextBox rfid211;
+        private TextBox rfid210;
+        private TextBox rfid209;
+        private TextBox rfid208;
+        private TextBox rfid207;
+        private TextBox rfid602;
+        private TextBox rfid601;
+        private TextBox textBox21;
+        private TextBox textBox20;
+        private TextBox textBox19;
+        private TextBox rfid213;
+        private TextBox textBox26;
+        private TextBox textBox25;
+        private TextBox textBox24;
+        private TextBox textBox23;
+        private TextBox textBox22;
+        private TextBox rfid605;
+        public System.Windows.Forms.Timer timer2;
     }
 }
