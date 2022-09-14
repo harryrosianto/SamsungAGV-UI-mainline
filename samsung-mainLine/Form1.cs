@@ -339,7 +339,7 @@ namespace samsung_mainLine
                     agvTime = UnixTimeStampToDateTime(data.msg[i][11]).ToString();
                     statusDelivery = data.msg[i][10];
                     jobId = data.msg[i][0];
-                    lastTIme = agvTime;.s
+                    lastTIme = agvTime;
                     SMDdata = data.msg[i][1].ToString();
                     jobData = data.msg[i][0].ToString();
 
