@@ -93,11 +93,16 @@ namespace samsung_mainLine
             giveUpButton.MouseLeave += giveUpButton_MouseLeave;
             trafficButton.MouseHover += trafficButton_MouseHover;
             trafficButton.MouseLeave += trafficButton_MouseLeave;
+            startButton.MouseHover += startButton_MouseHover;
+            startButton.MouseLeave += startButton_MouseLeave;
 
             //timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
             //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
             timerData.Text = Convert.ToString(counts);
             timerData2.Text = Convert.ToString(counts);
+
+            //timeNow = DateTime.Now.ToString("HH:mm:ss");
+            //waktuLabel.Text = timeNow;
         }
         private async Task<ResponseData> API(string command)
         {
@@ -295,8 +300,8 @@ namespace samsung_mainLine
         private async void callAPI()
         {
 
-            string[] arrayMachine1 = new string[] { "SMD_01", "SMD_02", "SMD_03", "SMD_04", "SMD_05", "SMD_06" };
-            string[] arrayMachine2 = new string[] { "SMD_07", "SMD_08", "SMD_09", "SMD_10", "SMD_11", "SMD_12" };
+            string[] arrayMachine1 = new string[] { "ROW_1", "CHARGING_1" };
+            string[] arrayMachine2 = new string[] { "SMD_2", "CHARGING_2" };
 
             string[] arrayPosition = new string[] {"HOME2","HOME1", "TRAFFIC2", "TRAFFIC1","BRANCH2", "BRANCH1","WIPFULL2", "WIPFULL1", // --- 8rfid
                                                    "WIP-IN-6", "WIP-IN-5","WIP-IN-4","WIP-IN-3","WIP-IN-2","WIP-IN-1","BRANCHLINE", // --- 7rfid
@@ -566,7 +571,8 @@ namespace samsung_mainLine
                         routeLabel2.Text = route2.ToString();
                         chargingTime = "11:40:00";
                         endChargingTime = "12:35:00";
-                        timeNow = DateTime.Now.ToString();
+                        timeNow = DateTime.Now.ToString("HH:mm:ss");
+                        waktuLabel.Text = timeNow;
 
                         if (timeNow == chargingTime)
                         {
@@ -778,7 +784,7 @@ namespace samsung_mainLine
                 {
                     agvAddress = data.msg[i][3]; 
                     agvAddress2 = data.msg[i][3];
-                    offTime = data.msg[0][i];
+                    offTime = data.msg[i][6];
                     offTime2 = data.msg[i][6];
 
                     Console.WriteLine(agvAddress);
@@ -808,7 +814,7 @@ namespace samsung_mainLine
                     {
                         agvState = "OFF";
                         AGV1NameLabel.Text = agvName;
-                        string disc = "AGV-1" + " DISCONNECTED but Strange";
+                        string disc = "AGV-1" + " DISCONNECTED";
                         Console.WriteLine(disc);
                         AGV1StateLabel.Text = agvState;
                         labelDisconnect.Text = disc;
@@ -1173,6 +1179,15 @@ namespace samsung_mainLine
         {
             trafficIndicator.Visible = false;
         }
+        private void startButton_MouseHover(object? sender, EventArgs e)
+        {
+            trafficIndicator.Visible = true;
+        }
+        private void startButton_MouseLeave(object? sender, EventArgs e)
+        {
+            trafficIndicator.Visible = false;
+        }
+
         private void bunifuLabel14_Click(object sender, EventArgs e)
         {
             

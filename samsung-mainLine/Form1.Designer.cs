@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -198,7 +198,8 @@
             this.rfid605 = new System.Windows.Forms.TextBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.startButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.startIndicator = new Bunifu.UI.WinForms.BunifuPanel();
+            this.waktuLabel = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -322,22 +323,22 @@
             // gridViewDS
             // 
             this.gridViewDS.AllowCustomTheming = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.gridViewDS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            this.gridViewDS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewDS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridViewDS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
             this.gridViewDS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridViewDS.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridViewDS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewDS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Inter Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewDS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridViewDS.ColumnHeadersHeight = 42;
             this.gridViewDS.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
             this.gridViewDS.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -357,14 +358,14 @@
             this.gridViewDS.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.gridViewDS.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
             this.gridViewDS.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewDS.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Inter Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewDS.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridViewDS.EnableHeadersVisualStyles = false;
             this.gridViewDS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(60)))));
             this.gridViewDS.HeaderBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(76)))), ((int)(((byte)(105)))));
@@ -431,11 +432,11 @@
             this.timerButton.ButtonTextMarginLeft = 0;
             this.timerButton.ColorContrastOnClick = 45;
             this.timerButton.ColorContrastOnHover = 45;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.timerButton.CustomizableEdges = borderEdges7;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.timerButton.CustomizableEdges = borderEdges8;
             this.timerButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.timerButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.timerButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -522,11 +523,11 @@
             this.homeButton.ButtonTextMarginLeft = 0;
             this.homeButton.ColorContrastOnClick = 45;
             this.homeButton.ColorContrastOnHover = 45;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.homeButton.CustomizableEdges = borderEdges6;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.homeButton.CustomizableEdges = borderEdges9;
             this.homeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.homeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.homeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -613,11 +614,11 @@
             this.modeButton.ButtonTextMarginLeft = 0;
             this.modeButton.ColorContrastOnClick = 45;
             this.modeButton.ColorContrastOnHover = 45;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.modeButton.CustomizableEdges = borderEdges5;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.modeButton.CustomizableEdges = borderEdges10;
             this.modeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.modeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -704,11 +705,11 @@
             this.logsButton.ButtonTextMarginLeft = 0;
             this.logsButton.ColorContrastOnClick = 45;
             this.logsButton.ColorContrastOnHover = 45;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.logsButton.CustomizableEdges = borderEdges4;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.logsButton.CustomizableEdges = borderEdges11;
             this.logsButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.logsButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logsButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -1880,7 +1881,7 @@
             this.station8.BorderColor = System.Drawing.Color.Transparent;
             this.station8.BorderRadius = 8;
             this.station8.BorderThickness = 1;
-            this.station8.Location = new System.Drawing.Point(1103, 340);
+            this.station8.Location = new System.Drawing.Point(1103, 341);
             this.station8.Name = "station8";
             this.station8.ShowBorders = true;
             this.station8.Size = new System.Drawing.Size(371, 54);
@@ -1897,6 +1898,7 @@
             this.agv1Vertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.agv1Vertical.TabIndex = 50;
             this.agv1Vertical.TabStop = false;
+            this.agv1Vertical.Visible = false;
             // 
             // station7
             // 
@@ -1921,7 +1923,7 @@
             this.station9.BorderColor = System.Drawing.Color.Transparent;
             this.station9.BorderRadius = 8;
             this.station9.BorderThickness = 1;
-            this.station9.Location = new System.Drawing.Point(1103, 407);
+            this.station9.Location = new System.Drawing.Point(1103, 411);
             this.station9.Name = "station9";
             this.station9.ShowBorders = true;
             this.station9.Size = new System.Drawing.Size(371, 54);
@@ -1936,7 +1938,7 @@
             this.station10.BorderColor = System.Drawing.Color.Transparent;
             this.station10.BorderRadius = 8;
             this.station10.BorderThickness = 1;
-            this.station10.Location = new System.Drawing.Point(1103, 475);
+            this.station10.Location = new System.Drawing.Point(1103, 480);
             this.station10.Name = "station10";
             this.station10.ShowBorders = true;
             this.station10.Size = new System.Drawing.Size(371, 54);
@@ -1951,7 +1953,7 @@
             this.station11.BorderColor = System.Drawing.Color.Transparent;
             this.station11.BorderRadius = 8;
             this.station11.BorderThickness = 1;
-            this.station11.Location = new System.Drawing.Point(1103, 542);
+            this.station11.Location = new System.Drawing.Point(1103, 550);
             this.station11.Name = "station11";
             this.station11.ShowBorders = true;
             this.station11.Size = new System.Drawing.Size(371, 54);
@@ -1966,7 +1968,7 @@
             this.station12.BorderColor = System.Drawing.Color.Transparent;
             this.station12.BorderRadius = 8;
             this.station12.BorderThickness = 1;
-            this.station12.Location = new System.Drawing.Point(1103, 610);
+            this.station12.Location = new System.Drawing.Point(1103, 619);
             this.station12.Name = "station12";
             this.station12.ShowBorders = true;
             this.station12.Size = new System.Drawing.Size(371, 54);
@@ -1981,7 +1983,7 @@
             this.station6.BorderColor = System.Drawing.Color.Transparent;
             this.station6.BorderRadius = 8;
             this.station6.BorderThickness = 1;
-            this.station6.Location = new System.Drawing.Point(1516, 610);
+            this.station6.Location = new System.Drawing.Point(1516, 619);
             this.station6.Name = "station6";
             this.station6.ShowBorders = true;
             this.station6.Size = new System.Drawing.Size(371, 54);
@@ -1996,7 +1998,7 @@
             this.station5.BorderColor = System.Drawing.Color.Transparent;
             this.station5.BorderRadius = 8;
             this.station5.BorderThickness = 1;
-            this.station5.Location = new System.Drawing.Point(1515, 542);
+            this.station5.Location = new System.Drawing.Point(1515, 550);
             this.station5.Name = "station5";
             this.station5.ShowBorders = true;
             this.station5.Size = new System.Drawing.Size(371, 54);
@@ -2011,7 +2013,7 @@
             this.station4.BorderColor = System.Drawing.Color.Transparent;
             this.station4.BorderRadius = 8;
             this.station4.BorderThickness = 1;
-            this.station4.Location = new System.Drawing.Point(1516, 475);
+            this.station4.Location = new System.Drawing.Point(1516, 480);
             this.station4.Name = "station4";
             this.station4.ShowBorders = true;
             this.station4.Size = new System.Drawing.Size(371, 54);
@@ -2026,7 +2028,7 @@
             this.station3.BorderColor = System.Drawing.Color.Transparent;
             this.station3.BorderRadius = 8;
             this.station3.BorderThickness = 1;
-            this.station3.Location = new System.Drawing.Point(1515, 407);
+            this.station3.Location = new System.Drawing.Point(1515, 411);
             this.station3.Name = "station3";
             this.station3.ShowBorders = true;
             this.station3.Size = new System.Drawing.Size(371, 54);
@@ -2041,7 +2043,7 @@
             this.station2.BorderColor = System.Drawing.Color.Transparent;
             this.station2.BorderRadius = 8;
             this.station2.BorderThickness = 1;
-            this.station2.Location = new System.Drawing.Point(1516, 340);
+            this.station2.Location = new System.Drawing.Point(1516, 341);
             this.station2.Name = "station2";
             this.station2.ShowBorders = true;
             this.station2.Size = new System.Drawing.Size(371, 54);
@@ -2071,7 +2073,7 @@
             this.palette1.BorderColor = System.Drawing.Color.Transparent;
             this.palette1.BorderRadius = 8;
             this.palette1.BorderThickness = 1;
-            this.palette1.Location = new System.Drawing.Point(859, 226);
+            this.palette1.Location = new System.Drawing.Point(861, 225);
             this.palette1.Name = "palette1";
             this.palette1.ShowBorders = true;
             this.palette1.Size = new System.Drawing.Size(31, 41);
@@ -2086,7 +2088,7 @@
             this.palette2.BorderColor = System.Drawing.Color.Transparent;
             this.palette2.BorderRadius = 8;
             this.palette2.BorderThickness = 1;
-            this.palette2.Location = new System.Drawing.Point(891, 226);
+            this.palette2.Location = new System.Drawing.Point(893, 225);
             this.palette2.Name = "palette2";
             this.palette2.ShowBorders = true;
             this.palette2.Size = new System.Drawing.Size(31, 41);
@@ -2101,7 +2103,7 @@
             this.palette3.BorderColor = System.Drawing.Color.Transparent;
             this.palette3.BorderRadius = 8;
             this.palette3.BorderThickness = 1;
-            this.palette3.Location = new System.Drawing.Point(923, 226);
+            this.palette3.Location = new System.Drawing.Point(925, 225);
             this.palette3.Name = "palette3";
             this.palette3.ShowBorders = true;
             this.palette3.Size = new System.Drawing.Size(31, 41);
@@ -2116,7 +2118,7 @@
             this.palette6.BorderColor = System.Drawing.Color.Transparent;
             this.palette6.BorderRadius = 8;
             this.palette6.BorderThickness = 1;
-            this.palette6.Location = new System.Drawing.Point(1019, 226);
+            this.palette6.Location = new System.Drawing.Point(1021, 225);
             this.palette6.Name = "palette6";
             this.palette6.ShowBorders = true;
             this.palette6.Size = new System.Drawing.Size(31, 41);
@@ -2131,7 +2133,7 @@
             this.palette5.BorderColor = System.Drawing.Color.Transparent;
             this.palette5.BorderRadius = 8;
             this.palette5.BorderThickness = 1;
-            this.palette5.Location = new System.Drawing.Point(987, 226);
+            this.palette5.Location = new System.Drawing.Point(989, 225);
             this.palette5.Name = "palette5";
             this.palette5.ShowBorders = true;
             this.palette5.Size = new System.Drawing.Size(31, 41);
@@ -2146,7 +2148,7 @@
             this.palette4.BorderColor = System.Drawing.Color.Transparent;
             this.palette4.BorderRadius = 8;
             this.palette4.BorderThickness = 1;
-            this.palette4.Location = new System.Drawing.Point(955, 226);
+            this.palette4.Location = new System.Drawing.Point(957, 225);
             this.palette4.Name = "palette4";
             this.palette4.ShowBorders = true;
             this.palette4.Size = new System.Drawing.Size(31, 41);
@@ -2161,7 +2163,7 @@
             this.palette12.BorderColor = System.Drawing.Color.Transparent;
             this.palette12.BorderRadius = 8;
             this.palette12.BorderThickness = 1;
-            this.palette12.Location = new System.Drawing.Point(799, 226);
+            this.palette12.Location = new System.Drawing.Point(801, 225);
             this.palette12.Name = "palette12";
             this.palette12.ShowBorders = true;
             this.palette12.Size = new System.Drawing.Size(31, 41);
@@ -2176,7 +2178,7 @@
             this.palette11.BorderColor = System.Drawing.Color.Transparent;
             this.palette11.BorderRadius = 8;
             this.palette11.BorderThickness = 1;
-            this.palette11.Location = new System.Drawing.Point(767, 226);
+            this.palette11.Location = new System.Drawing.Point(769, 225);
             this.palette11.Name = "palette11";
             this.palette11.ShowBorders = true;
             this.palette11.Size = new System.Drawing.Size(31, 41);
@@ -2191,7 +2193,7 @@
             this.palette9.BorderColor = System.Drawing.Color.Transparent;
             this.palette9.BorderRadius = 8;
             this.palette9.BorderThickness = 1;
-            this.palette9.Location = new System.Drawing.Point(703, 226);
+            this.palette9.Location = new System.Drawing.Point(705, 225);
             this.palette9.Name = "palette9";
             this.palette9.ShowBorders = true;
             this.palette9.Size = new System.Drawing.Size(31, 41);
@@ -2206,7 +2208,7 @@
             this.palette10.BorderColor = System.Drawing.Color.Transparent;
             this.palette10.BorderRadius = 8;
             this.palette10.BorderThickness = 1;
-            this.palette10.Location = new System.Drawing.Point(735, 226);
+            this.palette10.Location = new System.Drawing.Point(737, 225);
             this.palette10.Name = "palette10";
             this.palette10.ShowBorders = true;
             this.palette10.Size = new System.Drawing.Size(31, 41);
@@ -2221,7 +2223,7 @@
             this.palette8.BorderColor = System.Drawing.Color.Transparent;
             this.palette8.BorderRadius = 8;
             this.palette8.BorderThickness = 1;
-            this.palette8.Location = new System.Drawing.Point(671, 226);
+            this.palette8.Location = new System.Drawing.Point(673, 225);
             this.palette8.Name = "palette8";
             this.palette8.ShowBorders = true;
             this.palette8.Size = new System.Drawing.Size(31, 41);
@@ -2236,7 +2238,7 @@
             this.palette7.BorderColor = System.Drawing.Color.Transparent;
             this.palette7.BorderRadius = 8;
             this.palette7.BorderThickness = 1;
-            this.palette7.Location = new System.Drawing.Point(639, 226);
+            this.palette7.Location = new System.Drawing.Point(641, 225);
             this.palette7.Name = "palette7";
             this.palette7.ShowBorders = true;
             this.palette7.Size = new System.Drawing.Size(31, 41);
@@ -2253,6 +2255,7 @@
             this.agv1Horizontal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.agv1Horizontal.TabIndex = 48;
             this.agv1Horizontal.TabStop = false;
+            this.agv1Horizontal.Visible = false;
             // 
             // agv2Horizontal
             // 
@@ -2264,6 +2267,7 @@
             this.agv2Horizontal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.agv2Horizontal.TabIndex = 49;
             this.agv2Horizontal.TabStop = false;
+            this.agv2Horizontal.Visible = false;
             // 
             // agv2Vertical
             // 
@@ -2275,6 +2279,7 @@
             this.agv2Vertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.agv2Vertical.TabIndex = 51;
             this.agv2Vertical.TabStop = false;
+            this.agv2Vertical.Visible = false;
             // 
             // giveUpButton
             // 
@@ -2294,11 +2299,11 @@
             this.giveUpButton.ButtonTextMarginLeft = 0;
             this.giveUpButton.ColorContrastOnClick = 45;
             this.giveUpButton.ColorContrastOnHover = 45;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.giveUpButton.CustomizableEdges = borderEdges3;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.giveUpButton.CustomizableEdges = borderEdges12;
             this.giveUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.giveUpButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.giveUpButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2385,11 +2390,11 @@
             this.trafficButton.ButtonTextMarginLeft = 0;
             this.trafficButton.ColorContrastOnClick = 45;
             this.trafficButton.ColorContrastOnHover = 45;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.trafficButton.CustomizableEdges = borderEdges2;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.trafficButton.CustomizableEdges = borderEdges13;
             this.trafficButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.trafficButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.trafficButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2994,11 +2999,11 @@
             this.startButton.ButtonTextMarginLeft = 0;
             this.startButton.ColorContrastOnClick = 45;
             this.startButton.ColorContrastOnHover = 45;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.startButton.CustomizableEdges = borderEdges1;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.startButton.CustomizableEdges = borderEdges14;
             this.startButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.startButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.startButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -3040,7 +3045,7 @@
             this.startButton.onHoverState.BorderThickness = 1;
             this.startButton.onHoverState.FillColor = System.Drawing.Color.Transparent;
             this.startButton.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.startButton.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.onHoverState.IconLeftImage")));
+            this.startButton.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("startButton.onHoverState.IconLeftImage")));
             this.startButton.onHoverState.IconRightImage = null;
             this.startButton.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
             this.startButton.OnIdleState.BorderRadius = 1;
@@ -3048,7 +3053,7 @@
             this.startButton.OnIdleState.BorderThickness = 1;
             this.startButton.OnIdleState.FillColor = System.Drawing.Color.Transparent;
             this.startButton.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(83)))), ((int)(((byte)(97)))));
-            this.startButton.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconLeftImage")));
+            this.startButton.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("startButton.OnIdleState.IconLeftImage")));
             this.startButton.OnIdleState.IconRightImage = null;
             this.startButton.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
             this.startButton.OnPressedState.BorderRadius = 1;
@@ -3056,7 +3061,7 @@
             this.startButton.OnPressedState.BorderThickness = 1;
             this.startButton.OnPressedState.FillColor = System.Drawing.Color.Transparent;
             this.startButton.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.startButton.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnPressedState.IconLeftImage")));
+            this.startButton.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("startButton.OnPressedState.IconLeftImage")));
             this.startButton.OnPressedState.IconRightImage = null;
             this.startButton.Size = new System.Drawing.Size(178, 46);
             this.startButton.TabIndex = 97;
@@ -3067,28 +3072,45 @@
             this.startButton.UseDefaultRadiusAndThickness = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
-            // bunifuPanel5
+            // startIndicator
             // 
-            this.bunifuPanel5.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel5.BackgroundImage")));
-            this.bunifuPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel5.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel5.BorderRadius = 3;
-            this.bunifuPanel5.BorderThickness = 0;
-            this.bunifuPanel5.Location = new System.Drawing.Point(1328, 1027);
-            this.bunifuPanel5.Name = "bunifuPanel5";
-            this.bunifuPanel5.ShowBorders = false;
-            this.bunifuPanel5.Size = new System.Drawing.Size(168, 4);
-            this.bunifuPanel5.TabIndex = 18;
-            this.bunifuPanel5.Visible = false;
+            this.startIndicator.BackgroundColor = System.Drawing.Color.White;
+            this.startIndicator.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("startIndicator.BackgroundImage")));
+            this.startIndicator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.startIndicator.BorderColor = System.Drawing.Color.Transparent;
+            this.startIndicator.BorderRadius = 3;
+            this.startIndicator.BorderThickness = 0;
+            this.startIndicator.Location = new System.Drawing.Point(1328, 1027);
+            this.startIndicator.Name = "startIndicator";
+            this.startIndicator.ShowBorders = false;
+            this.startIndicator.Size = new System.Drawing.Size(168, 4);
+            this.startIndicator.TabIndex = 18;
+            this.startIndicator.Visible = false;
+            // 
+            // waktuLabel
+            // 
+            this.waktuLabel.AllowParentOverrides = false;
+            this.waktuLabel.AutoEllipsis = false;
+            this.waktuLabel.CursorType = System.Windows.Forms.Cursors.Default;
+            this.waktuLabel.Font = new System.Drawing.Font("Inter Semi Bold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.waktuLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.waktuLabel.Location = new System.Drawing.Point(1796, 83);
+            this.waktuLabel.Name = "waktuLabel";
+            this.waktuLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.waktuLabel.Size = new System.Drawing.Size(101, 16);
+            this.waktuLabel.TabIndex = 98;
+            this.waktuLabel.Text = "Time HH:mm:ss";
+            this.waktuLabel.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.waktuLabel.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
-            this.Controls.Add(this.bunifuPanel5);
+            this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.Controls.Add(this.waktuLabel);
+            this.Controls.Add(this.startIndicator);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.agv1Vertical);
             this.Controls.Add(this.rfid605);
@@ -3397,6 +3419,7 @@
         private TextBox rfid605;
         public System.Windows.Forms.Timer timer2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton startButton;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel5;
+        private Bunifu.UI.WinForms.BunifuPanel startIndicator;
+        private Bunifu.UI.WinForms.BunifuLabel waktuLabel;
     }
 }
