@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -196,6 +197,8 @@
             this.rfid213 = new System.Windows.Forms.TextBox();
             this.rfid605 = new System.Windows.Forms.TextBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.startButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -218,7 +221,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.agvInfo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.station8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.agv1Vertical)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv1Horizontal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv2Horizontal)).BeginInit();
@@ -429,11 +431,11 @@
             this.timerButton.ButtonTextMarginLeft = 0;
             this.timerButton.ColorContrastOnClick = 45;
             this.timerButton.ColorContrastOnHover = 45;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.timerButton.CustomizableEdges = borderEdges6;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.timerButton.CustomizableEdges = borderEdges7;
             this.timerButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.timerButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.timerButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -459,7 +461,7 @@
             this.timerButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("timerButton.IdleIconLeftImage")));
             this.timerButton.IdleIconRightImage = null;
             this.timerButton.IndicateFocus = false;
-            this.timerButton.Location = new System.Drawing.Point(608, 1033);
+            this.timerButton.Location = new System.Drawing.Point(513, 1033);
             this.timerButton.Name = "timerButton";
             this.timerButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.timerButton.OnDisabledState.BorderRadius = 1;
@@ -520,11 +522,11 @@
             this.homeButton.ButtonTextMarginLeft = 0;
             this.homeButton.ColorContrastOnClick = 45;
             this.homeButton.ColorContrastOnHover = 45;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.homeButton.CustomizableEdges = borderEdges5;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.homeButton.CustomizableEdges = borderEdges6;
             this.homeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.homeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.homeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -550,7 +552,7 @@
             this.homeButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("homeButton.IdleIconLeftImage")));
             this.homeButton.IdleIconRightImage = null;
             this.homeButton.IndicateFocus = false;
-            this.homeButton.Location = new System.Drawing.Point(507, 1037);
+            this.homeButton.Location = new System.Drawing.Point(412, 1037);
             this.homeButton.Name = "homeButton";
             this.homeButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.homeButton.OnDisabledState.BorderRadius = 1;
@@ -611,11 +613,11 @@
             this.modeButton.ButtonTextMarginLeft = 0;
             this.modeButton.ColorContrastOnClick = 45;
             this.modeButton.ColorContrastOnHover = 45;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.modeButton.CustomizableEdges = borderEdges4;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.modeButton.CustomizableEdges = borderEdges5;
             this.modeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.modeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -641,7 +643,7 @@
             this.modeButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("modeButton.IdleIconLeftImage")));
             this.modeButton.IdleIconRightImage = null;
             this.modeButton.IndicateFocus = false;
-            this.modeButton.Location = new System.Drawing.Point(890, 1017);
+            this.modeButton.Location = new System.Drawing.Point(795, 1017);
             this.modeButton.Name = "modeButton";
             this.modeButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modeButton.OnDisabledState.BorderRadius = 1;
@@ -702,11 +704,11 @@
             this.logsButton.ButtonTextMarginLeft = 0;
             this.logsButton.ColorContrastOnClick = 45;
             this.logsButton.ColorContrastOnHover = 45;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.logsButton.CustomizableEdges = borderEdges3;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.logsButton.CustomizableEdges = borderEdges4;
             this.logsButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.logsButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logsButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -732,7 +734,7 @@
             this.logsButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("logsButton.IdleIconLeftImage")));
             this.logsButton.IdleIconRightImage = null;
             this.logsButton.IndicateFocus = false;
-            this.logsButton.Location = new System.Drawing.Point(786, 1037);
+            this.logsButton.Location = new System.Drawing.Point(691, 1037);
             this.logsButton.Name = "logsButton";
             this.logsButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logsButton.OnDisabledState.BorderRadius = 1;
@@ -801,10 +803,10 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 3;
             this.bunifuPanel2.BorderThickness = 0;
-            this.bunifuPanel2.Location = new System.Drawing.Point(485, 1029);
+            this.bunifuPanel2.Location = new System.Drawing.Point(426, 1028);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = false;
-            this.bunifuPanel2.Size = new System.Drawing.Size(950, 2);
+            this.bunifuPanel2.Size = new System.Drawing.Size(1064, 2);
             this.bunifuPanel2.TabIndex = 14;
             // 
             // modeIndicator
@@ -815,7 +817,7 @@
             this.modeIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.modeIndicator.BorderRadius = 3;
             this.modeIndicator.BorderThickness = 0;
-            this.modeIndicator.Location = new System.Drawing.Point(901, 1027);
+            this.modeIndicator.Location = new System.Drawing.Point(809, 1027);
             this.modeIndicator.Name = "modeIndicator";
             this.modeIndicator.ShowBorders = false;
             this.modeIndicator.Size = new System.Drawing.Size(120, 4);
@@ -830,7 +832,7 @@
             this.logsIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.logsIndicator.BorderRadius = 3;
             this.logsIndicator.BorderThickness = 0;
-            this.logsIndicator.Location = new System.Drawing.Point(794, 1027);
+            this.logsIndicator.Location = new System.Drawing.Point(707, 1027);
             this.logsIndicator.Name = "logsIndicator";
             this.logsIndicator.ShowBorders = false;
             this.logsIndicator.Size = new System.Drawing.Size(76, 4);
@@ -845,7 +847,7 @@
             this.timerIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.timerIndicator.BorderRadius = 3;
             this.timerIndicator.BorderThickness = 0;
-            this.timerIndicator.Location = new System.Drawing.Point(618, 1027);
+            this.timerIndicator.Location = new System.Drawing.Point(532, 1027);
             this.timerIndicator.Name = "timerIndicator";
             this.timerIndicator.ShowBorders = false;
             this.timerIndicator.Size = new System.Drawing.Size(150, 4);
@@ -860,7 +862,7 @@
             this.homeIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.homeIndicator.BorderRadius = 3;
             this.homeIndicator.BorderThickness = 0;
-            this.homeIndicator.Location = new System.Drawing.Point(518, 1027);
+            this.homeIndicator.Location = new System.Drawing.Point(426, 1027);
             this.homeIndicator.Name = "homeIndicator";
             this.homeIndicator.ShowBorders = false;
             this.homeIndicator.Size = new System.Drawing.Size(79, 4);
@@ -1862,7 +1864,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(484, 183);
+            this.pictureBox8.Location = new System.Drawing.Point(484, 180);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(17, 21);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1878,7 +1880,6 @@
             this.station8.BorderColor = System.Drawing.Color.Transparent;
             this.station8.BorderRadius = 8;
             this.station8.BorderThickness = 1;
-            this.station8.Controls.Add(this.agv1Vertical);
             this.station8.Location = new System.Drawing.Point(1103, 340);
             this.station8.Name = "station8";
             this.station8.ShowBorders = true;
@@ -1890,7 +1891,7 @@
             // 
             this.agv1Vertical.BackColor = System.Drawing.Color.Transparent;
             this.agv1Vertical.Image = ((System.Drawing.Image)(resources.GetObject("agv1Vertical.Image")));
-            this.agv1Vertical.Location = new System.Drawing.Point(323, 5);
+            this.agv1Vertical.Location = new System.Drawing.Point(897, 340);
             this.agv1Vertical.Name = "agv1Vertical";
             this.agv1Vertical.Size = new System.Drawing.Size(32, 49);
             this.agv1Vertical.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -2293,11 +2294,11 @@
             this.giveUpButton.ButtonTextMarginLeft = 0;
             this.giveUpButton.ColorContrastOnClick = 45;
             this.giveUpButton.ColorContrastOnHover = 45;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.giveUpButton.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.giveUpButton.CustomizableEdges = borderEdges3;
             this.giveUpButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.giveUpButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.giveUpButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2323,7 +2324,7 @@
             this.giveUpButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("giveUpButton.IdleIconLeftImage")));
             this.giveUpButton.IdleIconRightImage = null;
             this.giveUpButton.IndicateFocus = false;
-            this.giveUpButton.Location = new System.Drawing.Point(1034, 1034);
+            this.giveUpButton.Location = new System.Drawing.Point(939, 1034);
             this.giveUpButton.Name = "giveUpButton";
             this.giveUpButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.giveUpButton.OnDisabledState.BorderRadius = 1;
@@ -2384,11 +2385,11 @@
             this.trafficButton.ButtonTextMarginLeft = 0;
             this.trafficButton.ColorContrastOnClick = 45;
             this.trafficButton.ColorContrastOnHover = 45;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.trafficButton.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.trafficButton.CustomizableEdges = borderEdges2;
             this.trafficButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.trafficButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.trafficButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -2414,7 +2415,7 @@
             this.trafficButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("trafficButton.IdleIconLeftImage")));
             this.trafficButton.IdleIconRightImage = null;
             this.trafficButton.IndicateFocus = false;
-            this.trafficButton.Location = new System.Drawing.Point(1230, 1034);
+            this.trafficButton.Location = new System.Drawing.Point(1135, 1034);
             this.trafficButton.Name = "trafficButton";
             this.trafficButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.trafficButton.OnDisabledState.BorderRadius = 1;
@@ -2448,7 +2449,7 @@
             this.trafficButton.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.trafficButton.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("trafficButton.OnPressedState.IconLeftImage")));
             this.trafficButton.OnPressedState.IconRightImage = null;
-            this.trafficButton.Size = new System.Drawing.Size(187, 46);
+            this.trafficButton.Size = new System.Drawing.Size(179, 46);
             this.trafficButton.TabIndex = 56;
             this.trafficButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.trafficButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2465,7 +2466,7 @@
             this.giveIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.giveIndicator.BorderRadius = 3;
             this.giveIndicator.BorderThickness = 0;
-            this.giveIndicator.Location = new System.Drawing.Point(1048, 1027);
+            this.giveIndicator.Location = new System.Drawing.Point(951, 1027);
             this.giveIndicator.Name = "giveIndicator";
             this.giveIndicator.ShowBorders = false;
             this.giveIndicator.Size = new System.Drawing.Size(168, 4);
@@ -2480,7 +2481,7 @@
             this.trafficIndicator.BorderColor = System.Drawing.Color.Transparent;
             this.trafficIndicator.BorderRadius = 3;
             this.trafficIndicator.BorderThickness = 0;
-            this.trafficIndicator.Location = new System.Drawing.Point(1241, 1027);
+            this.trafficIndicator.Location = new System.Drawing.Point(1146, 1027);
             this.trafficIndicator.Name = "trafficIndicator";
             this.trafficIndicator.ShowBorders = false;
             this.trafficIndicator.Size = new System.Drawing.Size(168, 4);
@@ -2975,12 +2976,121 @@
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // startButton
+            // 
+            this.startButton.AllowAnimations = true;
+            this.startButton.AllowMouseEffects = true;
+            this.startButton.AllowToggling = false;
+            this.startButton.AnimationSpeed = 200;
+            this.startButton.AutoGenerateColors = false;
+            this.startButton.AutoRoundBorders = false;
+            this.startButton.AutoSizeLeftIcon = true;
+            this.startButton.AutoSizeRightIcon = true;
+            this.startButton.BackColor = System.Drawing.Color.Transparent;
+            this.startButton.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.startButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("startButton.BackgroundImage")));
+            this.startButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.startButton.ButtonText = "START MISSION";
+            this.startButton.ButtonTextMarginLeft = 0;
+            this.startButton.ColorContrastOnClick = 45;
+            this.startButton.ColorContrastOnHover = 45;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.startButton.CustomizableEdges = borderEdges1;
+            this.startButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.startButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.startButton.DisabledFillColor = System.Drawing.Color.Empty;
+            this.startButton.DisabledForecolor = System.Drawing.Color.Empty;
+            this.startButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.startButton.Font = new System.Drawing.Font("Inter Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.startButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(83)))), ((int)(((byte)(97)))));
+            this.startButton.IconLeft = ((System.Drawing.Image)(resources.GetObject("startButton.IconLeft")));
+            this.startButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.startButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.startButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.startButton.IconMarginLeft = 11;
+            this.startButton.IconPadding = 10;
+            this.startButton.IconRight = null;
+            this.startButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.startButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.startButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.startButton.IconSize = 25;
+            this.startButton.IdleBorderColor = System.Drawing.Color.Empty;
+            this.startButton.IdleBorderRadius = 0;
+            this.startButton.IdleBorderThickness = 0;
+            this.startButton.IdleFillColor = System.Drawing.Color.Empty;
+            this.startButton.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("startButton.IdleIconLeftImage")));
+            this.startButton.IdleIconRightImage = null;
+            this.startButton.IndicateFocus = false;
+            this.startButton.Location = new System.Drawing.Point(1318, 1033);
+            this.startButton.Name = "startButton";
+            this.startButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.startButton.OnDisabledState.BorderRadius = 1;
+            this.startButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.startButton.OnDisabledState.BorderThickness = 1;
+            this.startButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.startButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.startButton.OnDisabledState.IconLeftImage = null;
+            this.startButton.OnDisabledState.IconRightImage = null;
+            this.startButton.onHoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.startButton.onHoverState.BorderRadius = 1;
+            this.startButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.startButton.onHoverState.BorderThickness = 1;
+            this.startButton.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.startButton.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.startButton.onHoverState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.onHoverState.IconLeftImage")));
+            this.startButton.onHoverState.IconRightImage = null;
+            this.startButton.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.startButton.OnIdleState.BorderRadius = 1;
+            this.startButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.startButton.OnIdleState.BorderThickness = 1;
+            this.startButton.OnIdleState.FillColor = System.Drawing.Color.Transparent;
+            this.startButton.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(83)))), ((int)(((byte)(97)))));
+            this.startButton.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconLeftImage")));
+            this.startButton.OnIdleState.IconRightImage = null;
+            this.startButton.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
+            this.startButton.OnPressedState.BorderRadius = 1;
+            this.startButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.startButton.OnPressedState.BorderThickness = 1;
+            this.startButton.OnPressedState.FillColor = System.Drawing.Color.Transparent;
+            this.startButton.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.startButton.OnPressedState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnPressedState.IconLeftImage")));
+            this.startButton.OnPressedState.IconRightImage = null;
+            this.startButton.Size = new System.Drawing.Size(178, 46);
+            this.startButton.TabIndex = 97;
+            this.startButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.startButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.startButton.TextMarginLeft = 0;
+            this.startButton.TextPadding = new System.Windows.Forms.Padding(0);
+            this.startButton.UseDefaultRadiusAndThickness = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            // 
+            // bunifuPanel5
+            // 
+            this.bunifuPanel5.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel5.BackgroundImage")));
+            this.bunifuPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel5.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel5.BorderRadius = 3;
+            this.bunifuPanel5.BorderThickness = 0;
+            this.bunifuPanel5.Location = new System.Drawing.Point(1328, 1027);
+            this.bunifuPanel5.Name = "bunifuPanel5";
+            this.bunifuPanel5.ShowBorders = false;
+            this.bunifuPanel5.Size = new System.Drawing.Size(168, 4);
+            this.bunifuPanel5.TabIndex = 18;
+            this.bunifuPanel5.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(42)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1920, 1061);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.bunifuPanel5);
+            this.Controls.Add(this.startButton);
+            this.Controls.Add(this.agv1Vertical);
             this.Controls.Add(this.rfid605);
             this.Controls.Add(this.rfid213);
             this.Controls.Add(this.textBox26);
@@ -3118,7 +3228,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.agvInfo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.station8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.agv1Vertical)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv1Horizontal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.agv2Horizontal)).EndInit();
@@ -3287,5 +3396,7 @@
         private TextBox textBox22;
         private TextBox rfid605;
         public System.Windows.Forms.Timer timer2;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton startButton;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel5;
     }
 }

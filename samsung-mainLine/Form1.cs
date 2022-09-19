@@ -64,7 +64,7 @@ namespace samsung_mainLine
         public string SMDdata;
         public int waitingTime = 0, moveCnt = 0;
         public double rfid2, route2;
-        public string chargingTime, timeNow;
+        public string chargingTime, timeNow, endChargingTime;
         public int cycleCount = 0, workHour = 0;
 
 
@@ -565,6 +565,7 @@ namespace samsung_mainLine
                         rfidLabel2.Text = rfid2.ToString();
                         routeLabel2.Text = route2.ToString();
                         chargingTime = "11:40:00";
+                        endChargingTime = "12:35:00";
                         timeNow = DateTime.Now.ToString();
 
                         if (timeNow == chargingTime)
@@ -578,11 +579,23 @@ namespace samsung_mainLine
                                 Console.WriteLine("Start Mission");
                             }
 
-                            timer1 = new System.Windows.Forms.Timer();
-                            timer1.Tick += new EventHandler(timer1_Tick);
-                            timer1.Interval = 1000; // 1 second
-                            timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
-                            timer1.Start();
+                            //timer1 = new System.Windows.Forms.Timer();
+                            //timer1.Tick += new EventHandler(timer1_Tick);
+                            //timer1.Interval = 1000; // 1 second
+                            //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
+                            //timer1.Start();
+                        }
+
+                        else if (timeNow == endChargingTime)
+                        {
+                            try
+                            {
+                                await API("missionC.netMissionAdd('ROW_2')");
+                            }
+                            catch (Newtonsoft.Json.JsonSerializationException)
+                            {
+                                Console.WriteLine("Start Mission");
+                            }
                         }
 
                         if (rfid2 == 213 && route2 == 210)
@@ -1054,6 +1067,18 @@ namespace samsung_mainLine
             //timer2.Enabled = true;
         }
 
+        private async void startButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                await API("missionC.netMissionAdd('ROW_2')");
+            }
+            catch (Newtonsoft.Json.JsonSerializationException)
+            {
+                Console.WriteLine("Start Mission");
+            }
+        }
+
         public void homeButton_Click(object sender, EventArgs e)
         {
             timer2.Stop();
@@ -1069,18 +1094,18 @@ namespace samsung_mainLine
         private async void timer1_Tick(object sender, EventArgs e)
         {
             counts--;
-            if (counts == 0)
-            {
-                timer1.Stop();
-                try
-                {
-                    await API("missionC.netMissionAdd('ROW_2')");
-                }
-                catch (Newtonsoft.Json.JsonSerializationException)
-                {
-                    Console.WriteLine("Start Mission");
-                }
-            }
+            //if (counts == 0)
+            //{
+                //timer1.Stop();
+                //try
+                //{
+                //    await API("missionC.netMissionAdd('ROW_2')");
+                //}
+                //catch (Newtonsoft.Json.JsonSerializationException)
+                //{
+                //    Console.WriteLine("Start Mission");
+                //}
+            //}
             //Console.WriteLine(flags);
             //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
         }
