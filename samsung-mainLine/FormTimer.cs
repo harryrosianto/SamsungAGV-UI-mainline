@@ -14,6 +14,7 @@ namespace samsung_mainLine
     {
         //private Form1 _formMain;
         public static string secondsValue = "";
+        public static string secondsValue2 = "";
         public FormTimer()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace samsung_mainLine
         {
 
             secondsValue = timerValue.Text;
+            secondsValue2 = timerValue2.Text;
             this.Close();
         }
         

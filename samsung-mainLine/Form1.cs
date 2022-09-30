@@ -53,7 +53,11 @@ namespace samsung_mainLine
         public long btnState;
         public long btnState2;
         public long obsState;
+        public long obsStateFront1;
+        public long obsStateRear1;
         public long obsState2;
+        public long obsStateFront2;
+        public long obsStateRear2;
         public string readType;
         public string jobIDInput;
         public string errorCode, errorCode2, errorTime, errorTime2;
@@ -64,8 +68,11 @@ namespace samsung_mainLine
         public string SMDdata;
         public int waitingTime = 0, moveCnt = 0;
         public double rfid2, route2;
-        public string chargingTime, timeNow, endChargingTime;
-        public int cycleCount = 0, workHour = 0;
+        public string chargingTime;
+        public string timeNow, endChargingTime;
+        public string chargingTime2;
+        public int cycleCount = 0, workHour1 = 0, workHour2 = 0;
+        public int chargingStatus = 0;
 
 
 
@@ -83,6 +90,8 @@ namespace samsung_mainLine
             callAPI();
             modeButton.MouseHover += ModeButton_MouseHover;
             modeButton.MouseLeave += ModeButton_MouseLeave;
+            logsButton1.MouseHover += logsButton1_MouseHover;
+            logsButton1.MouseLeave += logsButton1_MouseLeave;
             logsButton.MouseHover += LogsButton_MouseHover;
             logsButton.MouseLeave += LogsButton_MouseLeave;
             timerButton.MouseHover += TimerButton_MouseHover;
@@ -95,6 +104,8 @@ namespace samsung_mainLine
             trafficButton.MouseLeave += trafficButton_MouseLeave;
             startButton.MouseHover += startButton_MouseHover;
             startButton.MouseLeave += startButton_MouseLeave;
+            startButton2.MouseHover += startButton2_MouseHover;
+            startButton.MouseLeave += startButton2_MouseLeave;
 
             //timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
             //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
@@ -301,7 +312,7 @@ namespace samsung_mainLine
         {
 
             string[] arrayMachine1 = new string[] { "ROW_1", "CHARGING_1" };
-            string[] arrayMachine2 = new string[] { "SMD_2", "CHARGING_2" };
+            string[] arrayMachine2 = new string[] { "ROW_2", "CHARGING_2" };
 
             string[] arrayPosition = new string[] {"HOME2","HOME1", "TRAFFIC2", "TRAFFIC1","BRANCH2", "BRANCH1","WIPFULL2", "WIPFULL1", // --- 8rfid
                                                    "WIP-IN-6", "WIP-IN-5","WIP-IN-4","WIP-IN-3","WIP-IN-2","WIP-IN-1","BRANCHLINE", // --- 7rfid
@@ -330,13 +341,16 @@ namespace samsung_mainLine
 
             string[] arrayRFIDVertical = new string[] { "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "404", "200" };
 
+            //timeNow = DateTime.Now.ToString("HH:mm:ss");
+            //waktuLabel.Text = timeNow;
+
             ResponseData data = await API("missionC.missionGetActiveList()");
 
             if (data.errMark == "ok")
             {
                 //List<AGVCallingModel> showData = new();
                 List<AGVCallingModel> showData = new List<AGVCallingModel>();
-                List<AGV2CallingModel> showData2 = new List<AGV2CallingModel>();
+                List<AGVCallingModel> showData2 = new List<AGVCallingModel>();
                 string lastTIme = "";
                 for (int i = 0; i < data.msg.Count; i++)
                 {
@@ -392,8 +406,8 @@ namespace samsung_mainLine
                         //System.Console.WriteLine("Contents of WriteText.txt = \n{0}", text);
                         //foreach (string line in lines)
                         //{
-                        //    // Use a tab to indent each line of the file.
-                        //    //Console.WriteLine("\n" + line);
+                        //    Use a tab to indent each line of the file.
+                        //    Console.WriteLine("\n" + line);
                         //}
                         //Console.WriteLine(lines[0]);
 
@@ -421,7 +435,15 @@ namespace samsung_mainLine
                         //string searchString = data.msg[(int)indexJob][1];               //Read first call jobID then search Name
                         //int index = Array.IndexOf(arrayMachine, searchString);
                         AGVCallingModel temp = new AGVCallingModel(agvTime, AGVUniversalName, SMDdata + " (" + jobData + ")", statusDelivery);
-                        showData.Add(temp);
+                        if (AGVUniversalName == agvName)
+                        {
+                            showData.Add(temp);
+                        }
+                        else if (AGVUniversalName == agv2Name)
+                        {
+                            showData2.Add(temp);
+                        }
+                        //showData.Add(temp);
                         //if (index == 0) { activeLine(true, false, false, false, false, false);}
                         //else if (index == 1){ activeLine(false, true, false, false, false, false);}
                         //else if (index == 2){ activeLine(false, false, true, false, false, false);}
@@ -439,15 +461,34 @@ namespace samsung_mainLine
                     else if (statusDelivery == "正常结束")
                     {
                         statusDelivery = "FINISH";
-                        cycleCount = cycleCount + 1;
+                        
                         AGVCallingModel temp = new AGVCallingModel(agvTime, AGVUniversalName, SMDdata + " (" + jobData + ")", statusDelivery);
-                        showData.Add(temp);
+                        //showData.Add(temp);
+
+                        if (AGVUniversalName == agvName)
+                        {
+                            showData.Add(temp);
+                        }
+                        else if (AGVUniversalName == agv2Name)
+                        {
+                            showData2.Add(temp);
+                            
+                        }
                     }
                     else if (statusDelivery == "错误")
                     {
                         statusDelivery = "COM ERR";
                         AGVCallingModel temp = new AGVCallingModel(agvTime, AGVUniversalName, SMDdata + " (" + jobData + ")", statusDelivery);
-                        showData.Add(temp);
+                        //showData.Add(temp);
+
+                        if (AGVUniversalName == agvName)
+                        {
+                            showData.Add(temp);
+                        }
+                        else if (AGVUniversalName == agv2Name)
+                        {
+                            showData2.Add(temp);
+                        }
                     }
                     else { activeLine(false, false, false, false, false, false); }
                 }
@@ -459,6 +500,13 @@ namespace samsung_mainLine
                     //this.gridViewDS.Columns[1].Width = 55;
                     //this.gridViewDS.Columns[2].Width = 100;
                 });
+
+                gridViewDS2.Invoke((MethodInvoker)delegate {
+                    gridViewDS2.DataSource = showData2;
+                    //this.gridViewDS.Columns[0].Width = 120;
+                    //this.gridViewDS.Columns[1].Width = 55;
+                    //this.gridViewDS.Columns[2].Width = 100;
+                });
             }
 
             data = await API("devC.getCarList()");
@@ -466,7 +514,6 @@ namespace samsung_mainLine
             if (data.errMark == "OK")
             {
                 List<AGVStatusModel> showData = new List<AGVStatusModel>();
-
 
                 for (int i = 0; i < data.msg.Count; i++)
                 {
@@ -483,6 +530,9 @@ namespace samsung_mainLine
                     agvRoute = routeNow.ToString();
 
                     int agvRfid = (int)rfidNow;
+
+                    //chargingTime = "11:32:00";
+                    //endChargingTime = "12:35:00";
 
                     if (readAddress == 1 && readType == "车")
                     {
@@ -534,6 +584,10 @@ namespace samsung_mainLine
                         agv2Horizontal.BackColor = agvColor;
                         AGV2StatusLabel.Text = agv2Status;
 
+                        rfidLabel2.Text = rfid2.ToString();
+                        routeLabel2.Text = route2.ToString();
+                        
+
                         if (data.msg.Count == 2)
                         {
                             double power2 = data.msg[1][7];
@@ -567,45 +621,13 @@ namespace samsung_mainLine
                             batValue2.Text = power.ToString();
                         }
 
-                        rfidLabel2.Text = rfid2.ToString();
-                        routeLabel2.Text = route2.ToString();
-                        chargingTime = "11:40:00";
-                        endChargingTime = "12:35:00";
-                        timeNow = DateTime.Now.ToString("HH:mm:ss");
-                        waktuLabel.Text = timeNow;
-
-                        if (timeNow == chargingTime)
-                        {
-                            try
-                            {
-                                await API("missionC.netMissionAdd('CHARGING')");
-                            }
-                            catch (Newtonsoft.Json.JsonSerializationException)
-                            {
-                                Console.WriteLine("Start Mission");
-                            }
-
-                            //timer1 = new System.Windows.Forms.Timer();
-                            //timer1.Tick += new EventHandler(timer1_Tick);
-                            //timer1.Interval = 1000; // 1 second
-                            //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
-                            //timer1.Start();
-                        }
-
-                        else if (timeNow == endChargingTime)
-                        {
-                            try
-                            {
-                                await API("missionC.netMissionAdd('ROW_2')");
-                            }
-                            catch (Newtonsoft.Json.JsonSerializationException)
-                            {
-                                Console.WriteLine("Start Mission");
-                            }
-                        }
-
                         if (rfid2 == 213 && route2 == 210)
                         {
+
+                            cycleCount = cycleCount + 1;
+                            cycleLabel2.Text = cycleCount.ToString();
+                            palette7.Visible = false;
+
                             try
                             {
                                 await API("missionC.netMissionAdd('ROW_2')");
@@ -627,6 +649,7 @@ namespace samsung_mainLine
                             agv2Horizontal.Top = rfid601.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
+                            chargeIden2.Visible = true;
                         }
                         else if (rfid2 == 602)
                         {
@@ -634,6 +657,7 @@ namespace samsung_mainLine
                             agv2Horizontal.Top = rfid602.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
+                            chargeIden2.Visible = false;
                         }
                         else if (rfid2 == 213)
                         {
@@ -641,6 +665,7 @@ namespace samsung_mainLine
                             agv2Horizontal.Top = rfid213.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
+                            chargeIden2.Visible = false;
                         }
                         else if (rfid2 == 207)
                         {
@@ -648,6 +673,11 @@ namespace samsung_mainLine
                             agv2Horizontal.Top = rfid207.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
+                            palette8.Visible = false;
+                            if (route2 == 210)
+                            {
+                                palette7.Visible = true;
+                            }
                         }
                         else if (rfid2 == 208)
                         {
@@ -655,6 +685,11 @@ namespace samsung_mainLine
                             agv2Horizontal.Top = rfid208.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
+                            palette9.Visible = false;
+                            if (route2 == 210)
+                            {
+                                palette8.Visible = true;
+                            }
                         }
                         else if (rfid2 == 209)
                         {
@@ -662,6 +697,11 @@ namespace samsung_mainLine
                             agv2Horizontal.Top = rfid209.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
+                            palette10.Visible = false;
+                            if (route2 == 210)
+                            {
+                                palette9.Visible = true;
+                            }
                         }
                         else if (rfid2 == 210)
                         {
@@ -669,6 +709,11 @@ namespace samsung_mainLine
                             agv2Horizontal.Top = rfid210.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
+                            palette11.Visible = false;
+                            if (route2 == 210)
+                            {
+                                palette10.Visible = true;
+                            }
                         }
                         else if (rfid2 == 211)
                         {
@@ -676,6 +721,15 @@ namespace samsung_mainLine
                             agv2Horizontal.Top = rfid211.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
+                            palette12.Visible = false;
+                            if (route2 == 209)
+                            {
+                                palette11.Visible = true;
+                            }
+                            else
+                            {
+                                palette11.Visible = false;
+                            }
                         }
                         else if (rfid2 == 212)
                         {
@@ -683,6 +737,10 @@ namespace samsung_mainLine
                             agv2Horizontal.Top = rfid212.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
+                            if (route2 == 209)
+                            {
+                                palette12.Visible |= true;
+                            }
                         }
                         else if (rfid2 == 604)
                         {
@@ -732,6 +790,10 @@ namespace samsung_mainLine
                             agv2Vertical.Top = rfid107.Top;
                             agv2Horizontal.Visible = false;
                             agv2Vertical.Visible = true;
+                            if (route2 == 205)
+                            {
+                                station7.Visible = true;
+                            }
                         }
                         else if (rfid2 == 108)
                         {
@@ -739,6 +801,11 @@ namespace samsung_mainLine
                             agv2Vertical.Top = rfid108.Top;
                             agv2Horizontal.Visible = false;
                             agv2Vertical.Visible = true;
+                            station7.Visible = false;
+                            if (route2 == 205)
+                            {
+                                station8.Visible = true;
+                            }
                         }
                         else if (rfid2 == 109)
                         {
@@ -746,6 +813,11 @@ namespace samsung_mainLine
                             agv2Vertical.Top = rfid109.Top;
                             agv2Horizontal.Visible = false;
                             agv2Vertical.Visible = true;
+                            station8.Visible = false;
+                            if (route2 == 205)
+                            {
+                                station9.Visible = true;
+                            }
                         }
                         else if (rfid2 == 110)
                         {
@@ -753,6 +825,11 @@ namespace samsung_mainLine
                             agv2Vertical.Top = rfid110.Top;
                             agv2Horizontal.Visible = false;
                             agv2Vertical.Visible = true;
+                            station9.Visible = false;
+                            if (route2 == 205)
+                            {
+                                station10.Visible = true;
+                            }
                         }
                         else if (rfid2 == 111)
                         {
@@ -760,6 +837,12 @@ namespace samsung_mainLine
                             agv2Vertical.Top = rfid111.Top;
                             agv2Horizontal.Visible = false;
                             agv2Vertical.Visible = true;
+                            station10.Visible = false;
+                            station12.Visible = false;
+                            if (route2 == 205)
+                            {
+                                station11.Visible = true;
+                            }
                         }
                         else if (rfid2 == 112)
                         {
@@ -767,6 +850,20 @@ namespace samsung_mainLine
                             agv2Vertical.Top = rfid112.Top;
                             agv2Horizontal.Visible = false;
                             agv2Vertical.Visible = true;
+                            station11.Visible = false;
+                            if (route2 == 205)
+                            {
+                                station12.Visible = true;
+                            }
+                        }
+                        else
+                        {
+                            station7.Visible = false;
+                            station8.Visible = false;
+                            station9.Visible = false;
+                            station10.Visible = false;
+                            station11.Visible = false;
+                            station12.Visible = false;
                         }
                     }
                 }
@@ -782,10 +879,22 @@ namespace samsung_mainLine
 
                 for (int i = 0; i < data.msg.Count; i++)
                 {
-                    agvAddress = data.msg[i][3]; 
-                    agvAddress2 = data.msg[i][3];
-                    offTime = data.msg[i][6];
-                    offTime2 = data.msg[i][6];
+                    if (data.msg.Count == 2)
+                    {
+                        agvAddress = data.msg[0][3];
+                        agvAddress2 = data.msg[1][3];
+
+                        offTime = data.msg[0][6];
+                        offTime2 = data.msg[1][6];
+                    }
+                    else
+                    {
+                        agvAddress = data.msg[i][3];
+                        agvAddress2 = data.msg[i][3];
+
+                        offTime = data.msg[i][6];
+                        offTime2 = data.msg[i][6];
+                    }
 
                     Console.WriteLine(agvAddress);
                     Console.WriteLine(readType);
@@ -800,6 +909,7 @@ namespace samsung_mainLine
                         labelDisconnect.Text = disc;
                         labelDisconnect.Visible = true;
                         detailPanel1.BackgroundColor = Color.FromArgb(255, 87, 38, 65);
+                        timer1.Enabled = false;
                     }
                     else if (agvAddress == 1 && readType == "车" && offTime < 1)
                     {
@@ -809,6 +919,7 @@ namespace samsung_mainLine
                         AGV1StateLabel.Text = "ON";
                         labelDisconnect.Visible = false;
                         detailPanel1.BackgroundColor = Color.FromArgb(255, 50, 50, 71);
+                        timer1.Enabled = true;
                     }
                     else
                     {
@@ -820,6 +931,7 @@ namespace samsung_mainLine
                         labelDisconnect.Text = disc;
                         labelDisconnect.Visible = true;
                         detailPanel1.BackgroundColor = Color.FromArgb(255, 87, 38, 65);
+                        timer1.Enabled = false;
                     }
                     if ((agvAddress2 == 2) && readType == "车" && offTime2 >= 10)
                     {
@@ -831,14 +943,16 @@ namespace samsung_mainLine
                         labelDisconnect1.Text = disc;
                         labelDisconnect1.Visible = true;
                         detailPanel2.BackgroundColor = Color.FromArgb(255, 87, 38, 65);
+                        timer2.Enabled = false;
                     }
-                    else if (agvAddress2 == 2 && readType == "车" && offTime2 < 0.3)
+                    else if (agvAddress2 == 2 && readType == "车" && offTime2 < 1)
                     {
                         agv2State = "ON";
                         AGV2NameLabel.Text = agv2Name;
                         AGV2StateLabel.Text = "ON";
                         labelDisconnect1.Visible = false;
                         detailPanel2.BackgroundColor = Color.FromArgb(255, 50, 50, 71);
+                        timer2.Enabled = true;
                     }
                     else
                     {
@@ -850,16 +964,18 @@ namespace samsung_mainLine
                         labelDisconnect1.Text = disc;
                         labelDisconnect1.Visible = true;
                         detailPanel2.BackgroundColor = Color.FromArgb(255, 87, 38, 65);
+                        timer2.Enabled = false;
                     }
                 }
 
-                List<AGVErrorModel> showError = new List<AGVErrorModel>();
                 errorTime = DateTime.Now.ToString();
                 errorTime2 = DateTime.Now.ToString();
                 ResponseData2 datanonArray = await APInonArray("devC.deviceDic[1].optionsLoader.load(carLib.RAM.DEV.BTN_EMC)");
                 ResponseData2 datanonArray2 = await APInonArray("devC.deviceDic[2].optionsLoader.load(carLib.RAM.DEV.BTN_EMC)");
 
                 Console.WriteLine("KONDISI EMG SEKARANG: {0}", btnState2);
+
+                List<AGVErrorModel> showError = new List<AGVErrorModel>();
 
                 try
                 {
@@ -881,6 +997,7 @@ namespace samsung_mainLine
 
                 if (datanonArray.errMark == "OK")
                 {
+                    //List<AGVErrorModel> showError = new List<AGVErrorModel>();
                     errorTime = DateTime.Now.ToString();
                     if (btnState == 0)
                     {
@@ -889,6 +1006,9 @@ namespace samsung_mainLine
                         agv1Vertical.BackColor = Color.Red;
                         detailPanel1.BackgroundColor = Color.FromArgb(255, 87, 38, 65);
                         EMG1Label.Visible = true;
+
+                        AGVErrorModel temp1 = new AGVErrorModel(errorTime, agvName, errorCode, obsCode);
+                        showError.Add(temp1);
                     }
                     else if (btnState == 1)
                     {
@@ -898,6 +1018,8 @@ namespace samsung_mainLine
                         detailPanel1.BackgroundColor = Color.FromArgb(255, 50, 50, 71);
                         EMG1Label.Visible = false;
                     }
+
+                    //gridViewError.Invoke((MethodInvoker)delegate { gridViewError.DataSource = showError; });
                 }
                 else
                 {
@@ -907,6 +1029,8 @@ namespace samsung_mainLine
 
                 if (datanonArray2.errMark == "OK")
                 {
+                    //List<AGVErrorModel> showError2 = new List<AGVErrorModel>();
+
                     errorTime2 = DateTime.Now.ToString();
                     if (btnState2 == 0)
                     {
@@ -915,6 +1039,9 @@ namespace samsung_mainLine
                         agv1Vertical.BackColor = Color.Red;
                         detailPanel2.BackgroundColor = Color.FromArgb(255, 87, 38, 65);
                         EMG2Label.Visible = true;
+
+                        AGVErrorModel temp2 = new AGVErrorModel(errorTime, agvName, errorCode, obsCode);
+                        showError.Add(temp2);
                     }
                     else if (btnState2 == 1)
                     {
@@ -924,11 +1051,8 @@ namespace samsung_mainLine
                         detailPanel2.BackgroundColor = Color.FromArgb(255, 50, 50, 71);
                         EMG2Label.Visible = false;
                     }
-                }
-                else
-                {
-                    errorTime2 = "";
-                    errorCode2 = "";
+
+                    //gridViewError.Invoke((MethodInvoker)delegate { gridViewError.DataSource = showError2; });
                 }
 
                 ResponseData2 nonArrayOBS = await APInonArray("devC.deviceDic[1].optionsLoader.load(carLib.RAM.DEV.OBS)");
@@ -937,72 +1061,147 @@ namespace samsung_mainLine
                 try
                 {
                     obsState = nonArrayOBS.msg[2];
+                    obsStateFront1 = nonArrayOBS.msg[5];
+                    obsStateRear1 = nonArrayOBS.msg[6];
                 }
                 catch (NullReferenceException)
                 {
                     obsState = 3;
+                    obsStateFront1 = 3;
+                    obsStateRear1 = 3;
                 }
 
                 try
                 {
                     obsState2 = nonArrayOBS2.msg[2];
+                    obsStateFront2 = nonArrayOBS2.msg[5];
+                    obsStateRear2 = nonArrayOBS2.msg[6];
                 }
                 catch (NullReferenceException)
                 {
                     obsState2 = 3;
+                    obsStateFront2 = 3;
+                    obsStateRear2 = 3;
                 }
 
                 if (nonArrayOBS.errMark == "OK")
                 {
+                    //List<AGVErrorModel> showError = new List<AGVErrorModel>();
 
                     if (obsState == 7)
                     {
-                        obsCode = "OBS STOP";
+                        //obsCode = "OBS STOP";
                         agv1Horizontal.BackColor = Color.Red;
                         agv1Vertical.BackColor = Color.Red;
+
+                        if (obsStateFront1 == 7)
+                        {
+                            obsCode = "OBS FRONT";
+                            frontSensor1.Visible = true;
+                            frontSensorIden1.BackgroundColor = Color.Red;
+                            frontSensorText1.Text = "Detect Object";
+
+                            AGVErrorModel temp3 = new AGVErrorModel(errorTime2, agv2Name, errorCode2, obsCode2);
+                            showError.Add(temp3);
+                        }
+
+                        else if (obsStateRear1 == 7)
+                        {
+                            obsCode = "OBS REAR";
+                            rearSensor1.Visible = true;
+                            rearSensorIden1.BackgroundColor = Color.Red;
+                            rearSensorText1.Text = "Detect Object";
+
+                            AGVErrorModel temp4 = new AGVErrorModel(errorTime2, agv2Name, errorCode2, obsCode2);
+                            showError.Add(temp4);
+                        }
+
+                        //gridViewError.Invoke((MethodInvoker)delegate { gridViewError.DataSource = showError; });
                     }
                     else
                     {
                         obsCode = "-";
                         agv1Vertical.BackColor = agvColor;
                         agv1Horizontal.BackColor = agvColor;
+                        frontSensor1.Visible = false;
+                        frontSensorIden1.BackgroundColor = Color.FromArgb(255, 42, 202, 147);
+                        frontSensorText1.Text = "Clear";
+
+                        rearSensor1.Visible = false;
+                        rearSensorIden1.BackgroundColor = Color.FromArgb(255, 42, 202, 147);
+                        rearSensorText1.Text = "Clear";
                     }
-                }
-                else
-                {
-                    errorTime = "";
-                    obsCode = "";
+
+                    //gridViewError.Invoke((MethodInvoker)delegate { gridViewError.DataSource = showError; });
                 }
 
                 if (nonArrayOBS2.errMark == "OK")
                 {
+                    //List<AGVErrorModel> showError = new List<AGVErrorModel>();
+
                     if (obsState2 == 7)
                     {
-                        obsCode2 = "OBS STOP";
+                        //obsCode2 = "OBS STOP";
                         agv1Horizontal.BackColor = Color.Red;
                         agv1Vertical.BackColor = Color.Red;
+
+                        if (obsStateFront2 == 7)
+                        {
+                            obsCode2 = "OBS FRONT";
+                            frontSensor2.Visible = true;
+                            frontSensorIden2.BackgroundColor = Color.Red;
+                            frontSensorText2.Text = "Detect Object";
+
+                            AGVErrorModel temp5 = new AGVErrorModel(errorTime2, agv2Name, errorCode2, obsCode2);
+                            showError.Add(temp5);
+                        }
+
+                        else if (obsStateRear2 == 7)
+                        {
+                            obsCode2 = "OBS REAR";
+                            rearSensor2.Visible = true;
+                            rearSensorIden2.BackgroundColor = Color.Red;
+                            rearSensorText2.Text = "Detect Object";
+
+                            AGVErrorModel temp6 = new AGVErrorModel(errorTime2, agv2Name, errorCode2, obsCode2);
+                            showError.Add(temp6);
+                        }
+                        
                     }
                     else
                     {
                         obsCode2 = "-";
                         agv1Vertical.BackColor = agvColor;
                         agv1Horizontal.BackColor = agvColor;
+
+                        frontSensor1.Visible = false;
+                        frontSensorIden1.BackgroundColor = Color.FromArgb(255, 42, 202, 147);
+                        frontSensorText1.Text = "Clear";
+
+                        rearSensor1.Visible = false;
+                        rearSensorIden1.BackgroundColor = Color.FromArgb(255, 42, 202, 147);
+                        rearSensorText1.Text = "Clear";
+
+                        frontSensor2.Visible = false;
+                        frontSensorIden2.BackgroundColor = Color.FromArgb(255, 42, 202, 147);
+                        frontSensorText2.Text = "Clear";
+                        
+                        rearSensor2.Visible = false;
+                        rearSensorIden2.BackgroundColor = Color.FromArgb(255, 42, 202, 147);
+                        rearSensorText2.Text = "Clear";
                     }
+
+                    //gridViewError.Invoke((MethodInvoker)delegate { gridViewError.DataSource = showError; });
                 }
-                else
-                {
-                    errorTime2 = "";
-                    obsCode2 = "";
-                }
-                updateError = 0;
+                //updateError = 0;
 
                 Console.WriteLine("Kondisi OBS 1: {0}", obsState);
                 Console.WriteLine("Kondisi OBS 2: {0}", obsState2);
-                AGVErrorModel temp = new AGVErrorModel(errorTime, agvName, errorCode, obsCode);
-                AGVErrorModel temp2 = new AGVErrorModel(errorTime2, agv2Name, errorCode2, obsCode2);
-                showError.Add(temp);
-                showError.Add(temp2);
-                //gridViewError.Invoke((MethodInvoker)delegate { gridViewError.DataSource = showError; });
+                //AGVErrorModel temp = new AGVErrorModel(errorTime, agvName, errorCode, obsCode);
+                //AGVErrorModel temp2 = new AGVErrorModel(errorTime2, agv2Name, errorCode2, obsCode2);
+                //showError.Add(temp);
+                //showError.Add(temp2);
+                gridViewError.Invoke((MethodInvoker)delegate { gridViewError.DataSource = showError; });
 
             }
             
@@ -1015,6 +1214,9 @@ namespace samsung_mainLine
                 labelDisconnect.Text = disc;
                 labelDisconnect.Visible = true;
             }
+
+            //gridViewError.Invoke((MethodInvoker)delegate { gridViewError.DataSource = showError; });
+
             callAPI();
 
             //List<AGVErrorModel> errorData = new();
@@ -1022,9 +1224,26 @@ namespace samsung_mainLine
             //timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");   
         }
 
-        private void timer5_Tick(object sender, EventArgs e)
+        private async void timer5_Tick(object sender, EventArgs e)
         {
             waitingTime += 1;
+            timeNow = DateTime.Now.ToString("HH:mm:ss");
+            waktuLabel.Text = timeNow;
+
+            chargingTime = timerLabel.Text;
+            chargingTime2 = timerLabel2.Text;
+
+            if (waktuLabel.Text == chargingTime || waktuLabel.Text == chargingTime2)
+            {
+                try
+                {
+                    await API("missionC.netMissionAdd('CHARGING_2')");
+                }
+                catch (Newtonsoft.Json.JsonSerializationException)
+                {
+                    Console.WriteLine("Start Mission");
+                }
+            }
         }
 
         public class AGVCallingModel
@@ -1057,11 +1276,10 @@ namespace samsung_mainLine
             FormTimer f = new();
             f.ShowDialog();
             //flags = 1;
-            counts = Convert.ToInt32(FormTimer.secondsValue);
-            timerLabel.Text = dt.AddSeconds(counts).ToString("mm:ss");
-            timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
+            timerLabel.Text = FormTimer.secondsValue;
+            timerLabel2.Text = FormTimer.secondsValue2;
             timerData.Text = FormTimer.secondsValue;
-            timerData2.Text = FormTimer.secondsValue;
+            timerData2.Text = FormTimer.secondsValue2;
             //if (flags == 1)
             //{
             //    bunifuPanel3.BackColor = Color.Yellow;
@@ -1077,7 +1295,7 @@ namespace samsung_mainLine
         {
             try
             {
-                await API("missionC.netMissionAdd('ROW_2')");
+                await API("missionC.netMissionAdd('ROW_1')");
             }
             catch (Newtonsoft.Json.JsonSerializationException)
             {
@@ -1090,36 +1308,41 @@ namespace samsung_mainLine
             timer2.Stop();
         }
 
-
+        private async void startButton2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                await API("missionC.netMissionAdd('ROW_2')");
+            }
+            catch (Newtonsoft.Json.JsonSerializationException)
+            {
+                Console.WriteLine("Start Mission");
+            }
+        }
 
         private async void trafficButton_Click(object sender, EventArgs e)
         {
-            await API("missionC.netMissionAdd('CLEAR_TRAFFIC')");
+            try
+            {
+                await API("missionC.netMissionAdd('CLEAR_TRAFFIC')");
+            }
+            catch (Newtonsoft.Json.JsonSerializationException)
+            {
+                Console.WriteLine("Clear Traffic");
+            }
         }
     
         private async void timer1_Tick(object sender, EventArgs e)
         {
-            counts--;
-            //if (counts == 0)
-            //{
-                //timer1.Stop();
-                //try
-                //{
-                //    await API("missionC.netMissionAdd('ROW_2')");
-                //}
-                //catch (Newtonsoft.Json.JsonSerializationException)
-                //{
-                //    Console.WriteLine("Start Mission");
-                //}
-            //}
-            //Console.WriteLine(flags);
-            //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
+            workHour1++;
+            whoursLabel1.Text = dt.AddSeconds(workHour1).ToString("HH:mm:ss");
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            workHour++;
-            whoursLabel2.Text = TimeSpan.FromSeconds(workHour).ToString("mm\\:ss");
+            workHour2++;
+            whoursLabel2.Text = dt.AddSeconds(workHour2).ToString("HH:mm:ss");
+            
         }
 
         private void modeButton_Click(object sender, EventArgs e)
@@ -1138,6 +1361,14 @@ namespace samsung_mainLine
         private void ModeButton_MouseLeave(object? sender, EventArgs e)
         {
             modeIndicator.Visible = false;
+        }
+        private void logsButton1_MouseHover(object? sender, EventArgs e)
+        {
+            logsIndicator1.Visible = true;
+        }
+        private void logsButton1_MouseLeave(object? sender, EventArgs e)
+        {
+            logsIndicator1.Visible = false;
         }
         private void LogsButton_MouseHover(object? sender, EventArgs e)
         {
@@ -1181,11 +1412,19 @@ namespace samsung_mainLine
         }
         private void startButton_MouseHover(object? sender, EventArgs e)
         {
-            trafficIndicator.Visible = true;
+            startIndicator.Visible = true;
         }
         private void startButton_MouseLeave(object? sender, EventArgs e)
         {
-            trafficIndicator.Visible = false;
+            startIndicator.Visible = false;
+        }
+        private void startButton2_MouseHover(object? sender, EventArgs e)
+        {
+            startIndicator2.Visible = true;
+        }
+        private void startButton2_MouseLeave(object? sender, EventArgs e)
+        {
+            startIndicator2.Visible = false;
         }
 
         private void bunifuLabel14_Click(object sender, EventArgs e)
@@ -1195,11 +1434,11 @@ namespace samsung_mainLine
 
         private void logsButton_Click(object sender, EventArgs e)
         {
-            if (gridViewDS.Rows.Count > 0)
+            if (gridViewDS2.Rows.Count > 0)
             {
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "CSV (*.csv)|*.csv";
-                string outputName = DateTime.Today.ToString("dd-mm-yyyy");
+                string outputName = DateTime.Today.ToString("ddMMyyyy");
                 sfd.FileName = "Logs Exported - " + outputName + ".csv";
                 bool fileError = false;
                 if (sfd.ShowDialog() == DialogResult.OK)
@@ -1220,20 +1459,20 @@ namespace samsung_mainLine
                     {
                         try
                         {
-                            int columnCount = gridViewDS.Columns.Count;
+                            int columnCount = gridViewDS2.Columns.Count;
                             string columnNames = "";
-                            string[] outputCsv = new string[gridViewDS.Rows.Count + 1];
+                            string[] outputCsv = new string[gridViewDS2.Rows.Count + 1];
                             for (int i = 0; i < columnCount; i++)
                             {
-                                columnNames += gridViewDS.Columns[i].HeaderText.ToString() + ",";
+                                columnNames += gridViewDS2.Columns[i].HeaderText.ToString() + ",";
                             }
                             outputCsv[0] += columnNames;
 
-                            for (int i = 1; (i - 1) < gridViewDS.Rows.Count; i++)
+                            for (int i = 1; (i - 1) < gridViewDS2.Rows.Count; i++)
                             {
                                 for (int j = 0; j < columnCount; j++)
                                 {
-                                    outputCsv[i] += gridViewDS.Rows[i - 1].Cells[j].Value.ToString() + ",";
+                                    outputCsv[i] += gridViewDS2.Rows[i - 1].Cells[j].Value.ToString() + ",";
                                 }
                             }
 

@@ -60,7 +60,26 @@
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Inter Light'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="timerValue2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAhCAYAAADDLqnYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF+SURBVHhe7dyxTsJAGMDxGxl9BEdHn8TZR3DxWUx8Bl/B
+        ldJCkZ1BJogJxmDTmJrUBhtSvw+/xBA25D6W/y+5gV7Z/rlch7sAnFySJNd5nveHw2ExGAw6BuOQof1I
+        R0/S042ltU8mz/Sl6XRaFUXRNU3TAYfSfsqy7GazWT0ajZ6lr3NL7Y8Gt1qt7C/A8VRV1UlfLxJez3IL
+        IcuyWyny094Bjm4+nzcS3r0l97vK6VIIxFLXte7zXi25ENI0/Wrb1qaBOPQDw5ILQX8AsREd3BEd3BEd
+        3BEd3BEd3BEd3BEd3BEd3BEd3BEd3BEd3BEd3BEd3BEd3BEd3BEd3BEd3BEd3O1El6Zpu9lsbAqIYyc6
+        PQyrZxOBWNbrdZdlWWXJbaO7WywWHAdDNHqQP8/zR0tue6VET8J74yoJxKBbt/F4/LF3tYQ8uJQS35fL
+        5TdnYHEMGpveizOZTEpZ1K4stV0Snl6i86CHr3XTx2D8Z+gHqvTUl64uLDHgFEL4AaRSckWtz0TJAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Inter Light'; font-size: 11.25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
   <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEoAAAApCAYAAACSsL+FAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
