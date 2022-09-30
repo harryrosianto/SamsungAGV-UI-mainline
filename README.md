@@ -5,6 +5,7 @@ UI project to monitor the movement of Automated Guided Vehicle using Visual Stud
 ### Proposed Design
 
 ### UI Explanation
+![](UIEX.png)
 
 ### Built With
 
