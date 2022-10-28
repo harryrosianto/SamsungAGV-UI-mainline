@@ -636,11 +636,7 @@ namespace samsung_mainLine
                             {
                                 Console.WriteLine("Start Mission");
                             }
-                            //timer1 = new System.Windows.Forms.Timer();
-                            //timer1.Tick += new EventHandler(timer1_Tick);
-                            //timer1.Interval = 1000; // 1 second
-                            //timerLabel2.Text = dt.AddSeconds(counts).ToString("mm:ss");
-                            //timer1.Start();
+
                         }
 
                         else if (rfid2 == 601)
