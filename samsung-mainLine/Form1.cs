@@ -689,7 +689,7 @@ namespace samsung_mainLine
                         }
                         else if (rfid2 == 209)
                         {
-                            agv2Horizontal.Left = rfid209.Left;
+                            agv2Horizontal.Left =rfid209.Left;
                             agv2Horizontal.Top = rfid209.Top;
                             agv2Horizontal.Visible = true;
                             agv2Vertical.Visible = false;
