@@ -684,7 +684,7 @@ namespace samsung_mainLine
                             palette9.Visible = false;
                             if (route2 == 210)
                             {
-                                palette8.Visible = true;
+                                palette8.Visible =true;
                             }
                         }
                         else if (rfid2 == 209)
